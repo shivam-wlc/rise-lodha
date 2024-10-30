@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./src/assessts/logo/rise-lodha-logo-for-svg.png"
-    />
+    <link rel="icon" type="image/svg+xml" href="/rise.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RISE</title>
+    <title>RISE - Rising India School of Excellence</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
   </head>
   <body>
+    <!-- *******************************************************
+     *                                                     *
+     *                     Navbar Section                  *
+     *                                                     *
+     ******************************************************* -->
     <div class="header">
       <div class="logo">
         <img
@@ -19,29 +20,275 @@
           alt="Rise Lodha Logo"
         />
       </div>
+
       <div class="right-section">
-        <div class="nav-item" data-menu="Menu 1"></div>
-        <div class="nav-item" data-menu="Menu 2"></div>
-        <div class="nav-item" data-menu="Menu 3"></div>
-        <div class="nav-item" data-menu="Menu 4"></div>
-        <div class="nav-item" data-menu="Menu 5"></div>
-        <div class="nav-item" data-menu="Menu 6"></div>
+        <div class="nav-item" data-menu="Menu 1">
+          <div class="nav-text">Our Story</div>
+        </div>
+        <div class="nav-item" data-menu="Menu 2">
+          <div class="nav-text">Why Us</div>
+        </div>
+        <div class="nav-item" data-menu="Menu 3">
+          <div class="nav-text">Programmes</div>
+        </div>
+        <div class="nav-item" data-menu="Menu 4">
+          <div class="nav-text">Admissions</div>
+        </div>
+        <div class="nav-item" data-menu="Menu 5">
+          <div class="nav-text">Contact us</div>
+        </div>
       </div>
     </div>
+
+    <!-- *******************************************************
+     *                                                     *
+     *                  Main Content Area                  *
+     *                                                     *
+     ******************************************************* -->
+
     <div class="container">
+      <!-- *******************************************************
+     *                                                     *
+     *                     Video Screen                    *
+     *                                                     *
+     ******************************************************* -->
       <div class="screen screen1">
-        <div class="semi-circle-1"></div>
+        <div class="semi-circle-1">
+          <video id="responsive-video" class="video" controls>
+            <source id="video-source" src="./src/assessts/videos/horizontal.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
+
+      <!-- *******************************************************
+     *                                                     *
+     *                    Yellow Section                   *
+     *                                                     *
+     ******************************************************* -->
+
       <div class="screen screen2">
-        <div class="semi-circle-2"></div>
+        <div class="semi-circle-2">
+          <div class="content2">
+            <button>WHAT WE DO.</button>
+            <div>
+              <p>
+                Nurturing little minds <br />
+                that will build tomorrow, today.
+              </p>
+              <p>
+                At Rising India School of Excellence (RISE) Preschool, we are
+                building the future of India. Starting with its youngest minds.
+                As Goa’s first truly international preschool, we offer an
+                education that transcends the classroom. Many early learning
+                centres don’t offer children the chance to truly explore and
+                discover. This often stifles their natural sense of wonder,
+                curiosity and the joy of learning - the very foundation for
+                future leaders and creators. What we do is create a world of
+                Risers who are confident, curious and creative through our
+                proprietary D.I.S.C.O.V.E.R.Y. Mind ModelⒸ which equips young
+                children with the mindset and skills to become future leaders
+                and innovators.
+              </p>
+            </div>
+          </div>
+          <div class="values-container">
+            <p>Values of a RISER.</p>
+            <div class="values">
+              <div class="value">
+                <div class="letter-circle">R</div>
+                <p>Resilience</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">I</div>
+                <p>Innovative</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">S</div>
+                <p>Socially Responsible</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">E</div>
+                <p>Excellence</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">R</div>
+                <p>Respectful</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- *******************************************************
+     *                                                     *
+     *                    Orange Section                   *
+     *                                                     *
+     ******************************************************* -->
       <div class="screen screen3">
-        <div class="semi-circle-3"></div>
+        <div class="semi-circle-3">
+          <div class="content2">
+            <button>HOW WE DO IT.</button>
+            <div>
+              <p>
+                A bespoke curriculum. <br />
+                For innovative learning and holistic growth.
+              </p>
+              <p>
+                Our cutting-edge curriculum blends modern teaching methods with
+                state-of-the-art infrastructure. With a focus on holistic
+                development, we move beyond rote learning to embrace discovery,
+                creativity, critical thinking and character-building.
+              </p>
+            </div>
+          </div>
+          <div class="circular-keys">
+            <div class="nav-button left" onclick="moveLeft()">
+              <img src="./src/assessts/icons/leftIcon@5x.png" alt="Left Icon" >
+            </div>
+            <div class="circles-container">
+              <div class="circular-item active">
+                <h3>We rise beyond traditional learning.</h3>
+                <p>At Rising India School of Excellence, we don’t just teach - we let children discover. Our unique D.I.S.C.O.V.E.R.Y. Mind ModelⒸ fuels curiosity, encouraging kids to learn through experience and not just instruction.</p>
+              </div>
+              <div class="circular-item">
+                <h3>Learning without limits.</h3>
+                <p>Classrooms can’t contain us. With 20 immersive experience zones, children move freely, exploring and learning through hands-on activities in an ever-evolving environment.</p>
+              </div>
+              <div class="circular-item">
+                <h3>Building future-ready skills.</h3>
+                <p>Knowledge is just the beginning. Our D.I.S.C.O.V.E.R.Y. curriculum develops essential skills and mindsets, shaping adaptable, creative, and resilient individuals prepared for the future.</p>
+              </div>
+              <div class="circular-item">
+                <h3>Beyond traditional subjects.</h3>
+                <p>We go beyond the basics. From STEM to performing arts to international languages, our programmes ignite imagination and foster global perspectives.</p>
+              </div>
+              <div class="circular-item">
+                <h3>Excellence in every detail.</h3>
+                <p>Excellence is our foundation. That’s why we partner with the best to ensure every aspect of our school meets the highest standards for your child’s success.</p>
+              </div>
+            </div>
+            <div class="nav-button right" onclick="moveRight()">
+              <img src="./src/assessts/icons/rightIcon@5x.png" alt="Right Icon" >
+            </div>
+          </div>
+          
+      </div>
+      <!-- *******************************************************
+     *                                                     *
+     *                    Red Section                   *
+     *                                                     *
+     ******************************************************* -->
+      <div class="screen screen4">
+        <div class="semi-circle-4">
+          <div class="content2">
+            <button>WHY WE DO IT</button>
+            <div>
+              <p>
+                Elevating young minds. <br/>
+                Empowering a rising India. 
+              </p>
+              <p>
+                We believe that the children of today will build the India of tomorrow. By bringing a world-class curriculum to every corner of the country, we’re levelling the playing field. And shaping young minds to dream big, think bigger and lead the way. <br/><br/>Every day, we’re driven by the vision of a stronger, more innovative nation - one child and one Riser at a time. Because India’s future deserves it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+        <!-- *******************************************************
+     *                                                     *
+     *                    Violet Section                   *
+     *                                                     *
+     ******************************************************* -->
+
+
+     <div class="screen screen5">
+      <div class="semi-circle-5">
+        <div class="content2">
+          <button>KEY FACTS</button>
+          <div>
+            <p>Rising by the Numbers:</p>
+          </div>
+          
+          <!-- Container for three items -->
+          <div class="key-facts-three">
+            <div class="fact-item">
+              <img src="./src/assessts/icons/adultChildRatio@5x.png" alt="adultChildRatio">
+              <div class="fact-text">
+                <p>1:8</p>
+                <p>Adult-to-Child Ratio</p>
+              </div>
+            </div>
+    
+            <div class="fact-item">
+              <img src="./src/assessts/icons/squarefit@5x.png" alt="squarefit">
+              <div class="fact-text">
+                <p>100 sq. ft.</p>
+                <p>Large Area per Child</p>
+              </div>
+            </div>
+    
+            <div class="fact-item">
+              <img src="./src/assessts/icons/learningZone@5x.png" alt="learningZone">
+              <div class="fact-text">
+                <p>20</p>
+                <p>Experiential Learning Zones</p>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Container for two items -->
+          <div class="key-facts-two">
+            <div class="fact-item">
+              <img src="./src/assessts/icons/education@5x.png" alt="education">
+              <div class="fact-text">
+                <p>80%</p>
+                <p>Educators with Advanced Degrees</p>
+              </div>
+            </div>
+    
+            <div class="fact-item">
+              <img src="./src/assessts/icons/femaleStaff@5x.png" alt="femaleStaff">
+              <div class="fact-text">
+                <p>100%</p>
+                <p>Female Staff</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+      <!-- *******************************************************
+     *                                                     *
+     *                    Blue Section                   *
+     *                                                     *
+     ******************************************************* -->
+     <div class="screen screen6">
+      <div class="semi-circle-6"></div>
+    </div>
+      <!-- *******************************************************
+     *                                                     *
+     *                    White Section                   *
+     *                                                     *
+     ******************************************************* -->
+      <div class="screen screen7">
+        <div class="semi-circle-7"></div>
       </div>
     </div>
 
-    <button id="nextButton">Next</button>
-
+    <!-- <button id="nextButton">Next</button> -->
+    <img
+      src="./src/assessts/icons/DownArrow@5x.png"
+      alt="Click here"
+      id="nextButton"
+    />
+    <script src="./src/scripts/carousal.js"></script>
     <script type="module" src="./src/scripts/main.js"></script>
   </body>
+  
 </html>
