@@ -230,6 +230,9 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+.semi-circle-7 {
+  width: 170%;
+}
 
 /*******************************************************
  *                                                     *
@@ -659,6 +662,86 @@ html {
  *                                                     *
  *******************************************************/
 
+.other-logos-container {
+  /* border: 1px solid #000; */
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.other-logos-one {
+  /* border: 1px solid #000; */
+  width: 100%; /* Full width to allow centering */
+  max-width: 700px; /* Adjust max-width as needed */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 20px; */
+  column-gap: 40px;
+  row-gap: 50px;
+
+  justify-content: center; /* Centers the grid content */
+  align-items: center;
+}
+
+.other-logos-container img {
+  width: 200px;
+  height: auto;
+}
+
+/* Specific size adjustments */
+.other-logos-one img:nth-child(1),
+.other-logos-one img:nth-child(3) {
+  width: 100px;
+}
+.other-logos-one img:nth-child(1) {
+  margin-left: 50%;
+}
+
+.other-logos-one img:nth-child(2) {
+  width: 250px;
+}
+.connect-us-container {
+  text-align: center;
+  margin-top: 3%;
+  /* border: 1px solid black; */
+  font-family: "MontserratRegular";
+  color: rgb(43, 46, 140);
+}
+
+.connect-us-container > p {
+  font-size: 14px;
+  text-transform: uppercase; /* Only applies to this heading */
+  margin-bottom: 10px; /* Space between heading and icons */
+  font-weight: bold;
+}
+
+.connect-us-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Gap between each icon-content pair */
+  margin-top: 2%;
+}
+
+.connect-us-icons div {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Gap between icon and text */
+}
+
+.connect-us-icons p {
+  font-size: 12px; /* Other content text size */
+  text-transform: none; /* No uppercase for other paragraphs */
+  font-weight: bold;
+  text-align: left;
+}
+
+.connect-us-icons img {
+  width: 30px; /* Icon size */
+  height: 30px;
+}
+
 /* media queries for small screen sizes */
 @media screen and (max-width: 768px) {
   .logo img {
@@ -820,6 +903,7 @@ html {
   .nav-button img {
     width: 20px !important;
   }
+
   /*******************************************************
  *                                                     *
  *                                                     *
@@ -917,10 +1001,82 @@ html {
   /*******************************************************
  *                                                     *
  *                                                     *
+ *             Responsive for BLUE Screens           *
+ *                                                     *
+ *                                                     *
+ *                                                     *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *                                                     *
  *             Responsive for WHITE Screens           *
  *                                                     *
  *                                                     *
  *                                                     *
  *                                                     *
  *******************************************************/
+
+  .other-logos-container {
+    margin-top: 5%;
+  }
+  .other-logos-one {
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 4%;
+  }
+
+  .other-logos-container img {
+    width: 100px;
+  }
+
+  /* Specific size adjustments */
+  .other-logos-one img:nth-child(1),
+  .other-logos-one img:nth-child(3) {
+    width: 50px;
+  }
+  .other-logos-one img:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  .other-logos-one img:nth-child(2) {
+    width: 100px;
+  }
+
+  .connect-us-container > p {
+    font-size: 12px;
+  }
+  .connect-us-container {
+    margin-top: 7%;
+    /* border: 1px solid black; */
+  }
+  .connect-us-icons {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Adjust gap for mobile */
+    width: 50%;
+    margin: auto;
+    /* margin-top: 2%; */
+    /* border: 1px solid black; */
+  }
+
+  .connect-us-icons div {
+    display: flex;
+    align-items: center; /* Center items vertically within each div */
+    gap: 10px;
+  }
+
+  .connect-us-icons p {
+    font-size: 10px;
+  }
+
+  .connect-us-icons img {
+    width: 30px;
+    height: 30px;
+  }
 }
