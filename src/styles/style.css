@@ -10,8 +10,6 @@
 @font-face {
   font-family: "MontserratRegular";
   src: url("../assessts/fonts/Montserrat-Regular.ttf") format("truetype");
-  /* font-weight: normal; */
-  /* font-style: normal; */
 }
 @font-face {
   font-family: "MyriadProRegular";
@@ -42,33 +40,24 @@
   font-style: normal;
 }
 
-/* 
-how to use ? 
-h1 {
-  font-family: "CustomFont", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
- */
-
 body,
 html {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent default scrolling */
+  overflow: hidden;
   height: 100%;
 }
 
 .container {
-  position: relative; /* Ensure the container positions screens absolutely */
-  height: 100vh; /* Each screen will take full height */
-  width: 100%; /* Full width */
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
 .screen {
-  position: fixed; /* Position screens absolutely to overlap */
-  height: 100vh; /* Full height */
-  width: 100%; /* Full width */
+  position: fixed;
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,41 +68,28 @@ html {
 }
 
 .screen1 {
-  /* opacity: 1;  */
   transform: translateY(0); /* Visible */
-  /* background-color: var(--color-orange); */
   position: relative; /* Allow absolute positioning of children */
   overflow: hidden; /* Prevent overflow from showing */
 }
 
 .screen2 {
   transform: translateY(100%);
-  /* background-color: var(--color-red); */
 }
-
 .screen3 {
   transform: translateY(100%);
-  /* background-color: var(--color-purple); */
 }
-
 .screen4 {
-  /* opacity: 1;  */
-  transform: translateY(100%); /* Visible */
-  /* background-color: var(--color-orange); */
+  transform: translateY(100%);
 }
-
 .screen5 {
   transform: translateY(100%);
-  /* background-color: var(--color-red); */
 }
-
 .screen6 {
   transform: translateY(100%);
-  /* background-color: var(--color-purple); */
 }
 .screen7 {
   transform: translateY(100%);
-  /* background-color: var(--color-purple); */
 }
 
 #nextButton {
@@ -125,7 +101,7 @@ html {
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  z-index: 500; /* Keep button above other content */
+  z-index: 500;
 }
 
 #nextButton:hover {
@@ -230,17 +206,10 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
-.semi-circle-7 {
-  width: 170%;
-}
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for Videos Screens              *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for VIDEO Screens               *
  *                                                     *
  *******************************************************/
 
@@ -260,11 +229,7 @@ html {
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for Yellow Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for YELLOW Screens              *
  *                                                     *
  *******************************************************/
 .semi-circle-2 {
@@ -314,14 +279,12 @@ html {
   margin-top: 1%;
 }
 
-/* Center the entire values section vertically and horizontally */
 .values-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* z-index: 50; */
   /* border: 1px solid black; */
   margin-top: 2%;
 }
@@ -413,11 +376,7 @@ html {
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for Orange Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for ORANGE Screens              *
  *                                                     *
  *******************************************************/
 .screen3 .semi-circle-3 .content2 button {
@@ -459,14 +418,12 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  width: 230px; /* Active circle size */
-  height: 230px; /* Active circle size */
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   background-color: lightgray;
   margin: 0 10px;
   transition: transform 0.9s ease, opacity 0.3s;
-  /* opacity: 0.5;  */
   position: relative;
   /* border: 1px solid #000; */
 }
@@ -479,7 +436,6 @@ html {
 .circular-item:not(.active) {
   width: 30px; /* Inactive circle size */
   height: 30px; /* Inactive circle size */
-  /* opacity: 0.5;  */
 }
 
 .circular-item:not(.active) h3,
@@ -543,26 +499,18 @@ html {
   font-family: "MontserratRegular", sans-serif;
   overflow: auto;
   width: 80%;
-  /* margin: auto; */
-  /* border: 1px solid #000; */
   line-height: 12px;
   margin-top: -2px;
   text-align: justify;
-  /* text-align-last: center; */
   max-height: 100px;
 }
 
 .nav-button img {
   width: 13%;
 }
-
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for RED Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for RED Screens                 *
  *                                                     *
  *******************************************************/
 .screen4 .semi-circle-4 .content2 button {
@@ -577,11 +525,7 @@ html {
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for Purple Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for PURPLE Screens              *
  *                                                     *
  *******************************************************/
 
@@ -644,21 +588,13 @@ html {
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for BLUE Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for BLUE Screens                *
  *                                                     *
  *******************************************************/
 
 /*******************************************************
  *                                                     *
- *                                                     *
- *             Styling for WHITE Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Styling for WHITE Screens               *
  *                                                     *
  *******************************************************/
 
@@ -668,6 +604,7 @@ html {
   margin: auto;
   display: flex;
   justify-content: center;
+  margin-top: 3%;
 }
 
 .other-logos-one {
@@ -676,10 +613,8 @@ html {
   max-width: 700px; /* Adjust max-width as needed */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* gap: 20px; */
   column-gap: 40px;
   row-gap: 50px;
-
   justify-content: center; /* Centers the grid content */
   align-items: center;
 }
@@ -689,7 +624,6 @@ html {
   height: auto;
 }
 
-/* Specific size adjustments */
 .other-logos-one img:nth-child(1),
 .other-logos-one img:nth-child(3) {
   width: 100px;
@@ -697,22 +631,20 @@ html {
 .other-logos-one img:nth-child(1) {
   margin-left: 50%;
 }
-
 .other-logos-one img:nth-child(2) {
   width: 250px;
 }
 .connect-us-container {
   text-align: center;
   margin-top: 3%;
-  /* border: 1px solid black; */
   font-family: "MontserratRegular";
   color: rgb(43, 46, 140);
 }
 
 .connect-us-container > p {
   font-size: 14px;
-  text-transform: uppercase; /* Only applies to this heading */
-  margin-bottom: 10px; /* Space between heading and icons */
+  text-transform: uppercase;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -742,8 +674,21 @@ html {
   height: 30px;
 }
 
+/*******************************************************
+ *                                                     *
+ *             MEDIA QUERIES                           *
+ *                                                     *
+ *******************************************************/
+/*******************************************************
+ *                                                     *
+ *            MEDIA QUERIES                            *
+ *                                                     *
+ *******************************************************/
+
+/* Extra small devices (phones, less than 576px) */
+
 /* media queries for small screen sizes */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 575.98px) {
   .logo img {
     width: 60%;
   }
@@ -776,11 +721,7 @@ html {
 
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for Yellow Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for YELLOW Screens           *
  *                                                     *
  *******************************************************/
 
@@ -791,15 +732,15 @@ html {
 
   .content2 p:nth-child(1) {
     font-family: "MontserratRegular";
-    font-size: 16px;
-    letter-spacing: -1px;
-    line-height: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
     margin-bottom: 1px;
   }
 
   .content2 p:nth-child(2) {
     font-family: "MontserratRegular";
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     margin: auto;
     margin-top: 1%;
@@ -807,15 +748,21 @@ html {
 
   /* Style for the main heading */
   .values-container p {
-    font-size: 9px;
+    font-size: 8px;
     white-space: inherit;
+    margin-top: 2%;
+    white-space: none;
   }
 
   /* Flexbox to arrange letters horizontally */
   .values {
     display: flex;
     justify-content: center;
-    gap: 1.5%; /* Adjust spacing between circles */
+    /* margin-top: 1%; */
+    width: 50%;
+    /* margin: auto; */
+    gap: 10px !important;
+    justify-content: space-evenly;
   }
 
   /* Style for each value section */
@@ -835,11 +782,7 @@ html {
 
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for Orange Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for ORANGE Screens           *
  *                                                     *
  *******************************************************/
 
@@ -850,29 +793,30 @@ html {
   }
 
   .screen3 .semi-circle-3 .content2 p:nth-child(1) {
-    font-size: 14px;
-    letter-spacing: -1px;
-    line-height: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
     /* border: 1px solid black; */
-    width: 30%;
+    width: 35%;
     margin: auto;
-    margin-top: 1%;
+    margin-top: 2%;
   }
   .screen3 .semi-circle-3 .content2 p:nth-child(2) {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 20px;
     margin: auto;
     margin-top: 1%;
   }
 
   .circular-keys {
-    width: 30%;
-    margin-top: 4%;
+    width: 40%;
+    margin-top: 6%;
   }
 
   .circular-item {
     width: 190px;
     height: 190px;
+    /* border: 1px solid black; */
   }
 
   .circular-item.active {
@@ -887,14 +831,14 @@ html {
   .circular-item h3 {
     font-size: 9px;
     width: 70%;
-    margin-top: 13%;
+    /* margin-top: 13%; */
     font-weight: 600;
   }
 
   .circular-item p {
     font-size: 8px;
     line-height: 10px;
-    margin-top: -2px;
+    /* margin-top: -2px; */
     text-align: justify;
     max-height: 100px;
     width: 70%;
@@ -906,11 +850,7 @@ html {
 
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for RED Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for RED Screens              *
  *                                                     *
  *******************************************************/
   .screen4 .semi-circle-4 .content2 button {
@@ -936,17 +876,11 @@ html {
     margin-top: 2%;
     width: 30%;
   }
-
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for Purple Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for PURPLE Screens           *
  *                                                     *
  *******************************************************/
-
   .screen5 .semi-circle-5 .content2 button {
     padding: 8px;
     font-size: 14px;
@@ -962,15 +896,17 @@ html {
   .key-facts-two {
     grid-template-columns: 1fr; /* One column for small screens */
     justify-content: left; /* Center the items */
+    /* border:1px solid black; */
   }
 
   .key-facts-two {
-    width: 31%;
+    width: 25%;
     gap: 20px;
   }
 
   .key-facts-three {
     margin-top: 20px; /* Adjust spacing if needed */
+    width: 25%;
   }
 
   .key-facts-two {
@@ -979,7 +915,7 @@ html {
 
   .fact-item img {
     width: 50px;
-    margin-right: 15px;
+    /* margin-right: 15px; */
   }
 
   .fact-text p {
@@ -997,35 +933,28 @@ html {
     margin-left: 0px;
     font-size: 11px;
   }
-
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for BLUE Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for BLUE Screens             *
  *                                                     *
  *******************************************************/
-
   /*******************************************************
  *                                                     *
- *                                                     *
- *             Responsive for WHITE Screens           *
- *                                                     *
- *                                                     *
- *                                                     *
+ *             Responsive for WHITE Screens            *
  *                                                     *
  *******************************************************/
-
+  .semi-circle-7 {
+    width: 170%;
+  }
   .other-logos-container {
-    margin-top: 5%;
+    margin-top: 7%;
+    /* border: 1px solid black; */
   }
   .other-logos-one {
     width: 70%;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 30px;
+    column-gap: 5px;
+    row-gap: 20px;
     margin-top: 4%;
   }
 
@@ -1079,4 +1008,550 @@ html {
     width: 30px;
     height: 30px;
   }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 1200px) {
+  .content2 button {
+    font-size: 16px;
+  }
+
+  .content2 p:nth-child(1) {
+    font-family: "MontserratRegular";
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .content2 p:nth-child(2) {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  /* Style for the main heading */
+  .values-container p {
+    font-size: 10px;
+    white-space: inherit;
+  }
+
+  /* Flexbox to arrange letters horizontally */
+  .values {
+    width: 50%;
+    gap: 10px !important;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  /* Style for each value section */
+  .value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Style for circles containing letters */
+  .letter-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  /* Home page orange screen  */
+
+  .screen3 .semi-circle-3 .content2 button {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+
+  .screen3 .semi-circle-3 .content2 p:nth-child(1) {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 45%;
+    margin: auto;
+    margin-top: 2%;
+  }
+  .screen3 .semi-circle-3 .content2 p:nth-child(2) {
+    font-size: 12px;
+    line-height: 22px;
+    margin: auto;
+    margin-top: 1%;
+    width: 55%;
+  }
+
+  .circular-keys {
+    width: 40%;
+    margin-top: 6%;
+  }
+
+  .circular-item {
+    width: 190px;
+    height: 190px;
+    /* border: 1px solid black; */
+  }
+
+  .circular-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+    overflow: hidden;
+  }
+  .circular-item:not(.active) {
+    display: block;
+  }
+
+  .circular-item h3 {
+    font-size: 10px;
+    width: 70%;
+    /* margin-top: 13%; */
+    font-weight: 600;
+  }
+
+  .circular-item p {
+    font-size: 8px;
+    line-height: 10px;
+    /* margin-top: -2px; */
+    text-align: justify;
+    max-height: 100px;
+    width: 70%;
+  }
+
+  .nav-button img {
+    width: 20px !important;
+  }
+
+  /* for red screeens  */
+
+  .screen4 .semi-circle-4 .content2 button {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+
+  .screen4 .semi-circle-4 .content2 p:nth-child(1) {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: auto;
+    margin-top: 2%;
+  }
+  .screen4 .semi-circle-4 .content2 p:nth-child(2) {
+    font-size: 12px;
+    line-height: 22px;
+    margin: auto;
+    margin-top: 2%;
+    width: 30%;
+  }
+
+  /* purple screen  */
+
+  .screen5 .semi-circle-5 .content2 button {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+
+  .screen5 .semi-circle-5 .content2 p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .key-facts-three,
+  .key-facts-two {
+    grid-template-columns: 1fr; /* One column for small screens */
+    justify-content: left; /* Center the items */
+    /* border: 1px solid black; */
+  }
+
+  .key-facts-two {
+    width: 25%;
+    gap: 20px;
+    margin-top: 2%;
+  }
+
+  .key-facts-three {
+    margin-top: 20px; /* Adjust spacing if needed */
+    width: 25%;
+  }
+
+  .key-facts-two {
+    margin-top: 20px; /* Adjust spacing if needed */
+  }
+
+  .fact-item img {
+    width: 50px;
+    /* margin-right: 15px; */
+  }
+
+  .fact-text p {
+    margin: 0;
+    text-align: left;
+    /* font-size: 20px; */
+  }
+
+  .fact-text p:first-child {
+    font-size: 16px !important;
+  }
+
+  .fact-text > p:nth-child(2) {
+    text-align: left;
+    margin-left: 0px;
+    font-size: 11px;
+  }
+
+  /* white screen  */
+
+  .other-logos-container {
+    margin-top: 4%;
+    /* border: 1px solid black; */
+  }
+  .other-logos-one {
+    width: 70%;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 20px;
+    margin-top: 4%;
+  }
+
+  .other-logos-container img {
+    width: 120px;
+  }
+
+  /* Specific size adjustments */
+  .other-logos-one img:nth-child(1),
+  .other-logos-one img:nth-child(3) {
+    width: 60px;
+  }
+  .other-logos-one img:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  .other-logos-one img:nth-child(2) {
+    width: 120px;
+  }
+
+  .connect-us-container > p {
+    font-size: 14px;
+  }
+  .connect-us-container {
+    margin-top: 7%;
+    /* border: 1px solid black; */
+  }
+  .connect-us-icons {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the left */
+    gap: 15px; /* Adjust gap for mobile */
+    width: 50%;
+    margin: auto;
+    /* margin-top: 2%; */
+    /* border: 1px solid black; */
+  }
+
+  .connect-us-icons div {
+    display: flex;
+    align-items: center; /* Center items vertically within each div */
+    gap: 10px;
+  }
+
+  .connect-us-icons p {
+    font-size: 10px;
+  }
+
+  .connect-us-icons img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* medium screen  */
+@media screen and (min-width: 1280px) and (max-width: 2000px) {
+  .content2 button {
+    /* font-size: 16px; */
+    font-size: 20px;
+  }
+  .values {
+    width: 50%;
+    gap: 10px !important;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  /* orange home screen  */
+
+  .screen3 .semi-circle-3 .content2 button {
+    margin-top: 1%;
+    font-size: 20px;
+  }
+
+  .screen3 .semi-circle-3 .content2 p:nth-child(2) {
+    font-size: 16px;
+    line-height: 26px;
+    margin: auto;
+    margin-top: 1%;
+    width: 45%;
+  }
+
+  .circular-keys {
+    width: 40%;
+    margin-top: 3%;
+  }
+
+  .circular-item {
+    width: 230px;
+    height: 230px;
+    /* border: 1px solid black; */
+    margin: 0 25px;
+  }
+
+  .circular-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+    overflow: hidden;
+  }
+  .circular-item:not(.active) {
+    display: block;
+  }
+
+  .circular-item h3 {
+    font-size: 10px;
+    width: 70%;
+    /* margin-top: 13%; */
+    font-weight: 600;
+  }
+
+  .circular-item p {
+    font-size: 8px;
+    line-height: 10px;
+    /* margin-top: -2px; */
+    text-align: justify;
+    max-height: 100px;
+    width: 70%;
+  }
+
+  .nav-button img {
+    width: 25px !important;
+  }
+
+  /* red screens  */
+
+  .screen4 .semi-circle-4 .content2 button {
+    margin-top: 1%;
+    font-size: 20px;
+  }
+}
+
+/* extra large screen */
+@media (min-width: 2000px) and (max-width: 2800px) {
+  .logo img {
+    width: 60%;
+  }
+
+  .header {
+    padding-top: 0%;
+    /* border: 1px solid black; */
+  }
+  .right-section {
+    /* border: 1px solid black; */
+    margin-top: 1%;
+    width: 90%;
+  }
+  .nav-item {
+    height: 30px;
+    width: 30px;
+  }
+  .nav-text {
+    font-size: 20px;
+    /* margin-right: 2%; */
+  }
+  .content2 button {
+    /* font-size: 16px; */
+    font-size: 36px;
+    margin-top: 2%;
+  }
+  .content2 p:nth-child(1) {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  .content2 p:nth-child(2) {
+    font-family: "MontserratRegular";
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .values-container p {
+    font-size: 24px;
+    white-space: inherit;
+    margin-top: 2%;
+  }
+  .values {
+    width: 50%;
+    gap: 10px !important;
+    justify-content: space-evenly;
+    margin-top: 10px;
+  }
+
+  .letter-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 36px;
+  }
+
+  /* orange home screen  */
+
+  .screen3 .semi-circle-3 .content2 button {
+    margin-top: 2%;
+    font-size: 36px;
+  }
+
+  .screen3 .semi-circle-3 .content2 p:nth-child(1) {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .screen3 .semi-circle-3 .content2 p:nth-child(2) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 1%;
+  }
+
+  .circular-keys {
+    width: 40%;
+    margin-top: 3%;
+  }
+
+  .circular-item {
+    width: 330px;
+    height: 330px;
+    /* border: 1px solid black; */
+    margin: 0 25px;
+  }
+
+  .circular-item.active {
+    transform: scale(1.2);
+    opacity: 1;
+    overflow: hidden;
+  }
+  .circular-item:not(.active) {
+    display: block;
+  }
+
+  .circular-item h3 {
+    font-size: 16px;
+    line-height: 20px;
+
+    width: 70%;
+    /* margin-top: 13%; */
+    font-weight: 600;
+  }
+
+  .circular-item p {
+    font-size: 14px;
+    line-height: 20px;
+    /* margin-top: -2px; */
+    text-align: justify;
+    max-height: 150px;
+    width: 80%;
+    /* border: 1px solid black; */
+  }
+
+  .nav-button img {
+    width: 35px !important;
+  }
+
+  /* next button  */
+  #nextButton {
+    width: 100px;
+  }
+
+  /* red screens  */
+
+  .screen4 .semi-circle-4 .content2 button {
+    margin-top: 2%;
+    font-size: 36px;
+  }
+
+  /* purple screen  */
+
+  .screen5 .semi-circle-5 .content2 button {
+    font-size: 36px;
+    margin-top: 2%;
+  }
+
+  .screen5 .semi-circle-5 .content2 p:nth-child(1) {
+    font-size: 36px;
+  }
+
+  .fact-item img {
+    width: 100px;
+    /* margin-right: 15px; */
+  }
+
+  .key-facts-three {
+    /* border: 1px solid black; */
+    margin-top: 5%;
+  }
+
+  /* white screeen  */
+
+  .other-logos-container {
+    margin-top: 4%;
+  }
+
+  .other-logos-container img {
+    width: 250px;
+  }
+
+  /* Specific size adjustments */
+  .other-logos-one img:nth-child(1),
+  .other-logos-one img:nth-child(3) {
+    width: 160px;
+  }
+  .other-logos-one img:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  .other-logos-one img:nth-child(2) {
+    width: 260px;
+  }
+
+  .connect-us-container > p {
+    font-size: 30px;
+  }
+  .connect-us-container {
+    margin-top: 7%;
+    /* border: 1px solid black; */
+  }
+  .connect-us-icons {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    justify-content: space-evenly;
+    gap: 55px; /* Adjust gap for mobile */
+    width: 70%;
+    margin: auto;
+    /* margin-top: 2%; */
+    /* border: 1px solid black; */
+    /* border: 1px solid black; */
+    margin: auto;
+  }
+
+  .connect-us-icons div {
+    display: flex;
+    align-items: center; /* Center items vertically within each div */
+    /* gap: 100px; */
+    /* border: 1px solid black; */
+    /* width: 100%; */
+  }
+
+  .connect-us-icons p {
+    font-size: 24px;
+  }
+
+  .connect-us-icons img {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    margin-right: 20px;
+  }
+}
+
+/* Extra large devices (larger desktops, 1200px and up) */
+@media (min-width: 2800px) {
 }

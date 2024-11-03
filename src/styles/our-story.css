@@ -1,0 +1,389 @@
+/*******************************************************
+ *                                                     *
+ *             OUR STORY                               *
+ *                                                     *
+ *******************************************************/
+/*******************************************************
+ *                                                     *
+ *            OUR STORY                                *
+ *                                                     *
+ *******************************************************/
+
+.our-story-1 {
+  transform: translateY(100%);
+}
+
+.our-story-semi-circle-1,
+.our-story-semi-circle-2,
+.our-story-semi-circle-3,
+.our-story-semi-circle-4,
+.our-story-semi-circle-5,
+.our-story-semi-circle-6 {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.our-story-semi-circle-1 {
+  background-color: var(--color-yellow);
+}
+.our-story-semi-circle-2 {
+  background-color: var(--color-orange);
+}
+.our-story-semi-circle-3 {
+  background-color: var(--color-red);
+}
+.our-story-semi-circle-4 {
+  background-color: var(--color-purple);
+}
+.our-story-semi-circle-5 {
+  background-color: var(--color-blue);
+}
+.our-story-semi-circle-6 {
+  background-color: var(--color-white);
+}
+
+/*******************************************************
+ *                                                     *
+ *             Our story screen 1                     *
+ *                                                     *
+ *******************************************************/
+.our-story-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+  z-index: 50;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.our-story-content button {
+  color: var(--color-yellow);
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+  margin: 5% auto;
+  /* border: 1px solid black; */
+  gap: 20px; /* Space between each item */
+}
+
+.img-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%; /* Width to fit 4 items in a row on large screens */
+  /* border: 1px solid black; */
+  padding: 10px; /* Padding for spacing within each item */
+  box-sizing: border-box;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 80px; /* Set a max width for images */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.img-container > div p {
+  /* border: 1px solid black; */
+  text-align: center;
+  font-size: 14px; /* Adjust font size */
+  margin-top: 8px;
+  font-family: "MontserratRegular";
+}
+
+/* Specific styles for the fourth item, if needed */
+.img-container > div:nth-child(4) img {
+  max-width: 150px; /* Example width adjustment for a specific item */
+}
+
+.img-container > div:nth-child(1) p {
+  color: var(--color-orange);
+}
+.img-container > div:nth-child(2) p {
+  color: var(--color-red);
+}
+.img-container > div:nth-child(3) p {
+  color: var(--color-purple);
+}
+.img-container > div:nth-child(4) p {
+  color: var(--color-blue);
+}
+/*******************************************************
+ *                                                     *
+ *             Our story screen 2                     *
+ *                                                     *
+ *******************************************************/
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content > button {
+  color: var(--color-orange);
+}
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 25px;
+  width: 45%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/*******************************************************
+ *                                                     *
+ *             Our story screen 3                     *
+ *                                                     *
+ *******************************************************/
+
+/*******************************************************
+ *                                                     *
+ *             Our story screen 4                     *
+ *                                                     *
+ *******************************************************/
+
+/*******************************************************
+ *                                                     *
+ *             Our story screen 5                     *
+ *                                                     *
+ *******************************************************/
+
+/*******************************************************
+ *                                                     *
+ *             Our story screen 6                     *
+ *                                                     *
+ *******************************************************/
+
+/*******************************************************
+ *                                                     *
+ *             RESPONSIVE FOR OUR STORY                    *
+ *                                                     *
+ *******************************************************/
+
+/* media queries for small screen sizes */
+
+@media screen and (max-width: 575.98px) {
+  .our-story-semi-circle-1,
+  .our-story-semi-circle-2,
+  .our-story-semi-circle-3,
+  .our-story-semi-circle-4,
+  .our-story-semi-circle-5,
+  .our-story-semi-circle-6 {
+    width: 170%;
+    height: 100%;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .our-story-content button {
+    margin-top: 4%;
+    font-size: 14px;
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 50%;
+    margin: 10% auto;
+    /* border: 1px solid black; */
+    gap: 20px;
+  }
+
+  .img-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+
+  .img-container > div p {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+    margin-top: 8px;
+    font-family: "MontserratRegular";
+    white-space: nowrap;
+  }
+
+  /* Specific styles for the fourth item, if needed */
+  .img-container > div:nth-child(4) img {
+    width: 70px;
+  }
+
+  /* ORANGE  */
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+    /* overflow: visible; */
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 1200px) {
+  .our-story-content button {
+    margin-top: 4%;
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 50%;
+    margin: 7% auto;
+    /* border: 1px solid black; */
+    gap: 20px;
+  }
+
+  .img-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-container img {
+    width: 90px;
+    margin-bottom: 10px;
+  }
+
+  .img-container > div p {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+    margin-top: 8px;
+    font-family: "MontserratRegular";
+    white-space: nowrap;
+  }
+
+  /* Specific styles for the fourth item, if needed */
+  .img-container > div:nth-child(4) img {
+    width: 110px;
+  }
+
+  /* ORANGE  */
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 40%;
+    margin: auto;
+    margin-top: 1%;
+    /* overflow: visible; */
+  }
+}
+
+/* medium screen  */
+@media screen and (min-width: 1280px) and (max-width: 2000px) {
+}
+
+/* extra large screen */
+@media (min-width: 2000px) and (max-width: 2800px) {
+  .our-story-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-story-content button {
+    margin-top: 2%;
+    font-size: 36px;
+    padding: 8;
+  }
+
+  .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%; /* Adjust width as needed */
+    gap: 20px;
+  }
+
+  .img-container img {
+    max-width: 220px; /* Increase image size */
+  }
+
+  .img-container > div p {
+    font-size: 36px; /* Increase font size for <p> text */
+    margin-top: 12px;
+  }
+
+  /* Specific styles for the fourth item, if needed */
+  .img-container > div:nth-child(4) img {
+    max-width: 300px; /* Example width adjustment for a specific item */
+  }
+
+  /* ORANGE  */
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+    font-size: 36px;
+    margin-top: 2%;
+    letter-spacing: 2px;
+    line-height: 50px;
+    margin-bottom: 1px;
+  }
+
+  .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 40%;
+    margin: auto;
+    margin-top: 2%;
+    /* overflow: visible; */
+  }
+}
