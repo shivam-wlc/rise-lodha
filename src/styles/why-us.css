@@ -1,0 +1,619 @@
+/*******************************************************
+ *                                                     *
+ *            WHY US  COMMON STYLES                   *
+ *                                                     *
+ *******************************************************/
+.why-us-1 {
+  transform: translateY(100%);
+}
+
+.why-us-semi-circle-1,
+.why-us-semi-circle-2,
+.why-us-semi-circle-3,
+.why-us-semi-circle-4,
+.why-us-semi-circle-5,
+.why-us-semi-circle-6,
+.why-us-semi-circle-7 {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.why-us-semi-circle-1 {
+  background-color: var(--color-orange);
+}
+.why-us-semi-circle-2 {
+  background-color: var(--color-red);
+}
+.why-us-semi-circle-3 {
+  background-color: var(--color-purple);
+}
+.why-us-semi-circle-4 {
+  background-color: var(--color-blue);
+}
+.why-us-semi-circle-5 {
+  background-color: var(--color-yellow);
+}
+.why-us-semi-circle-6 {
+  background-color: var(--color-orange);
+}
+.why-us-semi-circle-7 {
+  background-color: var(--color-white);
+}
+
+.why-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+  z-index: 50;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.why-us-content button {
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 1                           *
+ *                                                     *
+ *******************************************************/
+
+.why-us-semi-circle-1 .why-us-content button {
+  color: var(--color-orange);
+}
+.why-us-img-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set 3 items per row */
+  gap: 20px; /* Space between each item */
+  width: 50%;
+  margin: 4% auto;
+  justify-items: center; /* Center items within each cell */
+  align-items: start;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.why-us-img-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+.why-us-img-container img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.why-us-img-container > div p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: "MontserratRegular";
+}
+
+/* Custom colors for each item’s text */
+.why-us-img-container > div:nth-child(1) p {
+  color: var(--color-yellow);
+}
+.why-us-img-container > div:nth-child(2) p {
+  color: var(--color-red);
+}
+.why-us-img-container > div:nth-child(3) p {
+  color: var(--color-purple);
+}
+.why-us-img-container > div:nth-child(4) p {
+  color: var(--color-blue);
+}
+.why-us-img-container > div:nth-child(5) p {
+  color: var(--color-yellow);
+}
+.why-us-img-container > div:nth-child(6) p {
+  color: var(--color-red);
+}
+
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 2                           *
+ *                                                     *
+ *******************************************************/
+.why-us-semi-circle-2 .why-us-content button {
+  color: var(--color-red);
+  margin-top: 1%;
+}
+
+.why-us-semi-circle-2 .why-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-2 .why-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 35%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 3                           *
+ *                                                     *
+ *******************************************************/
+
+.why-us-semi-circle-3 .why-us-content button {
+  color: var(--color-purple);
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-3 .why-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-3 .why-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.why-us-values-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1px;
+  /* border: 1px solid black; */
+  margin-top: 2%;
+  /* padding: 10px; */
+}
+
+.why-us-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+.why-us-letter-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: gray;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 25px;
+  color: white;
+  border: 1px solid var(--color-white);
+  margin-bottom: 10px;
+}
+
+.why-us-value:nth-child(2) .why-us-letter-circle {
+  background-color: rgb(48, 126, 144);
+}
+.why-us-value:nth-child(3) .why-us-letter-circle {
+  background-color: rgb(142, 88, 160);
+}
+.why-us-value:nth-child(4) .why-us-letter-circle {
+  background-color: rgb(253, 202, 48);
+}
+.why-us-value:nth-child(5) .why-us-letter-circle {
+  background-color: rgb(236, 77, 79);
+}
+.why-us-value:nth-child(6) .why-us-letter-circle {
+  background-color: rgb(24, 174, 83);
+}
+.why-us-value:nth-child(7) .why-us-letter-circle {
+  background-color: rgb(171, 121, 94);
+}
+.why-us-value:nth-child(8) .why-us-letter-circle {
+  background-color: rgb(28, 144, 129);
+}
+.why-us-value:nth-child(8) .why-us-letter-circle {
+  background-color: rgb(234, 65, 149);
+}
+.why-us-value:nth-child(8) .why-us-letter-circle {
+  background-color: rgb(28, 81, 159);
+}
+
+/* Style for "THE" and "WAY" */
+.why-us-text {
+  font-family: "MontserratBold", sans-serif;
+  font-size: 14px !important;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+
+.why-us-value p {
+  font-family: "MontserratRegular";
+  font-size: 12px;
+  /* line-height: 20px; */
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+.why-us-last-p {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 4                           *
+ *                                                     *
+ *******************************************************/
+.why-us-semi-circle-4 .why-us-content button {
+  color: var(--color-blue);
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-4 .why-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-4 .why-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+.why-us-semi-circle-4 .why-us-content p:nth-child(3) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 1%;
+}
+.why-us-semi-circle-4 .why-us-content p:nth-child(4) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 55%;
+  margin: auto;
+}
+
+/* icons  */
+.why-us-image-container-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* border: 1px solid var(--color-white); */
+}
+
+.why-us-image-container-4-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 30px; */
+  margin-top: 1%;
+  gap: 20px;
+}
+
+.why-us-item-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 550px; /* Adjust based on design */
+  text-align: center;
+  /* border: 1px solid var(--color-white); */
+}
+
+.why-us-item-4 img {
+  width: 50px; /* Size of the icon */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.why-us-text-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Space between paragraphs */
+}
+
+.why-us-title-4 {
+  font-weight: bold;
+  font-size: 16px;
+  /* margin-bottom: 5px; */
+  font-family: "MontserratBold", sans-serif; /* Adjust as needed */
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.why-us-text-4 p {
+  font-size: 13px;
+  font-family: "MontserratRegular", sans-serif; /* Adjust as needed */
+  line-height: 1.4;
+}
+
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 5                           *
+ *                                                     *
+ *******************************************************/
+.why-us-semi-circle-5 .why-us-content button {
+  color: var(--color-yellow);
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-5 .why-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-5 .why-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.why-us-image-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  justify-items: center; /* Center-align each item */
+  text-align: center;
+  /* padding: 20px; */
+  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+.why-us-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 350px;
+  border: 1px solid black;
+  /* gap: 0px; */
+}
+
+.why-us-item img {
+  width: 200px; /* Set a fixed size for the images */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.why-us-item .why-us-title {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 8px 0 4px;
+  font-family: "MontserratMedium";
+}
+
+.why-us-description {
+  font-size: 14px;
+  font-family: "MontserratRegular", sans-serif;
+  /* line-height: 1.5; */
+  border: 1px solid red;
+  /* margin-top: -10px; */
+}
+
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 6                           *
+ *                                                     *
+ *******************************************************/
+.why-us-semi-circle-6 .why-us-content button {
+  color: var(--color-orange);
+  margin-top: 1%;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-6 .why-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.why-us-semi-circle-6 .why-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 20px;
+  width: 35%;
+  margin: auto;
+  margin-top: 5%;
+}
+/*******************************************************
+ *                                                     *
+ *            WHY US Screen 7                           *
+ *                                                     *
+ *******************************************************/
+
+@media screen and (max-width: 575.98px) {
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 1                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 2                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 3                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 4                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 5                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 6                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 7                *
+ *                                                     *
+ *******************************************************/
+}
+@media (min-width: 576px) and (max-width: 1200px) {
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 1                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 2                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 3                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 4                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 5                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 6                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 7                *
+ *                                                     *
+ *******************************************************/
+}
+@media screen and (min-width: 1280px) and (max-width: 2000px) {
+}
+@media (min-width: 2000px) and (max-width: 2800px) {
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 1                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 2                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 3                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 4                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 5                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 6                *
+ *                                                     *
+ *******************************************************/
+
+  /*******************************************************
+ *                                                     *
+ *            WHY US Responsive Screen 7                *
+ *                                                     *
+ *******************************************************/
+}
