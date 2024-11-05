@@ -22,6 +22,7 @@
   font-family: "MontserratMedium";
   src: url("../assessts/fonts/Montserrat-Medium.ttf") format("truetype");
   font-style: normal;
+  font-weight: bold;
 }
 /* Variable font  */
 @font-face {
@@ -119,6 +120,11 @@ html {
   display: flex;
   background-color: #fff;
   /* border: 1px solid black; */
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-blue);
 }
 
 .logo {
