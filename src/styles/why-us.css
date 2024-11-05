@@ -415,8 +415,8 @@
   justify-items: center; /* Center-align each item */
   text-align: center;
   /* padding: 20px; */
-  border: 1px solid black;
-  width: 80%;
+  /* border: 1px solid black; */
+  width: 70%;
   margin: auto;
   margin-top: 1%;
 }
@@ -426,12 +426,12 @@
   flex-direction: column;
   align-items: center;
   max-width: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* gap: 0px; */
 }
 
 .why-us-item img {
-  width: 200px; /* Set a fixed size for the images */
+  width: 150px; /* Set a fixed size for the images */
   height: auto;
   margin-bottom: 10px;
 }
@@ -441,14 +441,16 @@
   font-size: 12px;
   margin: 8px 0 4px;
   font-family: "MontserratMedium";
+  align-self: start !important;
 }
 
 .why-us-description {
   font-size: 14px;
   font-family: "MontserratRegular", sans-serif;
   /* line-height: 1.5; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* margin-top: -10px; */
+  align-self: start !important;
 }
 
 /*******************************************************
@@ -487,17 +489,81 @@
  *******************************************************/
 
 @media screen and (max-width: 575.98px) {
+  .why-us-semi-circle-1,
+  .why-us-semi-circle-2,
+  .why-us-semi-circle-3,
+  .why-us-semi-circle-4,
+  .why-us-semi-circle-5,
+  .why-us-semi-circle-6,
+  .why-us-semi-circle-7 {
+    width: 170%;
+  }
+
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 1                *
  *                                                     *
  *******************************************************/
+  .why-us-content button {
+    margin-top: 4%;
+    font-size: 14px;
+  }
+  .why-us-img-container {
+    grid-template-columns: repeat(2, 1fr); /* Set 3 items per row */
+    gap: 10px; /* Space between each item */
+    width: 40%;
+    /* border: 1px solid black; */
+    margin: 8% auto;
+  }
+
+  .why-us-img-container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+  }
+
+  .why-us-img-container img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .why-us-img-container > div p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 8px;
+    font-family: "MontserratRegular";
+  }
 
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 2                *
  *                                                     *
  *******************************************************/
+  .why-us-semi-circle-2 .why-us-content button {
+    margin-top: 6%;
+    font-size: 12px;
+  }
+
+  .why-us-semi-circle-2 .why-us-content p:nth-child(1) {
+    font-family: "MontserratRegular";
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 2%;
+  }
+
+  .why-us-semi-circle-2 .why-us-content p:nth-child(2) {
+    font-family: "MontserratRegular";
+    font-size: 10px;
+    line-height: 20px;
+    width: 35%;
+    margin: auto;
+    margin-top: 2%;
+  }
 
   /*******************************************************
  *                                                     *
@@ -505,24 +571,218 @@
  *                                                     *
  *******************************************************/
 
+  .why-us-semi-circle-3 .why-us-content button {
+    margin-top: 6%;
+    font-size: 12px;
+  }
+
+  .why-us-semi-circle-3 .why-us-content p:nth-child(1) {
+    font-family: "MontserratRegular";
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .why-us-semi-circle-3 .why-us-content p:nth-child(2) {
+    font-family: "MontserratRegular";
+    font-size: 10px;
+    line-height: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+
+  .why-us-values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    margin-top: 2% !important;
+  }
+  .why-us-values-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+    margin: auto;
+  }
+
+  .why-us-value {
+    width: 50px;
+  }
+  .why-us-letter-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 20px !important;
+  }
+
+  /* Style for "THE" and "WAY" */
+  .why-us-text {
+    font-family: "MontserratBold", sans-serif;
+    font-size: 14px !important;
+    /* margin-bottom: 10px; */
+    text-align: center;
+  }
+
+  .why-us-value p {
+    font-size: 8px !important;
+    line-height: 10px !important;
+    margin-top: 1%;
+  }
+  .why-us-last-p {
+    font-family: "MontserratRegular";
+    font-size: 10px;
+    line-height: 20px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 4                *
  *                                                     *
  *******************************************************/
+  .why-us-semi-circle-4 .why-us-content button {
+    margin-top: 6%;
+    font-size: 12px;
+  }
 
+  .why-us-semi-circle-4 .why-us-content p:nth-child(1) {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+
+  .why-us-semi-circle-4 .why-us-content p:nth-child(2) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .why-us-semi-circle-4 .why-us-content p:nth-child(3) {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+  .why-us-semi-circle-4 .why-us-content p:nth-child(4) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+
+  /* icons  */
+  .why-us-image-container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .why-us-image-container-4-1 {
+    margin-top: 6%;
+    gap: 10px;
+  }
+
+  .why-us-item-4 {
+    max-width: 350px; /* Adjust based on design */
+  }
+
+  .why-us-item-4 img {
+    width: 30px; /* Size of the icon */
+    margin-bottom: 10px;
+  }
+
+  .why-us-text-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .why-us-title-4 {
+    font-size: 12px !important;
+  }
+
+  .why-us-text-4 p {
+    font-size: 12px;
+    font-family: "MontserratRegular", sans-serif; /* Adjust as needed */
+    line-height: 1.4;
+  }
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 5                *
  *                                                     *
  *******************************************************/
+  .why-us-semi-circle-5 .why-us-content button {
+    margin-top: 4%;
+    font-size: 12px;
+  }
+
+  .why-us-semi-circle-5 .why-us-content p:nth-child(1) {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-bottom: 1px;
+  }
+
+  .why-us-semi-circle-5 .why-us-content p:nth-child(2) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+  }
+
+  .why-us-image-container-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 items per row */
+  }
+
+  .why-us-item img {
+    width: 60px; /* Set a fixed size for the images */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .why-us-item .why-us-title {
+    font-weight: bold;
+    font-size: 10px;
+    margin: 8px 0 4px;
+    font-family: "MontserratMedium";
+    align-self: start !important;
+    margin-top: -1%;
+  }
+
+  .why-us-description {
+    font-size: 12px;
+    font-family: "MontserratRegular", sans-serif;
+    margin-top: 0%;
+    align-self: start !important;
+  }
 
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 6                *
  *                                                     *
  *******************************************************/
+  .why-us-semi-circle-6 .why-us-content button {
+    margin-top: 6%;
+    font-size: 12px;
+  }
 
+  .why-us-semi-circle-6 .why-us-content p:nth-child(2) {
+    font-size: 10px;
+    line-height: 14px;
+    width: 40%;
+    margin: auto;
+    margin-top: 1%;
+  }
   /*******************************************************
  *                                                     *
  *            WHY US Responsive Screen 7                *
