@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 305.37 305.37">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #2d3188;
+        mix-blend-mode: color;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="152.69" cy="152.69" r="152.69"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g class="cls-4">
+          <image width="5779" height="3251" transform="translate(-30.15 -58.3) scale(.12)" xlink:href="../../../Rise/files/new file 31 oct/wetransfer_lod-rise-preschool-website_301024-why-us_folder_2024-10-31_0659/LOD Rise Preschool Website_301024 PROGRAMMES_Folder/Links/little-girl-boy-learn-home.jpg"/>
+          <rect class="cls-3" x="-72.73" y="-30.38" width="461.71" height="352.57" transform="translate(316.24 291.8) rotate(-180)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

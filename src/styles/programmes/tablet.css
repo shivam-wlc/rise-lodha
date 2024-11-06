@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .programme-semi-circle-1,
+    .programme--semi-circle-2,
+    .programme-semi-circle-3,
+    .programme-semi-circle-4,
+    .programme-semi-circle-5,
+    .programme-semi-circle-6 {
+        width: 130%;
+    }
+}

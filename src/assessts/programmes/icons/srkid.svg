@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 305.37 305.37">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #812a84;
+        mix-blend-mode: color;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="152.69" cy="152.69" r="152.69"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g class="cls-4">
+          <image width="7360" height="4912" transform="translate(-92.4 -17.23) scale(.07)" xlink:href="../../../Rise/files/new file 31 oct/wetransfer_lod-rise-preschool-website_301024-why-us_folder_2024-10-31_0659/LOD Rise Preschool Website_301024 PROGRAMMES_Folder/Links/portrait-student-child-girl-studying-library.jpg"/>
+          <rect class="cls-3" x="-78.15" y="-19.59" width="461.71" height="352.57" transform="translate(305.4 313.39) rotate(-180)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

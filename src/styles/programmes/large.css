@@ -1,0 +1,22 @@
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
+    .programme-semi-circle-1,
+    .programme--semi-circle-2,
+    .programme-semi-circle-3,
+    .programme-semi-circle-4,
+    .programme-semi-circle-5,
+    .programme-semi-circle-6 {
+        width: 130%;
+    }
+    .description-text{
+        width: 60%;
+        margin: auto;
+    }
+    .programme-semi-circle-1 .programme-content .programme-img-container {
+        gap: 20px;
+    }
+
+    .programme-semi-circle-1 .programme-content .programme-img-container > div{
+        height: 150px;
+        max-width: 150px;
+    }
+}

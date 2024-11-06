@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 305.38 305.38">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        fill: #bc2132;
+        mix-blend-mode: color;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-2" cx="152.69" cy="152.69" r="152.69"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g class="cls-4">
+          <image width="7999" height="5322" transform="translate(-101.35) scale(.06)" xlink:href="../../../Rise/files/new file 31 oct/wetransfer_lod-rise-preschool-website_301024-why-us_folder_2024-10-31_0659/LOD Rise Preschool Website_301024 PROGRAMMES_Folder/Links/full-shot-cute-kid-playing-wtih-wooden-toys.jpg"/>
+          <rect class="cls-3" x="-16.18" y="-12.86" width="337.74" height="330.9" transform="translate(305.38 305.17) rotate(-180)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

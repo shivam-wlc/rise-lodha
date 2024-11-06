@@ -1,0 +1,350 @@
+
+@import url('./md.css');
+@import url("./lg.css");
+@import url("./xs.css");
+@import url("./sm.css");
+@import url("./xl.css");
+@import url("./xxl.css");
+
+.admission-1 {
+  transform: translateY(100%);
+}
+
+.admission-semi-circle-1,
+.admission-semi-circle-2,
+.admission-semi-circle-3,
+.admission-semi-circle-4,
+.admission-semi-circle-5,
+.admission-semi-circle-6
+ {
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.admission-semi-circle-1 {
+  background-color: var(--color-purple);
+}
+
+.admission-semi-circle-2,
+.admission-semi-circle-3{
+  background-color: var(--color-blue);
+}
+.admission-semi-circle-4{
+  background-color: var(--color-yellow);
+}
+.admission-semi-circle-5,
+.admission-semi-circle-6 {
+  background-color: var(--color-blue);
+}
+
+
+.admission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 50;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.admission-content button {
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+
+/*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 1                           *
+ *                                                     *
+ *******************************************************/
+
+.admission-img-container {
+  display: grid;
+  gap: 20px; 
+  width: 50%;
+  margin: 4% auto;
+  justify-items: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+.admission-img-container > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.admission-img-container img {
+  max-width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.admission-img-container > div:first-child img{
+  max-width: 100px;
+}
+.admission-img-container > div:nth-child(2) img{
+  max-width: 65px;
+}
+.admission-img-container > div:nth-child(3) img{
+  max-width: 80px;
+}
+
+.admission-img-container > div p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 8px;
+  font-family: "MontserratRegular";
+}
+
+/* Custom colors for each item’s text */
+.admission-img-container > div:nth-child(1) p {
+  color: var(--color-yellow);
+}
+.admission-img-container > div:nth-child(2) p {
+  color: var(--color-orange);
+}
+.admission-img-container > div:nth-child(3) p {
+  color: var(--color-white);
+}
+.admission-img-container > div:nth-child(4) p {
+  color: var(--color-yellow);
+}
+
+
+/*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 2                           *
+ *                                                     *
+ *******************************************************/
+
+ .admission-semi-circle-2 .admission-content p {
+  font-family: "MontserratRegular";
+ }
+
+ .admission-semi-circle-2 .admission-content img {
+  max-width: 200px;
+  padding: 15px 0px;
+ }
+
+
+ /*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 3                           *
+ *                                                     *
+ *******************************************************/
+
+ .admission-semi-circle-3 .admission-content {
+  margin: auto;
+ }
+
+  .admission-semi-circle-3 .admission-content img {
+    max-width: 200px;
+    padding: 15px 0px;
+    margin-top: -30px;
+  }
+
+  .admission-semi-circle-3 .admission-content p {
+    font-family: "MontserratRegular";
+  }
+ 
+  /*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 4                          *
+ *                                                     *
+ *******************************************************/
+
+.admission-semi-circle-4 .admission-content p {
+    font-family: "MontserratRegular";
+}
+
+.admission-semi-circle-4 .admission-content>.letter-circle{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  width: 240px;
+  border:1px solid var(--color-red);
+  border-radius: 50%;
+  padding: 20px;
+  background-color: var(--color-red);
+  box-sizing: border-box;
+  color: var(--color-white);
+  font-family: "MontserratRegular";
+  font-weight: 800;
+  line-height: 30px;
+}
+.admission-semi-circle-4 .small-text:first-child {
+  margin-bottom: -20px;
+}
+
+.admission-semi-circle-4 .large-text {
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  padding: 5px 0px;
+}
+.admission-semi-circle-4 .small-text:last-child {
+  margin-top: -20px;
+} 
+
+
+ /*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 5                      *
+ *                                                     *
+ *******************************************************/
+
+ .admission-semi-circle-5 .admission-content {
+  position: relative;
+ }
+
+ .admission-semi-circle-5 .registration-form-title-circle{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+    width: 190px;
+    border:1px solid var(--color-red);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: var(--color-red);
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: "MontserratRegular";
+    font-weight: 800;
+    line-height: 30px;
+    position: absolute;
+    z-index: 51;
+    top: -10px;
+ }
+
+ .admission-semi-circle-5 .registration-form-title-circle p{
+  font-size: 18px;
+ }
+
+.admission-semi-circle-5 .registration-form-container-1 {
+    position: absolute;
+    background-color: var(--color-white);
+    border-radius: 50% 50% 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+ }
+
+ .admission-semi-circle-5 .input-container {
+    display: flex;
+    justify-content: flex-start;
+
+ }
+ .admission-semi-circle-5 .input-container label {
+    width: 35%;
+    text-align: left;
+    font-size: 16px;
+    color: var(--color-blue);
+    font-family: "MontserratRegular";
+ }
+  .admission-semi-circle-5 .input-container input {
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: "MontserratRegular";
+ }
+
+ /*******************************************************
+ *                                                     *
+ *            ADMISSIONS Screen 6                      *
+ *                                                     *
+ *******************************************************/
+
+ .admission-semi-circle-6 .admission-content {
+  position: relative;
+ }
+
+ .admission-semi-circle-6 .registration-form-container-2 {
+    padding-left: 30px;
+    background-color: var(--color-white);
+    border-radius: 0 0 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
+
+ }
+
+ .admission-semi-circle-6 .input-container {
+    display: flex;
+    justify-content: flex-start;
+ }
+ .admission-semi-circle-6 .input-container label {
+    width: 35%;
+    text-align: left;
+    font-size: 16px;
+    color: var(--color-blue);
+    font-family: "MontserratRegular";
+ }
+  .admission-semi-circle-6 .input-container>input {
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: "MontserratRegular";
+ }
+
+.admission-semi-circle-6 .input-container .radio-options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.admission-semi-circle-6 .input-container .radio-options-container .radio-option {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: none;
+}
+.admission-semi-circle-6 .input-container .radio-options-container .radio-option>input{
+  height: 20px;
+}
+.admission-semi-circle-6 .input-container .radio-options-container .radio-option label{
+  font-size: 10px;
+  width: 150px;
+}
+
+.admission-semi-circle-6 .button-container{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+
+.admission-semi-circle-6 .button-container button{
+  padding: 10px 20px;
+  cursor: pointer;
+}
