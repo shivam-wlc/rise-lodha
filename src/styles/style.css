@@ -174,7 +174,7 @@ a[href="mailto:admissions@riseschool.in"] {
   position: absolute;
   right: 40px; /* Adjust this to position text relative to circle */
   white-space: nowrap;
-  opacity: 0; /* Initially hidden */
+  opacity: 0.3; /* Initially hidden */
   transition: opacity 0.5s ease; /* Smooth transition for opacity */
   color: var(--color-blue); /* Set appropriate text color */
 }
@@ -372,7 +372,7 @@ a[href="mailto:admissions@riseschool.in"] {
 }
 
 .semi-circle-3 {
-  background-color: var(--color-orange);
+  background-color: var(--color-blue);
 }
 .semi-circle-4 {
   background-color: var(--color-red);
@@ -430,6 +430,12 @@ a[href="mailto:admissions@riseschool.in"] {
   gap: 20px;
 }
 
+.circular-item img{
+display:block;
+object-fit: cover;
+width:200%;
+}
+
 .circular-item {
   display: flex;
   flex-direction: column;
@@ -443,6 +449,10 @@ a[href="mailto:admissions@riseschool.in"] {
   position: relative;
   /* border: 1px solid #000; */
 }
+
+.circular-item:not(.active) img{
+  display:none;
+  }
 
 .circular-item.active {
   transform: scale(1.2); /* Active circle scaling */
@@ -469,7 +479,7 @@ a[href="mailto:admissions@riseschool.in"] {
   background-color: var(--color-purple);
 }
 .circular-item:nth-child(4) {
-  background-color: var(--color-blue);
+  background-color: var(--color-orange);
 }
 .circular-item:nth-child(5) {
   background-color: var(--color-yellow);
@@ -535,9 +545,13 @@ a[href="mailto:admissions@riseschool.in"] {
   font-weight: bold !important;
 }
 
-.screen4 .semi-circle-4 .content2 p:nth-child(2) {
-  width: 25%;
+#circles_home{
+width:20%;
 }
+
+/*.screen4 .semi-circle-4 .content2 p:nth-child(2) {
+  width: 25%;
+}*/
 
 /*******************************************************
  *                                                     *
