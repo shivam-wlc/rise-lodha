@@ -264,6 +264,23 @@ a[href="mailto:admissions@riseschool.in"] {
   text-align: center;
 }
 
+
+.book {
+  position: absolute;
+  left: 3%;
+  top: 110%;
+  color: #fff;
+  width: 200px;
+  height:40px;
+  background-color: var(--color-blue);
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 5px;
+  border: none;
+  font-size: 11px;
+  font-weight: 800;
+}
+
 .content2 button {
   color: var(--color-yellow);
   background-color: #fff;

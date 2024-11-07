@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Directly set the currentIndex to 6 (7th screen)
-			currentIndex = 6;
+			currentIndex = 3;
 			updateScreens();
 		});
 	}
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Directly set the currentIndex to 6 (7th screen)
-			currentIndex = 13;
+			currentIndex = 10;
 			updateScreens();
 		});
 	}
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Directly set the currentIndex to 27 (28th screen)
-			currentIndex = 27;
+			currentIndex = 24;
 			updateScreens();
 		});
 	}
@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Directly set the currentIndex to 34 (34th screen)
-			currentIndex = 34;
+			currentIndex = 31;
 			updateScreens();
 		});
 	}
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			event.preventDefault();
 
 			// Directly set the currentIndex to 41 (42th screen)
-			currentIndex = 41;
+			currentIndex = 38;
 			updateScreens();
 		});
 	}
