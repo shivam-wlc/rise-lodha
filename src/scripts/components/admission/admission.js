@@ -5,7 +5,7 @@ import {
 	renderAdmissionProcessScreen1,
 	renderAdmissionProcessScreen2,
 	renderAdmissionRegistrationScreen1,
-	renderAdmissionRegistrationScreen2,
+	// renderAdmissionRegistrationScreen2,
 } from "./admission-components.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	admissionContainer3.innerHTML += renderAdmissionProcessScreen2();
 	admissionContainer4.innerHTML += renderAdmissionFeeStructureScreen();
 	admissionContainer5.innerHTML += renderAdmissionRegistrationScreen1();
-	admissionContainer6.innerHTML += renderAdmissionRegistrationScreen2();
+	// admissionContainer6.innerHTML += renderAdmissionRegistrationScreen2();
 	admissionContainer7.innerHTML += renderContactUsScreen();
 });

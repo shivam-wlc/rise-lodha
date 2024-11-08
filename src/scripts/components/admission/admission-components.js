@@ -125,9 +125,6 @@ function renderAdmissionRegistrationScreen1() {
 	return `
         <div class="admission-semi-circle-5">
           <div class="admission-content">
-              <div class="registration-form-title-circle">
-                <p>REGISTER TO MEET THE EARLY YEARS EXPERTS.</p>
-              </div>
               <div class="registration-form-container-1">
                    <div class="input-container">
                       <label for="firstName"> Child First Name: </label>
@@ -149,17 +146,6 @@ function renderAdmissionRegistrationScreen1() {
                       <label for="mother's name"> Mother's Name: </label>
                       <input type="text" name="mother-name"/>
                    </div>
-              </div>
-          </div>
-        </div>
-      `;
-}
-
-function renderAdmissionRegistrationScreen2() {
-	return `
-        <div class="admission-semi-circle-6">
-          <div class="admission-content">
-            <div class="registration-form-container-2">
                    <div class="input-container">
                       <label for="mobile"> Mobile Number: </label>
                       <input type="text" name="mobile"/>
@@ -205,5 +191,5 @@ export {
 	renderAdmissionProcessScreen1,
 	renderAdmissionProcessScreen2,
 	renderAdmissionRegistrationScreen1,
-	renderAdmissionRegistrationScreen2,
+	// renderAdmissionRegistrationScreen2,
 };

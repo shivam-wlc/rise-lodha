@@ -242,7 +242,7 @@
  }
 
 .admission-semi-circle-5 .registration-form-container-1 {
-    position: absolute;
+    /* position: absolute; */
     background-color: var(--color-white);
     border-radius: 50% 50% 0 0;
     display: flex;
