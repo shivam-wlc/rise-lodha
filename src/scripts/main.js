@@ -2,6 +2,7 @@ const screens = document.querySelectorAll(".screen");
 const nextButton = document.getElementById("nextButton");
 let currentIndex = 0;
 let isTransitioning = false;
+let lastTouchTime = 0;
 
 // Function to show the current screen
 function updateScreens() {
@@ -35,24 +36,28 @@ function handleTransition(direction) {
   }
 }
 
-// Handle scroll events (desktop)
-// window.addEventListener("wheel", (event) => {
-// 	event.preventDefault();
-// 	if (Math.abs(event.deltaY) > 30) {
-// 		handleTransition(event.deltaY > 0 ? "next" : "prev");
-// 	}
-// });
-
-window.addEventListener(
-  "wheel",
-  (event) => {
-    event.preventDefault();
-    if (Math.abs(event.deltaY) > 30) {
-      handleTransition(event.deltaY > 0 ? "next" : "prev");
-    }
-  },
-  { passive: false }
-);
+// window.addEventListener(
+//   "wheel",
+//   (event) => {
+//     event.preventDefault();
+//     if (Math.abs(event.deltaY) > 30) {
+//       handleTransition(event.deltaY > 0 ? "next" : "prev");
+//     }
+//   },
+//   { passive: false }
+// );
+if (!/Mobi|Android/i.test(navigator.userAgent)) {
+  window.addEventListener(
+    "wheel",
+    (event) => {
+      event.preventDefault();
+      if (Math.abs(event.deltaY) > 30) {
+        handleTransition(event.deltaY > 0 ? "next" : "prev");
+      }
+    },
+    { passive: false }
+  );
+}
 
 // Handle touch events (mobile)
 let touchStartY = 0;
@@ -61,12 +66,26 @@ window.addEventListener("touchstart", (event) => {
   touchStartY = event.touches[0].clientY;
 });
 
+// window.addEventListener("touchend", (event) => {
+//   const touchEndY = event.changedTouches[0].clientY;
+//   if (touchStartY > touchEndY + 50) {
+//     handleTransition("next"); // Swiping up
+//   } else if (touchStartY < touchEndY - 50) {
+//     handleTransition("prev"); // Swiping down
+//   }
+// });
 window.addEventListener("touchend", (event) => {
   const touchEndY = event.changedTouches[0].clientY;
-  if (touchStartY > touchEndY + 50) {
-    handleTransition("next"); // Swiping up
-  } else if (touchStartY < touchEndY - 50) {
-    handleTransition("prev"); // Swiping down
+  const currentTime = Date.now();
+
+  // Throttle the touch events to prevent rapid firing
+  if (currentTime - lastTouchTime > 300) {
+    if (touchStartY > touchEndY + 50) {
+      handleTransition("next");
+    } else if (touchStartY < touchEndY - 50) {
+      handleTransition("prev");
+    }
+    lastTouchTime = currentTime;
   }
 });
 
@@ -84,7 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
+      
       event.preventDefault(); // Prevent default anchor behavior
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 6 (7th screen)
       currentIndex = 7;
@@ -99,7 +120,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
+
       event.preventDefault(); // Prevent default anchor behavior
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 6 (7th screen)
       currentIndex = 0;
@@ -115,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 6 (7th screen)
       currentIndex = 14;
@@ -130,6 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 27 (28th screen)
       currentIndex = 28;
@@ -145,6 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
       event.preventDefault(); // Prevent default anchor behavior
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 34 (34th screen)
       currentIndex = 35;
@@ -160,6 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
       event.preventDefault();
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 41 (42th screen)
       currentIndex = 42;
@@ -175,6 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (ourStoryLink) {
     ourStoryLink.addEventListener("click", (event) => {
       event.preventDefault();
+      event.stopImmediatePropagation();
 
       // Directly set the currentIndex to 41 (42th screen)
       currentIndex = 44;

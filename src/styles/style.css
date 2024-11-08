@@ -85,6 +85,7 @@ a[href="mailto:admissions@riseschool.in"] {
   color: white;
   transition: transform 1.8s ease; /* Smooth transition for opacity */
   top: 0;
+  will-change: transform;
 }
 
 .screen1 {
@@ -525,8 +526,10 @@ a[href="mailto:admissions@riseschool.in"] {
 
 .nav-button.left,
 .nav-button.right {
-  user-select: none;
+  /* user-select: none; */
   /* margin: 0 20px; */
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .left {
