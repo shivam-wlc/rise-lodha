@@ -1,51 +1,54 @@
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-.admission-img-container{
-        grid-template-columns: repeat(4, 1fr);
-    }
-   .admission-semi-circle-1,
-   .admission-semi-circle-2,
-   .admission-semi-circle-3,
-   .admission-semi-circle-4,
-   .admission-semi-circle-5,
-   .admission-semi-circle-6 {
-      width: 130%;
-    }
-   .admission-semi-circle-2 .admission-content p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .admission-semi-circle-3 .admission-content {
-      width: 50%;
-    }
-    .admission-semi-circle-3 .admission-content p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .admission-semi-circle-4 .small-text {
-      font-size: 14px;
-    }
-    .admission-content > div p.title-level-1{
-        font-size: 32px;
-        line-height: 45px;
-    }
-    .admission-semi-circle-5 .registration-form-container-1 {
-      top: 130px;
-      padding-top: 100px;
-      padding-bottom: 20px;
-      width: 70vw;
-    }
-     .admission-semi-circle-5 .registration-form-container-1 .input-container {
-      padding: 10px 20px 10px 120px;
-    }
-    /* .admission-semi-circle-5 .registration-form-container-1 .input-container input {
-      padding: 15px 10px;
-    } */
-    .admission-semi-circle-6 .registration-form-container-2{
-      margin-top: -50px;
-      padding-top: 100px;
-      width: 80vw;
-    }
-    .admission-semi-circle-6 .registration-form-container-2 .input-container{
-      padding: 20px 20px 12px 75px;
-    }
+  .admission-img-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .admission-semi-circle-1,
+  .admission-semi-circle-2,
+  .admission-semi-circle-3,
+  .admission-semi-circle-4,
+  .admission-semi-circle-5,
+  .admission-semi-circle-6 {
+    width: 130%;
+  }
+  .admission-semi-circle-2 .admission-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .admission-semi-circle-3 .admission-content {
+    width: 50%;
+  }
+  .admission-semi-circle-3 .admission-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .admission-semi-circle-4 .small-text {
+    font-size: 14px;
+  }
+  .admission-content > div p.title-level-1 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .admission-semi-circle-5 .registration-form-container-1 {
+    top: 0px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    width: 90vw;
+  }
+  .admission-semi-circle-5 .registration-form-container-1 .input-container {
+    padding: 10px 20px 0px 90px;
+  }
+  .admission-semi-circle-5
+    .registration-form-container-1
+    .input-container
+    input {
+    padding: 5px 0px;
+  }
+  .admission-semi-circle-6 .registration-form-container-2 {
+    margin-top: -50px;
+    padding-top: 100px;
+    width: 80vw;
+  }
+  .admission-semi-circle-6 .registration-form-container-2 .input-container {
+    padding: 20px 20px 12px 75px;
+  }
 }
