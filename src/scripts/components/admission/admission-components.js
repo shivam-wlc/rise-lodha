@@ -75,16 +75,7 @@ function renderAdmissionProcessScreen2() {
 	return `
         <div class="admission-semi-circle-3">
           <div class="admission-content">
-          <img
-            src="./src/assessts/admission/icons/arrow.svg"
-            alt="Admission steps"
-          />
-            <p>Please refer to our simple 4-step Admission Process:</p>
-            <p>
-              <strong>1. Submit Online Application</strong> <br/>
-              Begin the admission process by completing our online inquiry form <br/>
-              and submitting the application fee of Rs. 1500/-.
-            </p>
+          </br></br></br>
             <p>
               <strong>2. Campus Tour </strong> <br/>
               We invite both parents and children to visit our school for an exclusive, personalised tour of our state-of-the-art campus.

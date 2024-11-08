@@ -381,6 +381,13 @@ a[href="mailto:admissions@riseschool.in"] {
   background-color: var(--color-blue);
 }
 
+.lightbox .lb-image {
+  border-radius: 20px !important;
+}
+.lb-outerContainer {
+  border-radius: 20px !important;
+}
+
 /* Full-form text styling */
 .value p {
   margin-top: 10px;
@@ -389,7 +396,7 @@ a[href="mailto:admissions@riseschool.in"] {
 }
 
 .semi-circle-3 {
-  background-color: var(--color-blue);
+  background-color: var(--color-orange);
 }
 .semi-circle-4 {
   background-color: var(--color-red);
