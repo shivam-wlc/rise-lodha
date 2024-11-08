@@ -1,60 +1,63 @@
-@media screen and (min-width: 1400px){
-    .admission-img-container{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .admission-content > div p.title-level-1{
-      margin-top: 70px;
-      font-size: 42px;
-      line-height: 60px;
-    }
+@media screen and (min-width: 1400px) {
+  .admission-img-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .admission-content > div p.title-level-1 {
+    margin-top: 70px;
+    font-size: 42px;
+    line-height: 60px;
+  }
 
-    .admission-semi-circle-1,
-    .admission-semi-circle-2,
-    .admission-semi-circle-3,
-    .admission-semi-circle-4,
-    .admission-semi-circle-5,
-    .admission-semi-circle-6 {
-        width: 130%;
-    }
-    .admission-semi-circle-2 .admission-content p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .admission-semi-circle-3 .admission-content {
-      width: 50%;
-    }
-    .admission-semi-circle-3 .admission-content p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .admission-semi-circle-4 .small-text {
-      font-size: 16px;
-    }
-    .admission-semi-circle-5 .registration-form-container-1 {
-      top: 150px;
-      padding-top: 110px;
-      padding-bottom: 20px;
-      width: 60vw;
-    }
-     .admission-semi-circle-5 .registration-form-container-1 .input-container {
-      padding: 10px 20px 10px 120px;
-    }
-    .admission-semi-circle-5 .registration-form-container-1 .input-container input {
-      padding: 10px 10px;
-    } 
+  .admission-semi-circle-1,
+  .admission-semi-circle-2,
+  .admission-semi-circle-3,
+  .admission-semi-circle-4,
+  .admission-semi-circle-5,
+  .admission-semi-circle-6 {
+    width: 130%;
+  }
+  .admission-semi-circle-2 .admission-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .admission-semi-circle-3 .admission-content {
+    width: 50%;
+  }
+  .admission-semi-circle-3 .admission-content p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .admission-semi-circle-4 .small-text {
+    font-size: 16px;
+  }
+  .admission-semi-circle-5 .registration-form-container-1 {
+    top: 150px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+    width: 60vw;
+  }
+  .admission-semi-circle-5 .registration-form-container-1 .input-container {
+    padding: 10px 20px 10px 90px;
+  }
+  .admission-semi-circle-5
+    .registration-form-container-1
+    .input-container
+    input {
+    padding: 10px 10px;
+  }
 
-   .admission-semi-circle-5 .registration-form-container-1 {
-      top: 180px;
-      padding-top: 110px;
-      padding-bottom: 40px;
-      width: 50vw;
-    }
-    .admission-semi-circle-6 .registration-form-container-2{
-      margin-top: -50px;
-      padding-top: 70px;
-      width: 50vw;
-    }
-    .admission-semi-circle-6 .registration-form-container-2 .input-container{
-      padding: 20px 20px 12px 75px;
-    }
+  .admission-semi-circle-5 .registration-form-container-1 {
+    top: 180px;
+    padding-top: 110px;
+    padding-bottom: 40px;
+    width: 50vw;
+  }
+  .admission-semi-circle-6 .registration-form-container-2 {
+    margin-top: -50px;
+    padding-top: 70px;
+    width: 50vw;
+  }
+  .admission-semi-circle-6 .registration-form-container-2 .input-container {
+    padding: 20px 20px 12px 75px;
+  }
 }

@@ -15,8 +15,20 @@
     <link rel="stylesheet" href="./src/styles/admission/admission-main.css" />
     <link rel="stylesheet" href="./src/styles/why-us.css" />
     <link rel="stylesheet" href="./src/styles/contact-us.css" />
-    
+    <link rel="stylesheet" href="./src/styles/preschool-tour.css">
     <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
+    
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "G2SDjizAB86ZjO6Tz",
+      });
+   })();
+</script>
   </head>
   <body>
     <!-- *******************************************************
@@ -31,7 +43,8 @@
         /></a>
       </div>
 
-      <button class="book">BOOK A PRESCHOOL TOUR</button>
+      <button class="book" id="book-button">BOOK A PRESCHOOL TOUR</button>
+      
 
       <div class="right-section">
         <div class="nav-item" data-menu="Menu 1">
@@ -1750,6 +1763,58 @@
           </div>
         </div>
       </div>
+
+      <!-- *******************************************************
+     *              BOOK A PRESCHOOL TOUR                      *
+     ******************************************************* -->
+     <div class="screen preschool-tour">
+      <div class="preschool-tour-semi-circle-1">
+   
+        <!-- form  -->
+       <div class="preschool-tour-form">
+        <form id="booking-form">
+          <p>Book a Preschool Tour</p>
+
+          <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          
+          <div class="form-field">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+          <div class="form-field">
+          <label for="mobile">Mobile:</label>
+          <input type="tel" id="mobile" name="mobile" required>
+       </div>
+
+          <div class="form-field">
+          <label for="childname">Child's Name:</label>
+          <input type="text" id="childname" name="childname" required>
+       </div>
+
+       <div class="form-field">
+          <label for="childage">Child's Age:</label>
+          <div class="age-inputs">
+            <input type="number" id="childage-year" name="childage-year" placeholder="Year" required min="0">
+            <input type="number" id="childage-month" name="childage-month" placeholder="Month" required min="0" max="11">
+          </div>
+        </div>
+    
+        <div class="form-field">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required>
+        </div>
+
+        <div class="form-field" id="submit-button">
+          <button type="submit" >Book</button>
+          </div>
+        </form>
+       </div>
+      </div>
+    </div>
       <img
         src="./src/assessts/icons/DownArrow@5x.png"
         alt="Click here"
@@ -1757,9 +1822,12 @@
       />
     </div>
 
+    
+
     <script src="./src/scripts/carousal.js"></script>
     <script src="./src/scripts/responsiveVideo.js"></script>
     <script src="./src/scripts/main.js"></script>
+    <script src="./src/scripts/preschool-tour.js"></script>
     <script type="module" src="./src/scripts/components/admission/admission.js"></script>
     <script type="module" src="./src/scripts/components/programmes/programmes.js"></script>
      
