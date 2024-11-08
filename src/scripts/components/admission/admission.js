@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	admissionContainer2.innerHTML += renderAdmissionProcessScreen1();
 	admissionContainer3.innerHTML += renderAdmissionProcessScreen2();
 	admissionContainer4.innerHTML += renderAdmissionFeeStructureScreen();
-	admissionContainer5.innerHTML += renderAdmissionRegistrationScreen1();
+	// admissionContainer5.innerHTML += renderAdmissionRegistrationScreen1();
 	// admissionContainer6.innerHTML += renderAdmissionRegistrationScreen2();
 	admissionContainer7.innerHTML += renderContactUsScreen();
 });
