@@ -191,7 +191,7 @@ function renderAdmissionRegistrationScreen1() {
    
         <!-- form  -->
        <div class="preschool-tour-form">
-        <form id="booking-form">
+        <form id="admission-booking-form">
           <p>Book a Preschool Tour</p>
 
           <div class="form-field">
