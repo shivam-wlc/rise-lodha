@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const admissionContainer6 = document.getElementById("admission-6");
 	const admissionContainer7 = document.getElementById("admission-7");
 
-	admissionContainer.innerHTML += renderAdmissionIntoScreen();
-	admissionContainer2.innerHTML += renderAdmissionProcessScreen1();
-	admissionContainer3.innerHTML += renderAdmissionProcessScreen2();
-	admissionContainer4.innerHTML += renderAdmissionFeeStructureScreen();
+	// admissionContainer.innerHTML += renderAdmissionIntoScreen();
+	// admissionContainer2.innerHTML += renderAdmissionProcessScreen1();
+	// admissionContainer3.innerHTML += renderAdmissionProcessScreen2();
+	// admissionContainer4.innerHTML += renderAdmissionFeeStructureScreen();
 	// admissionContainer5.innerHTML += renderAdmissionRegistrationScreen1();
 	// admissionContainer6.innerHTML += renderAdmissionRegistrationScreen2();
-	admissionContainer7.innerHTML += renderContactUsScreen();
+	// admissionContainer7.innerHTML += renderContactUsScreen();
 });

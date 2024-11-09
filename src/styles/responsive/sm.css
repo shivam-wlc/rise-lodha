@@ -1,0 +1,26 @@
+.video{
+    top: 0%;
+    bottom: 20%;
+    height: auto;
+    width: 242%;
+    left: -9%;
+}
+
+.semi-circle {
+  width: 130%;
+  height: 75%;
+  bottom: 0px;
+  top: auto;
+  left: -16%;
+  border-radius: 50% 50% 0% 0%;
+}
+
+ .logo img {
+    width: 60%;
+  }
+
+  .book {
+    top: 100%;
+    font-size: 12px;
+    padding: 2px;
+  }

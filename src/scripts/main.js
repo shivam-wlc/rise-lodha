@@ -1,212 +1,123 @@
-const screens = document.querySelectorAll(".screen");
-const nextButton = document.getElementById("nextButton");
-let currentIndex = 0;
-let isTransitioning = false;
-let lastTouchTime = 0;
+import { updateVideoSource } from "./responsiveVideo";
 
-// Function to show the current screen
-function updateScreens() {
-  screens.forEach((screen, index) => {
-    if (index < currentIndex) {
-      screen.style.transform = "translateY(0)"; // Keep previous screens fixed in place
-    } else if (index === currentIndex) {
-      screen.style.transform = "translateY(0)"; // Show current screen
-    } else {
-      screen.style.transform = "translateY(100%)"; // Slide next screens from below
-    }
-  });
-}
-
-// Unified function to handle transitions
-function handleTransition(direction) {
-  if (!isTransitioning) {
-    isTransitioning = true;
-
-    if (direction === "next" && currentIndex < screens.length - 1) {
-      currentIndex++;
-    } else if (direction === "prev" && currentIndex > 0) {
-      currentIndex--;
-    }
-
-    updateScreens();
-
-    setTimeout(() => {
-      isTransitioning = false;
-    }, 800); // Adjust duration as needed
-  }
-}
-
-// window.addEventListener(
-//   "wheel",
-//   (event) => {
-//     event.preventDefault();
-//     if (Math.abs(event.deltaY) > 30) {
-//       handleTransition(event.deltaY > 0 ? "next" : "prev");
-//     }
-//   },
-//   { passive: false }
-// );
-if (!/Mobi|Android/i.test(navigator.userAgent)) {
-  window.addEventListener(
-    "wheel",
-    (event) => {
-      event.preventDefault();
-      if (Math.abs(event.deltaY) > 30) {
-        handleTransition(event.deltaY > 0 ? "next" : "prev");
-      }
-    },
-    { passive: false }
-  );
-}
-
-// Handle touch events (mobile)
-let touchStartY = 0;
-
-window.addEventListener("touchstart", (event) => {
-  touchStartY = event.touches[0].clientY;
+document.addEventListener("DOMContentLoaded", (event) => {
+	event.preventDefault();
+	updateVideoSource();
+	window.addEventListener("resize", updateVideoSource);
 });
 
-// window.addEventListener("touchend", (event) => {
-//   const touchEndY = event.changedTouches[0].clientY;
-//   if (touchStartY > touchEndY + 50) {
-//     handleTransition("next"); // Swiping up
-//   } else if (touchStartY < touchEndY - 50) {
-//     handleTransition("prev"); // Swiping down
-//   }
-// });
-window.addEventListener("touchend", (event) => {
-  const touchEndY = event.changedTouches[0].clientY;
-  const currentTime = Date.now();
-
-  // Throttle the touch events to prevent rapid firing
-  if (currentTime - lastTouchTime > 300) {
-    if (touchStartY > touchEndY + 50) {
-      handleTransition("next");
-    } else if (touchStartY < touchEndY - 50) {
-      handleTransition("prev");
-    }
-    lastTouchTime = currentTime;
-  }
-});
-
-// Handle button click
-nextButton.addEventListener("click", () => {
-  handleTransition("next");
-});
-
-// Initial call to set the first screen
-updateScreens();
-
-// Smooth transition to the 7th screen on "Our Story" link click
 document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("our-story-link");
+	const screens = document.querySelectorAll(".screen");
+	let currentIndex = 0;
+	let isTransitioning = false;
+	let lastTouchTime = 0;
 
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
+	// Function to update visible screens
+	function updateScreens() {
+		screens.forEach((screen, index) => {
+			if (index < currentIndex) {
+				// Keep the current screen in place
+				screen.style.transform = "translateY(0)";
+			} else if (index === currentIndex) {
+				// Center the current screen
+				screen.style.transform = "translateY(0)";
+			} else {
+				// Move below the current screen
+				screen.style.transform = `translateY(${100 * (index - currentIndex)}%)`;
+			}
+		});
+	}
 
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 7;
-      updateScreens();
-    });
-  }
-});
+	// Unified transition handler
+	function handleTransition(direction) {
+		if (!isTransitioning) {
+			isTransitioning = true;
 
-// Smooth transition to the )th screen on "Home" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("home");
+			if (direction === "next" && currentIndex < screens.length - 1) {
+				currentIndex++;
+			} else if (direction === "prev" && currentIndex > 0) {
+				currentIndex--;
+			}
 
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
+			updateScreens();
 
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
+			setTimeout(() => {
+				isTransitioning = false;
+			}, 800); // Adjust duration if necessary
+		}
+	}
 
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 0;
-      updateScreens();
-    });
-  }
-});
+	// Wheel event for scrolling (desktop)
+	if (!/Mobi|Android/i.test(navigator.userAgent)) {
+		let lastWheelTime = 0;
+		window.addEventListener(
+			"wheel",
+			(event) => {
+				const now = Date.now();
+				if (now - lastWheelTime < 500) return;
+				lastWheelTime = now;
 
-// Smooth transition to the 7th screen on "Why Us" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("why-us-link");
+				event.preventDefault();
+				const scrollThreshold = 20;
+				// Increase threshold for Mac touchpad sensitivity
+				if (Math.abs(event.deltaY) > scrollThreshold) {
+					handleTransition(event.deltaY > 0 ? "next" : "prev");
+				}
+			},
+			{ passive: false }
+		);
+	}
 
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
+	// Touch event for scrolling (mobile)
+	let touchStartY = 0;
+	window.addEventListener(
+		"touchstart",
+		(event) => {
+			touchStartY = event.touches[0].clientY;
+		},
+		{ passive: true }
+	);
 
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 14;
-      updateScreens();
-    });
-  }
-});
+	window.addEventListener(
+		"touchend",
+		(event) => {
+			const touchEndY = event.changedTouches[0].clientY;
+			const currentTime = Date.now();
 
-// Smooth transition to the 7th screen on "programmes" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("programmes-link");
+			if (currentTime - lastTouchTime > 300) {
+				if (touchStartY > touchEndY + 50) {
+					handleTransition("next");
+				} else if (touchStartY < touchEndY - 50) {
+					handleTransition("prev");
+				}
+				lastTouchTime = currentTime;
+			}
+		},
+		{ passive: true }
+	);
 
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
+	// Smooth transitions for menu links
+	function smoothTransition(linkId, targetIndex) {
+		const link = document.getElementById(linkId);
+		if (link) {
+			link.addEventListener("click", (event) => {
+				event.preventDefault();
+				currentIndex = targetIndex;
+				updateScreens();
+			});
+		}
+	}
 
-      // Directly set the currentIndex to 27 (28th screen)
-      currentIndex = 28;
-      updateScreens();
-    });
-  }
-});
+	// Assign menu link transitions (adjust target indexes as needed)
+	smoothTransition("home-link", 0);
+	smoothTransition("book-button", 1);
+	smoothTransition("our-story-link", 7);
+	smoothTransition("why-us-link", 14);
+	smoothTransition("programmes-link", 28);
+	smoothTransition("admission-link", 35);
+	smoothTransition("contact-us-link", 42);
+	smoothTransition("book-tour-link", 44);
 
-// Smooth transition to the 7th screen on "admission" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("admission-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 34 (34th screen)
-      currentIndex = 35;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "Our Story" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("contact-us-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 41 (42th screen)
-      currentIndex = 42;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "Our Story" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("book-button");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 41 (42th screen)
-      currentIndex = 44;
-      updateScreens();
-    });
-  }
+	// Initial call to set the first screen
+	updateScreens();
 });

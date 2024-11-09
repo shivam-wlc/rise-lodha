@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	const programmeContainer6 = document.getElementById("programme-6");
 	const programmeContainer7 = document.getElementById("programme-7");
 
-	programmeContainer1.innerHTML += renderProgrammesScreen();
-	programmeContainer2.innerHTML += renderToddlerScreen();
-	programmeContainer3.innerHTML += renderPlaygroundScreen();
-	programmeContainer4.innerHTML += renderNurseryScreen();
-	programmeContainer5.innerHTML += renderJuniorKgScreen();
-	programmeContainer6.innerHTML += renderSeniorKgScreen();
-	programmeContainer7.innerHTML += renderContactUsScreen();
+	// programmeContainer1.innerHTML += renderProgrammesScreen();
+	// programmeContainer2.innerHTML += renderToddlerScreen();
+	// programmeContainer3.innerHTML += renderPlaygroundScreen();
+	// programmeContainer4.innerHTML += renderNurseryScreen();
+	// programmeContainer5.innerHTML += renderJuniorKgScreen();
+	// programmeContainer6.innerHTML += renderSeniorKgScreen();
+	// programmeContainer7.innerHTML += renderContactUsScreen();
 });

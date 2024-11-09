@@ -1,0 +1,25 @@
+.video {
+    width: 110%;
+    left: 2%;
+    top: auto;
+    bottom: 14%;
+}
+
+.book{
+    font-size: 22px;
+    width: auto;
+    height: auto;
+    padding: 20px 25px;
+}
+.header{
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.right-section {
+    justify-content: space-between;
+}
+
+.nav-text {
+    font-size: 24px;
+}

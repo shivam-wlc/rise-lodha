@@ -1,0 +1,338 @@
+/* Root color Variables */
+:root {
+  --color-white: rgb(209, 211, 212);
+  --color-yellow: rgb(253, 185, 19);
+  --color-orange: rgb(243, 112, 33);
+  --color-red: rgb(186, 31, 46);
+  --color-purple: rgb(129, 42, 132);
+  --color-blue: rgb(43, 46, 140);
+}
+
+/* Fonts */
+/* Regular */
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../assessts/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../assessts/fonts/MyriadPro-Regular_2.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Medium */
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("../assessts/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+/* Variable font  */
+@font-face {
+  font-family: "MontserratVariableFont";
+  src: url("../assessts/fonts/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Light  */
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("../assessts/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "MontserratRegular";
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header Style Start (Left logo, right menus, book preschool tour button) */
+
+.header {
+  width: 100%;
+  height: 15%;
+  padding-top: 2%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  background-color: #fff;
+  /* border: 1px solid black; */
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.logo img {
+  width: 25%;
+}
+
+/* Right menu section */
+.right-section {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 2%;
+}
+
+.nav-item {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-text {
+  position: absolute;
+  right: 40px; 
+  white-space: nowrap;
+  opacity: 0.3; 
+  transition: opacity 0.5s ease; 
+  color: var(--color-blue);
+}
+
+/* Book Pre School Tour button */
+.book {
+  position: absolute;
+  left: 3%;
+  top: 110%;
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  background-color: var(--color-blue);
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 5px;
+  border: none;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.right-section:hover .nav-text {
+  opacity: 0.3; 
+}
+
+.nav-item:hover .nav-text {
+  opacity: 1; 
+}
+
+.nav-item:nth-child(1) {
+  background-color: var(--color-yellow);
+}
+.nav-item:nth-child(2) {
+  background-color: var(--color-orange);
+}
+.nav-item:nth-child(3) {
+  background-color: var(--color-red);
+}
+.nav-item:nth-child(4) {
+  background-color: var(--color-purple);
+}
+.nav-item:nth-child(5) {
+  background-color: var(--color-blue);
+}
+
+/* Header Style Ends here (Left logo, right menus, book preschool tour button) */
+
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Video Screen Styling starts here */
+.screen {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: transform 1.8s ease;
+  -moz-transition: transform 1.8s ease;
+  transition: transform 1.8s ease; 
+  top: 0;
+  will-change: transform;
+}
+
+
+.screen1 {
+  transform: translateY(0); 
+  position: relative; 
+  overflow: hidden; 
+}
+
+.semi-circle {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: -15%;
+  /* transform: translateX(-50%); */
+  background-color: var(--color-white);
+  overflow: hidden;
+}
+
+.video {
+/* Positioning the video absolutely */
+  position: absolute; 
+  /* Align to top */
+  top: -32%; 
+  height: auto;
+  /* Center horizontally */
+  left: 6%; 
+  /* -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+    transform: translateX(-50%);  */
+  width: 80%;
+  /* Ensure it's behind any other content */
+  z-index: 0; 
+ 
+}
+
+
+/* 
+ * Common across all screens.
+ */
+
+ .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 50;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.screen-tittle {
+  color: var(--color-yellow);
+  background-color: #fff;
+  border-radius: 45px;
+  font-family: "MontserratRegular";
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.screen-title-l2{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.screen-description{
+  font-size: 16px;
+  line-height: 25px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/* 
+  ========= Screen 2 What we do ==========
+ */
+.screen2 .semi-circle{
+  background-color: var(--color-yellow);
+}
+
+.screen2 .values-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.screen2 .values-container p {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.screen2 .values-container .values {
+  display: flex;
+  justify-content: center;
+   /* Adjust spacing between circles */
+  gap: 20%;
+}
+
+.screen2 .values-container .values .value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen2 .values-container .values .letter-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(
+    --circle-color,
+    yellow
+  ); 
+  /* Set circle background color */
+  font-family: "MontserratBold", sans-serif;
+  font-size: 25px;
+  color: white;
+  border: 1px solid var(--color-white);
+}
+
+.screen2 .values-container .values .value:nth-child(1) .letter-circle {
+  background-color: var(--color-yellow);
+}
+
+.screen2 .values-container .values .value:nth-child(2) .letter-circle {
+  background-color: var(--color-orange);
+}
+.screen2 .values-container .values .value:nth-child(3) .letter-circle {
+  background-color: var(--color-red);
+}
+.screen2 .values-container .values .value:nth-child(4) .letter-circle {
+  background-color: var(--color-purple);
+}
+.screen2 .values-container .values .value:nth-child(5) .letter-circle {
+  background-color: var(--color-blue);
+}
