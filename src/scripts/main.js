@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		screens.forEach((screen, index) => {
 			if (index < currentIndex) {
 				// Keep the current screen in place
-				screen.style.transform = "translateY(100)";
+				// screen.style.transform = "translateY(0)";
 			} else if (index === currentIndex) {
 				// Center the current screen
 				screen.style.transform = "translateY(0)";
@@ -33,29 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	}
-
-	// function updateScreens() {
-	// 	screens.forEach((screen, index) => {
-	// 		if (index === currentIndex) {
-	// 			// Display the current screen in place
-	// 			screen.style.transform = "translateY(0)";
-	// 			screen.style.transition = "transform 0.8s ease";
-	// 			screen.style.visibility = "visible"; // Ensure current screen is visible
-	// 		} else if (index === targetIndex) {
-	// 			// Move the target screen to the top of the viewport
-	// 			screen.style.transform = `translateY(${
-	// 				100 * (targetIndex - currentIndex)
-	// 			}%)`;
-	// 			screen.style.transition = "transform 0.8s ease";
-	// 			screen.style.visibility = "visible"; // Ensure target screen is visible
-	// 		} else {
-	// 			// Hide intermediate screens to prevent them from appearing in transition
-	// 			screen.style.visibility = "hidden";
-	// 			screen.style.transform = `translateY(${100 * (index - currentIndex)}%)`; // Position offscreen
-	// 			screen.style.transition = "none"; // No transition for hidden screens
-	// 		}
-	// 	});
-	// }
 
 	// Unified transition handler
 	function handleTransition(direction) {
