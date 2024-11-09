@@ -1865,8 +1865,10 @@ img.circles_home {
 .admission-1 .semi-circle {
   background-color: var(--color-purple);
 }
-
-.admission-2,.admission-2 .semi-circle{
+.admission-2 .semi-circle{
+  background-color: var(--color-blue);
+}
+.admission-3 .semi-circle{
   background-color: var(--color-blue);
 }
 .admission-4 .semi-circle{
@@ -2182,4 +2184,498 @@ img.circles_home {
 .admission-semi-circle-6 .button-container button{
   padding: 10px 20px;
   cursor: pointer;
+}
+
+
+/* 
+  Pre School Tour
+ */
+
+ .preschool-tour {
+  transform: translateY(100%);
+}
+
+.preschool-tour-semi-circle-1 {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background-color: #a9a9cc;
+}
+
+.preschool-tour-form {
+  /* border: 1px solid black; */
+  font-family: "MontserratRegular";
+  width: 30%;
+  margin: auto;
+  background-color: var(--color-blue);
+  margin-top: 4%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+label {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  width: 30%;
+  margin-right: 10px;
+}
+
+#booking-form p {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field {
+  display: flex;
+  /* width: 15%; */
+  justify-content: flex-start;
+}
+
+.form-field input {
+  width: 50%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 10px 5px;
+  font-family: "MontserratRegular";
+}
+
+.age-inputs {
+  display: flex;
+  /* width: 50%;
+  margin: auto; */
+  /* border: 1px solid black; */
+  justify-content: flex-start;
+}
+.age-inputs input {
+  width: 40%;
+  margin: auto;
+
+}
+
+.form-field button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-family: "MontserratRegular";
+  padding: 10px 25px;
+  margin-top: 1%;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#submit-button {
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 575.98px) {
+  .preschool-tour-semi-circle-1 {
+    width: 170%;
+    height: 100%;
+    border-radius: 50% 50% 0% 0%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .preschool-tour-form {
+    font-family: "MontserratRegular";
+    width: 45%;
+    margin: auto;
+    background-color: var(--color-blue);
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  label {
+    font-family: "MontserratRegular";
+    font-size: 12px;
+    width: 40%;
+    margin-right: 10px;
+  }
+
+  #booking-form p {
+    font-family: "MontserratRegular";
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+    display: grid;
+  }
+
+  .form-field {
+    display: flex;
+    /* width: 15%; */
+    justify-content: flex-start;
+  }
+
+  .form-field input {
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-family: "MontserratRegular";
+  }
+
+  .age-inputs {
+    display: flex;
+  }
+  .age-inputs input {
+    width: 45%;
+    margin-left: 10px;
+  }
+
+  .form-field button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-family: "MontserratRegular";
+    padding: 10px 25px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #submit-button {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1200px) {
+  .preschool-tour-form {
+    width: 55%;
+    margin: auto;
+    margin-top: 200px;
+  }
+
+  label {
+    width: 50%;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+    display: grid;
+  }
+
+  .form-field input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-family: "MontserratRegular";
+  }
+
+  .age-inputs {
+    display: flex;
+  }
+  .age-inputs input {
+    width: 50% !important;
+    margin-left: 10px;
+  }
+
+  .form-field button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-family: "MontserratRegular";
+    padding: 10px 25px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #submit-button {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2800px) {
+  .preschool-tour-form {
+    width: 40%;
+    margin: auto;
+    margin-top: 300px;
+  }
+
+  label {
+    font-family: "MontserratRegular";
+    font-size: 26px;
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  #booking-form p {
+    font-family: "MontserratRegular";
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  form {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    /* flex-direction: column; */
+    gap: 30px;
+  }
+
+  .form-field {
+    display: flex;
+    /* width: 15%; */
+    justify-content: flex-start;
+  }
+
+  .form-field input {
+    width: 70%;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 25px 15px;
+  }
+
+  .age-inputs {
+    display: flex;
+    border: 1px solid black;
+    width: 72%;
+  }
+
+  .form-field button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 25px;
+    border: none;
+    font-size: 26px;
+    font-family: "MontserratRegular";
+    padding: 20px 45px;
+    margin-top: 1%;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #submit-button {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+/*******************************************************
+ *                                                     *
+ *            CONTACT US COMMON STYLES                 *
+ *                                                     *
+ *******************************************************/
+
+.contact-us-1 {
+  transform: translateY(100%);
+}
+
+.contact-us-semi-circle-1 {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background-color: var(--color-blue);
+}
+
+.contact-us-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+  z-index: 50;
+  margin-top: 2%;
+  text-align: center;
+}
+
+/*******************************************************
+ *                                                     *
+ *            CONTACT US SCREEN1 STYLES                 *
+ *                                                     *
+ *******************************************************/
+
+.contact-us-content button {
+  color: var(--color-blue);
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: "MontserratRegular";
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.contact-us-semi-circle-1 > .contact-us-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.contact-us-semi-circle-1 > .contact-us-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 25px;
+  width: 55%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/* Container styling */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid black; */
+  margin-top: 1%;
+}
+
+/* Row for email and mobile items */
+.contact-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem; /* Specific gap between email and mobile number */
+  width: 100%;
+}
+
+/* Email item styling */
+.email-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5%;
+}
+
+.email-item img {
+  width: 30px;
+  height: 30px;
+}
+.email-item p {
+  margin-left: 0;
+  font-family: "MontserratRegular";
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+/* Mobile item styling */
+.mobile-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Minimal space between icon and text for mobile */
+}
+
+.mobile-item img {
+  width: 30px;
+  height: 30px;
+}
+.mobile-item p {
+  margin-left: 0;
+  font-family: "MontserratRegular";
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+/* Address item styling with reduced spacing */
+.address-item {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* width: 70%; */
+  margin: auto;
+  white-space: nowrap;
+  /* gap: -10.5rem !important; */
+  margin-top: 1.5%;
+}
+
+.address-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.address-item p {
+  margin-left: 0;
+  font-family: "MontserratRegular";
+  font-size: 12px !important;
+  line-height: 18px !important;
+  /* letter-spacing: 1px; */
+}
+
+/* Map item styling */
+.map-item {
+  display: flex;
+  align-items: center;
+  margin-top: 5.5%;
+}
+
+.map-item img {
+  width: 350px;
+  height: auto;
+  margin-right: 0;
 }

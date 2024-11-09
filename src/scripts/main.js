@@ -4,6 +4,7 @@ const activeIndexes = {
 	"carousel-images": 0,
 	"carousel-text": 0,
 };
+let currentIndex = 0;
 
 document.addEventListener("DOMContentLoaded", (event) => {
 	event.preventDefault();
@@ -14,8 +15,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
 	const screens = document.querySelectorAll(".screen");
 	const nextButton = document.getElementById("nextButton");
-
-	let currentIndex = 4;
 	let isTransitioning = false;
 	let lastTouchTime = 0;
 
@@ -24,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		screens.forEach((screen, index) => {
 			if (index < currentIndex) {
 				// Keep the current screen in place
-				screen.style.transform = "translateY(0)";
+				screen.style.transform = "translateY(100)";
 			} else if (index === currentIndex) {
 				// Center the current screen
 				screen.style.transform = "translateY(0)";
@@ -34,6 +33,29 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		});
 	}
+
+	// function updateScreens() {
+	// 	screens.forEach((screen, index) => {
+	// 		if (index === currentIndex) {
+	// 			// Display the current screen in place
+	// 			screen.style.transform = "translateY(0)";
+	// 			screen.style.transition = "transform 0.8s ease";
+	// 			screen.style.visibility = "visible"; // Ensure current screen is visible
+	// 		} else if (index === targetIndex) {
+	// 			// Move the target screen to the top of the viewport
+	// 			screen.style.transform = `translateY(${
+	// 				100 * (targetIndex - currentIndex)
+	// 			}%)`;
+	// 			screen.style.transition = "transform 0.8s ease";
+	// 			screen.style.visibility = "visible"; // Ensure target screen is visible
+	// 		} else {
+	// 			// Hide intermediate screens to prevent them from appearing in transition
+	// 			screen.style.visibility = "hidden";
+	// 			screen.style.transform = `translateY(${100 * (index - currentIndex)}%)`; // Position offscreen
+	// 			screen.style.transition = "none"; // No transition for hidden screens
+	// 		}
+	// 	});
+	// }
 
 	// Unified transition handler
 	function handleTransition(direction) {
@@ -117,13 +139,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Assign menu link transitions (adjust target indexes as needed)
 	smoothTransition("home-link", 0);
-	smoothTransition("book-button", 1);
 	smoothTransition("our-story-link", 7);
 	smoothTransition("why-us-link", 14);
 	smoothTransition("programmes-link", 28);
 	smoothTransition("admission-link", 35);
 	smoothTransition("contact-us-link", 42);
-	smoothTransition("book-tour-link", 44);
+	smoothTransition("book-button", 44);
 
 	// Initial call to set the first screen
 	updateScreens();
