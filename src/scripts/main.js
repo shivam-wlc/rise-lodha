@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	const screens = document.querySelectorAll(".screen");
-	let currentIndex = 0;
+	let currentIndex = 3;
 	let isTransitioning = false;
 	let lastTouchTime = 0;
 

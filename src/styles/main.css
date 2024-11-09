@@ -265,7 +265,9 @@ html {
   margin: auto;
   margin-top: 1%;
 }
-
+.link{
+  cursor: pointer;
+}
 /* 
   ========= Screen 2 What we do ==========
  */
