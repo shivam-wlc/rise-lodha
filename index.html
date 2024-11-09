@@ -11,29 +11,78 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript> -->
 
     <!-- Consolidated styles into a single request if possible -->
-    <link rel="preload" href="./src/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link
+      rel="preload"
+      href="./src/styles/main.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
     <!-- CSS for screens smaller than 576px (like phones) -->
-    <link rel="stylesheet" href="./src/styles/responsive/sm.css" media="screen and (max-width: 576px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/sm.css"
+      media="screen and (max-width: 576px)"
+    />
     <!-- CSS for screens between 576px and 768px (like phones) -->
-    <link rel="stylesheet" href="./src/styles/responsive/md.css" media="screen and (min-width: 576px) and (max-width: 768px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/md.css"
+      media="screen and (min-width: 576px) and (max-width: 768px)"
+    />
     <!-- CSS for screens between 768px and 1200px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/lg.css" media="screen and (min-width: 768px) and (max-width: 1200px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/lg.css"
+      media="screen and (min-width: 768px) and (max-width: 1200px)"
+    />
     <!-- CSS for screens between 1200px and 1400px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/xl.css" media="screen and (min-width: 1200px) and (max-width: 1400px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/xl.css"
+      media="screen and (min-width: 1200px) and (max-width: 1400px)"
+    />
     <!-- CSS for screens between 1400px and 1800px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/xl-14w-18w.css" media="screen and (min-width: 1400px) and (max-width: 1800px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/xl-14w-18w.css"
+      media="screen and (min-width: 1400px) and (max-width: 1800px)"
+    />
     <!-- CSS for screens between 1800px and 2000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/xl-18w-2kw.css" media="screen and (min-width: 1800px) and (max-width: 2000px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/xl-18w-2kw.css"
+      media="screen and (min-width: 1800px) and (max-width: 2000px)"
+    />
     <!-- CSS for screens between 2000px and 3000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/2-3k-xl*12H.css" media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1200px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/2-3k-xl*12H.css"
+      media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1200px)"
+    />
     <!-- CSS for screens between 2000px and 3000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/2-3k-xl*14H.css" media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1400px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/2-3k-xl*14H.css"
+      media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1400px)"
+    />
     <!-- CSS for screens greater than 3000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/2-3k-xl*16H.css" media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1599px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/2-3k-xl*16H.css"
+      media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1599px)"
+    />
     <!-- CSS for screens greater than 3000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/2-3k-xl*18H.css" media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1799px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/2-3k-xl*18H.css"
+      media="screen and (min-width: 2000px) and (max-width: 3000px) and (min-height: 1799px)"
+    />
     <!-- CSS for screens greater than 3000px (like laptops, desktops) -->
-    <link rel="stylesheet" href="./src/styles/responsive/3xl.css" media="screen and (min-width: 3000px)">
+    <link
+      rel="stylesheet"
+      href="./src/styles/responsive/3xl.css"
+      media="screen and (min-width: 3000px)"
+    />
 
     <!-- <link rel="stylesheet" href="./src/styles/our-story.css" />
     <link rel="stylesheet" href="./src/styles/programmes/programmes.css" />
@@ -43,10 +92,13 @@
     <link rel="stylesheet" href="./src/styles/preschool-tour.css" />
     <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css" /> -->
 
-        <!-- Defer JavaScript to reduce blocking -->
-    <script async src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Defer JavaScript to reduce blocking -->
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         emailjs.init("G2SDjizAB86ZjO6Tz");
       });
     </script>
@@ -118,12 +170,12 @@
     -->
 
     <div class="container">
-    <!--
+      <!--
       *******************************************************
       *                     Video Screen                    *
       ******************************************************* 
     -->
-    <div class="screen screen1">
+      <div class="screen screen1">
         <div class="semi-circle">
           <video
             id="responsive-video"
@@ -142,67 +194,67 @@
             Your browser does not support the video tag.
           </video>
         </div>
-    </div>
+      </div>
 
-    <!-- 
+      <!-- 
       *******************************************************
       *               Yellow Section  (What We do Screen)   *
       *******************************************************
     -->
-    <div class="screen screen2">
-      <div class="semi-circle">
-        <div class="content">
-          <p class="screen-tittle">WHAT WE DO</p>
-          <div>
-            <p class="screen-title-l2">
-              Nurturing little minds <br />
-              that will build tomorrow, today.
-            </p>
-            <p class="screen-description">
-              At Rising India School of Excellence (RISE) Preschool, we are
-              building the future of India. Starting with its youngest minds.
-              As Goa's first truly international preschool, we offer an
-              education that transcends the classroom. Many early learning
-              centres don't offer children the chance to truly explore and
-              discover. This often stifles their natural sense of wonder,
-              curiosity and the joy of learning - the very foundation for
-              future leaders and creators. What we do is create a world of
-              Risers who are confident, curious and creative through our
-              proprietary D.I.S.C.O.V.E.R.Y. Mind ModelⒸ which equips young
-              children with the mindset and skills to become future leaders
-              and innovators.
-            </p>
+      <div class="screen screen2">
+        <div class="semi-circle">
+          <div class="content">
+            <p class="screen-tittle">WHAT WE DO</p>
+            <div>
+              <p class="screen-title-l2">
+                Nurturing little minds <br />
+                that will build tomorrow, today.
+              </p>
+              <p class="screen-description">
+                At Rising India School of Excellence (RISE) Preschool, we are
+                building the future of India. Starting with its youngest minds.
+                As Goa's first truly international preschool, we offer an
+                education that transcends the classroom. Many early learning
+                centres don't offer children the chance to truly explore and
+                discover. This often stifles their natural sense of wonder,
+                curiosity and the joy of learning - the very foundation for
+                future leaders and creators. What we do is create a world of
+                Risers who are confident, curious and creative through our
+                proprietary D.I.S.C.O.V.E.R.Y. Mind ModelⒸ which equips young
+                children with the mindset and skills to become future leaders
+                and innovators.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="values-container">
-          <p>Values of a RISER.</p>
-          <div class="values">
-            <div class="value">
-              <div class="letter-circle">R</div>
-              <p>Resilience</p>
-            </div>
-            <div class="value">
-              <div class="letter-circle">I</div>
-              <p>Innovative</p>
-            </div>
-            <div class="value">
-              <div class="letter-circle">S</div>
-              <p>Socially Responsible</p>
-            </div>
-            <div class="value">
-              <div class="letter-circle">E</div>
-              <p>Excellence</p>
-            </div>
-            <div class="value">
-              <div class="letter-circle">R</div>
-              <p>Respectful</p>
+          <div class="values-container">
+            <p>Values of a RISER.</p>
+            <div class="values">
+              <div class="value">
+                <div class="letter-circle">R</div>
+                <p>Resilience</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">I</div>
+                <p>Innovative</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">S</div>
+                <p>Socially Responsible</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">E</div>
+                <p>Excellence</p>
+              </div>
+              <div class="value">
+                <div class="letter-circle">R</div>
+                <p>Respectful</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    
-     <!-- 
+
+      <!-- 
       *******************************************************
       *                    Orange Section                   *
       *******************************************************
@@ -255,9 +307,7 @@
                   the future.
                 </p>
               </div>
-              <div
-                class="circular-item"
-              >
+              <div class="circular-item">
                 <h3>Beyond traditional subjects.</h3>
                 <p>
                   We go beyond the basics. From STEM to performing arts to
@@ -286,10 +336,344 @@
           </div>
         </div>
       </div>
+
+      <!-- 
+      *******************************************************
+      *                    DUMMY Section                   *
+      *******************************************************
+    -->
+
+      <div class="screen screen3">
+        <div class="semi-circle">
+          <div class="content"><p class="screen-tittle">HOW WE DO IT-3</p></div>
+        </div>
+      </div>
+      <div class="screen screen3">
+        <div class="semi-circle">
+          <div class="content"><p class="screen-tittle">HOW WE DO IT-4</p></div>
+        </div>
+      </div>
+      <div class="screen screen3">
+        <div class="semi-circle">
+          <div class="content"><p class="screen-tittle">HOW WE DO IT-5</p></div>
+        </div>
+      </div>
+      <div class="screen screen3">
+        <div class="semi-circle">
+          <div class="content"><p class="screen-tittle">HOW WE DO IT-6</p></div>
+        </div>
+      </div>
+
+      <!-- 
+      *******************************************************
+      *                    OUR STORY SECTION                *
+      *******************************************************
+    -->
+      <div class="screen our-story-1">
+        <div class="our-story-semi-circle-1">
+          <div class="our-story-content">
+            <button>OUR STORY</button>
+            <div class="img-container">
+              <div>
+                <img
+                  src="./src//assessts/icons/our-story/purpose@5x.png"
+                  alt="purpose"
+                />
+                <p>Our Purpose</p>
+              </div>
+              <div>
+                <img
+                  src="./src//assessts/icons/our-story/mission@5x.png"
+                  alt="mission"
+                />
+                <p>Our Mission</p>
+              </div>
+              <div>
+                <img
+                  src="./src//assessts/icons/our-story/philosophy@5x.png"
+                  alt="philosophy"
+                />
+                <p>Our Philosophy</p>
+              </div>
+              <div>
+                <img
+                  src="./src//assessts/icons/our-story/team@5x.png"
+                  alt="team"
+                />
+                <p>Our Team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen our-story-2">
+        <div class="our-story-semi-circle-2">
+          <div class="our-story-content">
+            <button>OUR PURPOSE</button>
+            <div>
+              <p>
+                WHERE THE FUTURE OF EDUCATION <br />
+                AND THE FUTURE OF INDIA RISE
+              </p>
+              <p>
+                “Elevating education for a rising India to nurture thinkers,
+                innovators and leaders who will shape the country’s ascent as a
+                global powerhouse.”
+                <br /><br />
+                Rising India School of Excellence is not just an institution; it
+                is a calling, a dream and a movement dedicated to
+                nation-building. This school represents the deep-seated desire
+                of a team of pedigreed professionals and acclaimed educationists
+                to contribute to the progress and development of our great
+                nation, fostering future leaders who will take India to even
+                greater heights.
+                <br /><br />
+                In the 21st century - the age of Artificial Intelligence -
+                India's trajectory is set on the path to global leadership. But
+                for this vision to become a reality, we need thinkers,
+                innovators and leaders who can make a difference. This requires
+                education that goes beyond classrooms and textbooks. We need
+                transformative education for a rising India. Education which
+                modernises knowledge, and complements it with skills, character
+                and meta-learning.
+                <br /><br />
+                Through a progressive and dynamic curriculum that blends modern
+                teaching methodologies, state-of-the-art infrastructure and
+                dedicated faculty, we are committed to fostering the development
+                of holistic well-rounded individuals who are prepared to thrive
+                in a fast-changing world.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen our-story-3">
+        <div class="our-story-semi-circle-3">
+          <div class="our-story-content">
+            <button>OUR PHILOSOPHY</button>
+            <div>
+              <p>
+                SHAPING TOMORROW'S CHANGEMAKERS. <br />
+                ONE RISER AT A TIME.
+              </p>
+
+              <p>
+                At Rising India School of Excellence (RISE) Preschool, our
+                mission is to cultivate a generation of Risers. We foster a
+                community of curious learners, eager to explore, excel, and
+                grow. We aim to shape students who are not only academically
+                proficient but also globally aware and socially responsible
+                citizens.
+              </p>
+
+              <p>
+                We are more than a preschool. We contribute to the story of a
+                rising India by enabling our students to:
+              </p>
+
+              <div class="our-story-values-list">
+                <div>Rise beyond standard to transformative education.</div>
+                <div>Rise beyond borders to global perspectives.</div>
+                <div>Rise beyond knowledge to innovation.</div>
+                <div>Rise beyond conventional to progressive.</div>
+                <div>Rise beyond expectations to excellence.</div>
+              </div>
+              <p class="our-story-after-values">
+                We are RISE - Rising India School of Excellence Preschool. Where
+                the spirit of resilience, innovation, social responsibility,
+                excellence and respect is rooted in every Riser.
+              </p>
+
+              <div class="our-story-founder">
+                <img
+                  src="./src/assessts/images/team/payalGaba.png"
+                  alt="Payal Gaba"
+                  class="founder-image"
+                />
+                <div id="founder-text">
+                  <p>Warm regards,</p>
+                  <p>
+                    Payal Gaba <br />
+                    CEO & Founder, Rising India School of Excellence
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen our-story-4">
+        <div class="our-story-semi-circle-4">
+          <div class="our-story-content">
+            <button>OUR MISSION</button>
+            <div>
+              <p>BECAUSE EVERY CHILD CAN.</p>
+              <p>
+                We believe that every child has the potential to grow and
+                evolve. Abilities aren't set in stone - they're skills that can
+                be nurtured and developed. Which is why, we don't set
+                limitations and cultivate boundless opportunities instead. Here,
+                each day is a fresh opportunity to uncover new strengths and
+                surpass expectations. With the right guidance and encouragement,
+                every child can unlock their true potential and reach new
+                heights.
+              </p>
+            </div>
+          </div>
+          <div class="our-story-image-container">
+            <img
+              src="./src/assessts/images/childrensImage.png"
+              alt="imag"
+              class="semicircle-image"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- *******************************************************
+   *                 Our Story Section NO SCROLLING EFFECT          *
+   ******************************************************* -->
+      <div class="screen our-story-5">
+        <div class="our-story-semi-circle-5">
+          <div class="our-story-content">
+            <button>OUR TEAM</button>
+            <div>
+              <p>
+                THE STRONGER THE FOUNDATION,<br />
+                THE GREATER THE RISE
+              </p>
+              <p>
+                At Rising India School of Excellence Preschool, a collective of
+                the very best minds guides our students on their journey of
+                discovery. Each member is dedicated to creating an environment
+                where every child can thrive, ensuring that they have the
+                perfect start for their rise to greatness.
+              </p>
+            </div>
+          </div>
+          <div class="team-container">
+            <div class="team-member left">
+              <img
+                src="./src/assessts/images/team/payalGaba.png"
+                alt="Payal Gaba"
+              />
+              <div class="team-text-container">
+                <p>Payal Gaba</p>
+                <p>CEO & Founder</p>
+                <p>
+                  A successful business leader and educator, Payal Gaba has a
+                  degree in science and an MBA. She worked in leading
+                  organisations like Maruti and Samsung before founding
+                  BeyondSkool, an upskilling academy for kids. As the CEO of
+                  RISE School, she aims to revolutionise early childhood
+                  education by fostering creativity, curiosity and resilience in
+                  children.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member right">
+              <div class="team-text-container">
+                <p>Pritam Bisht</p>
+                <p>Education Strategist</p>
+                <p>
+                  Pritam Bisht has over 20 years of experience in management
+                  consulting, specialising in corporate strategy, business
+                  development and marketing. He wants to impact the education
+                  ecosystem with his expertise and drive for innovation. His
+                  forward-thinking approach has helped create something relevant
+                  for the fast-changing world.
+                </p>
+              </div>
+
+              <img
+                src="./src/assessts/images/team/pritamBisht.png"
+                alt="John Doe"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen our-story-5">
+        <div class="our-story-semi-circle-5">
+          <div class="team-container-2">
+            <div class="team-member left">
+              <img
+                src="./src/assessts/images/team/Zeenat.png"
+                alt="Member Name"
+              />
+              <div class="team-text-container">
+                <p>Zeenat Bandukwala</p>
+                <p>Pedagogy & Learning Advisor</p>
+                <p>
+                  Zeenat started her career in research at Nielsen. She then
+                  joined Teach for India as a Fellow and later trained teachers,
+                  wrote curriculum and measured student impact. As co-founder
+                  and Chief Academic Officer at BeyondSkool, she created 21st
+                  century skills curricula. She is now pursuing a PhD to
+                  understand the core competencies of exceptional teachers.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member right">
+              <div class="team-text-container">
+                <p>Leena Pimpley</p>
+                <p>Curriculum Advisor & Specialist</p>
+                <p>
+                  An educationist with more than 30 years of experience in
+                  varied roles ranging from being a Principal for an IB World
+                  School to National Head of Academics for the Aga Khan
+                  Education Service to Programme Leader for the Cambridge
+                  International Professional Development course to School
+                  Quality Assessor and mentor to many international schools and
+                  non-government organisations, Dr. Leena holds a PhD from
+                  Mumbai University and is passionate about developing
+                  progressive and dynamic curricula relevant to our
+                  fast-changing world.
+                </p>
+              </div>
+              <img
+                src="./src/assessts/images/team/leena.png"
+                alt="Mike Johnson"
+              />
+            </div>
+
+            <div class="team-member left">
+              <img
+                src="./src/assessts/images/team/Shilpa.png"
+                alt="Member Name"
+              />
+              <div class="team-text-container">
+                <p>Dr. Shilpa Agrawal</p>
+                <p>Child Development Expert</p>
+                <p>
+                  Dr. Shilpa holds a Ph.D. in Child Development and has over 15
+                  years of expertise in early childhood education. She is deeply
+                  passionate about creating a nurturing, stimulating and safe
+                  environment for children. With an extensive background in
+                  child and adolescent psychology, Dr. Shilpa has closely
+                  collaborated with children, parents and educators throughout
+                  her career. She understands the significance of fostering
+                  emotional, social and academic growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="screen our-story-6">
+      <div class="our-story-semi-circle-6"></div>
+    </div> -->
+
+      <div class="next-button">
+        <img
+          src="./src/assessts/icons/DownArrow@5x.png"
+          alt="Click here"
+          id="nextButton"
+        />
+      </div>
     </div>
   </body>
 </html>
 
-<script type="module" src="./src/scripts/main.js">
-
-</script>
+<script type="module" src="./src/scripts/main.js"></script>
