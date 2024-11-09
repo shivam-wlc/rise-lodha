@@ -23,3 +23,30 @@
 .nav-text {
     font-size: 24px;
 }
+
+.screen-tittle { 
+    font-size: 32px;
+}
+.screen-title-l2{
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.screen-description{
+  font-size: 28px;
+  line-height: 45px;
+}
+
+.screen2 .values-container .values .letter-circle{
+  font-size: 32px;
+  width: 80px;
+  height: 80px;
+}
+
+.screen2 .values-container .values .value p{
+    font-size: 26px;
+}
+
+.screen2 .values-container p:first-child {
+    font-size: 24px;
+}

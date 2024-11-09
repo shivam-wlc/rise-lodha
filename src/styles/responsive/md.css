@@ -1,5 +1,30 @@
+.book{
+    top: 100%;
+}
 .video {
     top: auto;
     bottom: 19%; 
     width: 128%;
+}
+
+.screen-title-l2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.screen-description{
+  font-size: 18px;
+  line-height: 18px;
+  width: 65%;
+}
+
+.screen2 .values-container .values{
+  gap: 20px;
+  margin-top: 15px; 
+  width: 70%;
+  flex-wrap: wrap;
+}
+.screen2 .values-container .values .value{  
+  width: 30%;
 }

@@ -19,8 +19,30 @@
     width: 60%;
   }
 
-  .book {
-    top: 100%;
-    font-size: 12px;
-    padding: 2px;
-  }
+.book {
+  top: 80%;
+  font-size: 12px;
+  padding: 2px;
+}
+
+.screen-title-l2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.screen-description{
+  font-size: 14px;
+  line-height: 18px;
+  width: 70%;
+}
+
+.screen2 .values-container .values{
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.screen2 .values-container .values .value{  
+  width: 30%;
+}

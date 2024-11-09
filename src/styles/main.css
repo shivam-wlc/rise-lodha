@@ -319,7 +319,9 @@ html {
   color: white;
   border: 1px solid var(--color-white);
 }
-
+.screen2 .values-containe p:nth-child(1) {
+    font-size: 18px;
+}
 .screen2 .values-container .values .value:nth-child(1) .letter-circle {
   background-color: var(--color-yellow);
 }
