@@ -28,3 +28,102 @@
 .screen2 .values-container .values .value{  
   width: 30%;
 }
+
+.screen-description{
+  font-size: 14px;
+}
+.nav-button img {
+  width: 20px;
+}
+img.circles_home {
+  margin-top: 30px;
+  width: 45%;
+  margin-top: 22px;
+}
+
+.other-logos-one {
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  margin-top: 20px;
+  column-gap: 20px;
+}
+
+.other-logos-container img {
+  width: 100px;
+}
+
+  /* Specific size adjustments */
+  .other-logos-one img:nth-child(1),
+  .other-logos-one img:nth-child(3) {
+    width: 50px;
+  }
+  .other-logos-one img:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  .other-logos-one img:nth-child(2) {
+    width: 100px;
+  }
+
+  .connect-us-container{
+    margin-top: 50px;
+    width: 87%;
+    padding-left: none;
+  }
+
+  .connect-us-icons {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 10px;
+  }
+
+  .connect-us-icons > div:nth-child(1){
+    margin-left: 70px;
+  }
+
+  .connect-us-icons > div:nth-child(2){
+    margin-left: 70px;
+    width: 30%;
+  }
+
+  .connect-us-icons > div:nth-child(3){
+    margin-left: 70px;
+    width: 20%;
+  }
+
+  .connect-us-icons > div:nth-child(4){
+    margin-left: 70px;
+  }
+
+  .connect-us-icons .phonecontainer{
+    font-size: 14px;
+  }
+  .emailLink{
+    font-size: 14px;
+  }
+
+  .connect-us-container-title{
+    text-align: center;
+    margin-left: 70px;
+  }
+
+
+.key-facts-three {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 30%;
+}
+.key-facts-two{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding-left: 30%;
+}
+.fact-item img{
+  width: 50px;
+}
+.fact-text{
+  font-size: 18px;
+}

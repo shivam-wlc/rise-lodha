@@ -3,3 +3,21 @@
     bottom: 20%;
     width: 121%;
 }
+
+img.circles_home {
+  margin-top: 30px;
+  width: 25%;
+  margin-top: 22px;
+}
+
+.key-facts-three {
+  width: 70%;
+  gap: 10px;
+}
+.fact-item img{
+  width: 70px;
+}
+
+.fact-text{
+  font-size: 22px;
+}

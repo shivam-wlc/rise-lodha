@@ -24,7 +24,7 @@
     font-size: 24px;
 }
 
-.screen-tittle { 
+.screen-title { 
     font-size: 32px;
 }
 .screen-title-l2{
@@ -49,4 +49,9 @@
 
 .screen2 .values-container p:first-child {
     font-size: 24px;
+}
+
+img.circles_home {
+  width: 12%;
+  margin-top: 10px;
 }

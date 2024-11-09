@@ -1,14 +1,4 @@
-@import url('./mobile.css');
-@import url("./tablet.css");
-@import url("./large.css");
-@import url("./xl.css");
 
-* {
-  font-family: "Montserrat";
-}
-.programme-1 {
-  transform: translateY(100%);
-}
 
 .programme-semi-circle-1,
 .programme--semi-circle-2,

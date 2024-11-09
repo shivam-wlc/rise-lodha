@@ -13,7 +13,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	const screens = document.querySelectorAll(".screen");
-	let currentIndex = 3;
+	const nextButton = document.getElementById("nextButton");
+
+	let currentIndex = 4;
 	let isTransitioning = false;
 	let lastTouchTime = 0;
 
@@ -63,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				lastWheelTime = now;
 
 				event.preventDefault();
-				const scrollThreshold = 0;
+				const scrollThreshold = 5;
 				// Increase threshold for Mac touchpad sensitivity
 				if (Math.abs(event.deltaY) > scrollThreshold) {
 					handleTransition(event.deltaY > 0 ? "next" : "prev");
@@ -136,9 +138,31 @@ document.addEventListener("DOMContentLoaded", () => {
 		.addEventListener("click", () => {
 			moveLeft("carousel-images");
 		});
-});
 
-// Carousel
+	document
+		.getElementById("carousel2-right-icon")
+		.addEventListener("click", () => {
+			moveRight("carousel-text");
+		});
+	document
+		.getElementById("carousel2-left-icon")
+		.addEventListener("click", () => {
+			moveLeft("carousel-text");
+		});
+
+	// Add event listeners to the images
+	document.querySelectorAll(".circular-item a").forEach((item) => {
+		item.addEventListener("click", function (event) {
+			event.preventDefault(); // Prevent default link behavior
+			const imageSrc = this.href; // Get the image source
+			openModal(imageSrc); // Open the modal with the clicked image
+		});
+	});
+
+	nextButton.addEventListener("click", () => {
+		handleTransition("next");
+	});
+});
 
 function moveLeft(carouselClass) {
 	const circularItems = document.querySelectorAll(
@@ -174,3 +198,12 @@ function updateCircularItems(circularItems, activeIndex) {
 		}
 	});
 }
+
+// Open the modal and display the clicked image
+function openModal(imageSrc) {
+	const modal = document.getElementById("image-modal");
+	const modalImg = document.getElementById("modal-image");
+	modal.style.display = "block";
+	modalImg.src = imageSrc;
+}
+

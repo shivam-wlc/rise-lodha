@@ -4,3 +4,22 @@
     top: auto;
     bottom: 14%;
 }
+
+img.circles_home {
+  width: 16%;
+  margin-top: 22px;
+}
+
+
+
+.key-facts-three {
+  width: 70%;
+  gap: 10px;
+}
+.fact-item img{
+  width: 70px;
+}
+
+.fact-text{
+  font-size: 22px;
+}

@@ -22,3 +22,33 @@
   flex-wrap: wrap;
   width: 80%;
 }
+
+.nav-button img {
+  width: 20px;
+}
+
+img.circles_home {
+  margin-top: 30px;
+  width: 25%;
+  margin-top: 22px;
+}
+
+.key-facts-three {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 30%;
+}
+
+.key-facts-two{
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding-left: 30%;
+}
+.fact-item img{
+  width: 50px;
+}
+.fact-text{
+  font-size: 18px;
+}
