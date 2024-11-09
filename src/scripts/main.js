@@ -1,4 +1,9 @@
-import { updateVideoSource } from "./responsiveVideo";
+import { updateVideoSource } from "./responsiveVideo.js";
+
+const activeIndexes = {
+	"carousel-images": 0,
+	"carousel-text": 0,
+};
 
 document.addEventListener("DOMContentLoaded", (event) => {
 	event.preventDefault();
@@ -58,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				lastWheelTime = now;
 
 				event.preventDefault();
-				const scrollThreshold = 20;
+				const scrollThreshold = 0;
 				// Increase threshold for Mac touchpad sensitivity
 				if (Math.abs(event.deltaY) > scrollThreshold) {
 					handleTransition(event.deltaY > 0 ? "next" : "prev");
@@ -120,4 +125,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// Initial call to set the first screen
 	updateScreens();
+
+	document
+		.getElementById("carousel1-right-icon")
+		.addEventListener("click", () => {
+			moveRight("carousel-images");
+		});
+	document
+		.getElementById("carousel1-left-icon")
+		.addEventListener("click", () => {
+			moveLeft("carousel-images");
+		});
 });
+
+// Carousel
+
+function moveLeft(carouselClass) {
+	const circularItems = document.querySelectorAll(
+		`.${carouselClass} .circular-item`
+	);
+	if (activeIndexes[carouselClass] > 0) {
+		activeIndexes[carouselClass]--;
+	} else {
+		// Wrap around to the end
+		activeIndexes[carouselClass] = circularItems.length - 1;
+	}
+	updateCircularItems(circularItems, activeIndexes[carouselClass]);
+}
+
+function moveRight(carouselClass) {
+	const circularItems = document.querySelectorAll(
+		`.${carouselClass} .circular-item`
+	);
+	if (activeIndexes[carouselClass] < circularItems.length - 1) {
+		activeIndexes[carouselClass]++;
+	} else {
+		// Wrap around to the start
+		activeIndexes[carouselClass] = 0;
+	}
+	updateCircularItems(circularItems, activeIndexes[carouselClass]);
+}
+
+function updateCircularItems(circularItems, activeIndex) {
+	circularItems.forEach((item, index) => {
+		item.classList.remove("active");
+		if (index === activeIndex) {
+			item.classList.add("active");
+		}
+	});
+}

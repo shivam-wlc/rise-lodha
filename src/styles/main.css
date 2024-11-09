@@ -340,3 +340,147 @@ html {
 .screen2 .values-container .values .value:nth-child(5) .letter-circle {
   background-color: var(--color-blue);
 }
+
+/* 
+  ========= Screen 2 How we do it ==========
+ */
+
+ .screen3 .semi-circle{
+  background-color: var(--color-orange);
+}
+ 
+.circular-keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.circles-container-infra, .circles-container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.circular-item img {
+  display: block;
+  object-fit: cover;
+  width: 200%;
+}
+
+.circular-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 10px;
+  transition: transform 0.9s ease, opacity 0.3s;
+  position: relative;
+}
+
+.circular-item:not(.active) img {
+  display: none;
+}
+
+.circular-item.active {
+  transform: scale(1.2); /* Active circle scaling */
+  opacity: 1; /* Fully visible */
+  overflow: hidden;
+}
+
+.circular-item:not(.active) {
+  width: 30px; /* Inactive circle size */
+  height: 30px; /* Inactive circle size */
+}
+
+.circular-item:not(.active) h3,
+.circular-item:not(.active) p {
+  display: none; /* Hide text content in inactive circles */
+}
+
+.circular-item:nth-child(1) {
+  background-color: var(--color-yellow);
+}
+.circular-item:nth-child(2) {
+  background-color: var(--color-red);
+}
+.circular-item:nth-child(3) {
+  background-color: var(--color-purple);
+}
+.circular-item:nth-child(4) {
+  background-color: var(--color-blue);
+}
+.circular-item:nth-child(5) {
+  background-color: var(--color-yellow);
+}
+
+.circles-container-infra .circular-item:nth-child(4){
+  background-color: var(--color-orange);
+}
+.circles-container-infra .circular-item:nth-child(6){
+  background-color: var(--color-red);
+}
+
+.circles-container-infra .circular-item:nth-child(7){
+  background-color: var(--color-purple);
+}
+.circles-container-infra .circular-item:nth-child(8){
+  background-color: var(--color-orange);
+}
+
+.nav-button {
+  cursor: pointer;
+}
+
+.nav-button.left,
+.nav-button.right {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.left {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
+.right {
+  display: flex;
+  justify-content: left;
+  margin-left: 30px;
+}
+
+.circular-item h3 {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 11px;
+  overflow: auto;
+  text-transform: uppercase;
+  width: 70%;
+  text-align: center;
+  margin-top: 20%;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.circular-item p {
+  font-size: 10px;
+  font-family: "MontserratRegular", sans-serif;
+  overflow: auto;
+  width: 80%;
+  line-height: 12px;
+  margin-top: -2px;
+  text-align: justify;
+  max-height: 100px;
+}
+
+.nav-button img {
+  width: 13%;
+}

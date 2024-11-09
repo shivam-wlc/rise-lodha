@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.css" /> -->
 
         <!-- Defer JavaScript to reduce blocking -->
-    <script async src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         emailjs.init("G2SDjizAB86ZjO6Tz");
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div class="circular-keys">
-            <div class="nav-button left" onclick="moveLeft('carousel-images')">
+            <div id="carousel1-left-icon" class="nav-button left">
               <img src="./src/assessts/icons/leftIcon@5x.png" alt="Left Icon" />
             </div>
             <div class="circles-container carousel-images">
@@ -275,8 +275,8 @@
               </div>
             </div>
             <div
+              id="carousel1-right-icon"
               class="nav-button right"
-              onclick="moveRight('carousel-images')"
             >
               <img
                 src="./src/assessts/icons/rightIcon@5x.png"

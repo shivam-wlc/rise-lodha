@@ -29,6 +29,8 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 15px;
+  width: 70%;
+  margin: auto;
 }
 
 .screen-description{
@@ -45,4 +47,49 @@
 }
 .screen2 .values-container .values .value{  
   width: 30%;
+}
+
+/* Screen 3 */
+
+.screen3 .screen-description{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Carouser navigation */
+.circles-container-infra, .circles-container {
+  gap: 10px;
+}
+.circular-item {
+  width: 145px;
+  height: 145px;
+  margin: 0 5px;
+}
+
+.left {
+  margin-right:5px;
+  margin-left: 10px;
+}
+.right {
+  margin-left: 10px;
+}
+.circular-item h3{
+  margin-top: 13%;
+  font-size: 8px;
+}
+
+.circular-item p {
+  font-size: 8px;
+  margin-top: -4%;
+  line-height: 10px;
+  text-align: center;
+}
+.circular-keys{
+  gap: 8px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.nav-button img {
+  width: 20px;
 }

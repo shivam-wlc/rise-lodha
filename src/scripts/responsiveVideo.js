@@ -11,6 +11,7 @@ function updateVideoSource() {
 	} else {
 		videoSource.setAttribute("src", "./src/assessts/videos/horizontal.mp4");
 	}
+
 }
 
 export { updateVideoSource };
