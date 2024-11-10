@@ -685,7 +685,11 @@ img.circles_home {
 }
 
 .connect-us-container {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin-top: 3%;
   font-family: "MontserratRegular";
   color: rgb(43, 46, 140);
@@ -714,10 +718,6 @@ img.circles_home {
 /*******************************************************
  *             OUR STORY                               *
  *******************************************************/
-
-/* .our-story-1 {
-  transform: translateY(100%);
-} */
 
 .our-story-semi-circle-1,
 .our-story-semi-circle-2,
@@ -764,6 +764,7 @@ img.circles_home {
   z-index: 50;
   margin-top: 2%;
   text-align: center;
+  position: relative;
 }
 
 .our-story-content button {
@@ -996,7 +997,7 @@ img.circles_home {
 .our-story-image-container {
   position: absolute;
   bottom: 18%;
-  left: 0;
+  left: -35%;
   height: auto;
   z-index: 50;
 }
@@ -1004,7 +1005,6 @@ img.circles_home {
 .semicircle-image {
   position: relative;
   left: 50%;
-  /* transform: translateX(-50%); */
   width: 25%;
   height: auto;
 }
@@ -1162,7 +1162,8 @@ img.circles_home {
  *                                                     *
  *******************************************************/
 
-.why-us-semi-circle-1 .why-us-content button {
+
+.why-us-1 .screen-title {
   color: var(--color-orange);
 }
 .why-us-img-container {
@@ -1175,6 +1176,11 @@ img.circles_home {
   align-items: start;
   box-sizing: border-box;
   /* border: 1px solid black; */
+}
+
+.why-us-2 .screen-title {
+  color: var(--color-red);
+  margin-top: 50px;
 }
 
 .why-us-img-container > div {
@@ -1254,13 +1260,12 @@ img.circles_home {
  *                                                     *
  *******************************************************/
 
-.why-us-semi-circle-3 .why-us-content button {
+.why-us-3 .screen-title {
   color: var(--color-purple);
-  margin-top: 1%;
-  text-transform: uppercase;
+  font-size: 11px;
 }
 
-.why-us-semi-circle-3 .why-us-content p:nth-child(1) {
+/* .why-us-3 .content p:nth-child(1) {
   font-family: "MontserratRegular";
   font-size: 22px;
   letter-spacing: 2px;
@@ -1268,16 +1273,16 @@ img.circles_home {
   line-height: 30px;
   margin-bottom: 0;
   text-transform: uppercase;
-}
+} */
 
-.why-us-semi-circle-3 .why-us-content p:nth-child(2) {
+/* .why-us-3 .content p:nth-child(2) {
   font-family: "MontserratRegular";
   font-size: 14px;
   line-height: 20px;
   width: 55%;
   margin: auto;
   margin-top: 1%;
-}
+} */
 
 .why-us-values-container {
   display: flex;
@@ -1372,10 +1377,13 @@ img.circles_home {
  *            WHY US Screen 4                           *
  *                                                     *
  *******************************************************/
-.why-us-semi-circle-4 .why-us-content button {
+.why-us-4 .screen-title {
   color: var(--color-blue);
-  margin-top: 1%;
-  text-transform: uppercase;
+}
+
+.why-us-4 .screen-description {
+  margin-top: -12px;
+  font-size: 11px;
 }
 
 .why-us-semi-circle-4 .why-us-content p:nth-child(1) {
@@ -1428,7 +1436,6 @@ img.circles_home {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 30px; */
   margin-top: 1%;
   gap: 20px;
 }
@@ -1474,104 +1481,65 @@ img.circles_home {
  *            WHY US Screen 5                           *
  *                                                     *
  *******************************************************/
-.why-us-semi-circle-5 .why-us-content button {
+
+ .why-us-5 .screen-title {
   color: var(--color-yellow);
-  margin-top: 1%;
-  text-transform: uppercase;
+ }
+ .why-us-5 .screen-title-l2{
+  font-size: 12px;
+ }
+.why-us-5 .screen-description {
+  font-size: 11px;
 }
-
-.why-us-semi-circle-5 .why-us-content p:nth-child(1) {
-  font-family: "MontserratRegular";
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.why-us-semi-circle-5 .why-us-content p:nth-child(2) {
-  font-family: "MontserratRegular";
-  font-size: 14px;
-  line-height: 20px;
-  width: 55%;
-  margin: auto;
-  margin-top: 1%;
-}
-
 .why-us-image-container-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 items per row */
-  justify-items: center; /* Center-align each item */
+  justify-items: center;
+  align-items: center;
   text-align: center;
-  /* padding: 20px; */
-  /* border: 1px solid black; */
-  width: 70%;
+  width: 72%;
   margin: auto;
-  margin-top: 1%;
 }
 
 .why-us-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 350px;
-  /* border: 1px solid black; */
-  /* gap: 0px; */
 }
 
 .why-us-item img {
-  width: 150px; /* Set a fixed size for the images */
+  /* Set a fixed size for the images */
+  width: 100px; 
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: -5px;
 }
 
 .why-us-item .why-us-title {
   font-weight: bold;
-  font-size: 12px;
-  margin: 8px 0 4px;
+  font-size: 11px;
+  margin: 0px;
   font-family: "MontserratMedium";
-  align-self: start !important;
 }
 
 .why-us-description {
-  font-size: 14px;
+  font-size: 11px;
   font-family: "MontserratRegular", sans-serif;
-  /* line-height: 1.5; */
-  /* border: 1px solid red; */
-  /* margin-top: -10px; */
-  align-self: start !important;
 }
 
 /*******************************************************
  *                                                     *
- *            WHY US Screen 6                           *
+ *            WHY US Screen 6                          *
  *                                                     *
  *******************************************************/
-.why-us-semi-circle-6 .why-us-content button {
+ 
+ .why-us-6 .screen-title{ 
   color: var(--color-orange);
-  margin-top: 1%;
-  text-transform: uppercase;
 }
+.why-us-6 .screen-description{
+  padding: 0px 20px;
+ }
 
-.why-us-semi-circle-6 .why-us-content p:nth-child(1) {
-  font-family: "MontserratRegular";
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.why-us-semi-circle-6 .why-us-content p:nth-child(2) {
-  font-family: "MontserratRegular";
-  font-size: 14px;
-  line-height: 20px;
-  width: 35%;
-  margin: auto;
-  margin-top: 5%;
-}
 /*******************************************************
  *                                                     *
  *            WHY US Screen 7                           *
@@ -2296,94 +2264,6 @@ form {
   justify-content: center;
 }
 
-@media screen and (max-width: 575.98px) {
-  .preschool-tour-semi-circle-1 {
-    width: 170%;
-    height: 100%;
-    border-radius: 50% 50% 0% 0%;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-  }
-
-  .preschool-tour-form {
-    font-family: "MontserratRegular";
-    width: 45%;
-    margin: auto;
-    background-color: var(--color-blue);
-    margin-top: 100px;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 14px;
-  }
-
-  label {
-    font-family: "MontserratRegular";
-    font-size: 12px;
-    width: 40%;
-    margin-right: 10px;
-  }
-
-  #booking-form p {
-    font-family: "MontserratRegular";
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  form {
-    width: 90%;
-    margin: auto;
-    display: grid;
-  }
-
-  .form-field {
-    display: flex;
-    /* width: 15%; */
-    justify-content: flex-start;
-  }
-
-  .form-field input {
-    width: 80%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    font-size: 16px;
-    padding: 10px 5px;
-    font-family: "MontserratRegular";
-  }
-
-  .age-inputs {
-    display: flex;
-  }
-  .age-inputs input {
-    width: 45%;
-    margin-left: 10px;
-  }
-
-  .form-field button {
-    background-color: var(--color-red);
-    color: var(--color-white);
-    border-radius: 25px;
-    border: none;
-    font-size: 16px;
-    font-family: "MontserratRegular";
-    padding: 10px 25px;
-    margin-top: 15px;
-    text-align: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
-  #submit-button {
-    text-align: center;
-    justify-content: center;
-  }
-}
-
 @media (min-width: 576px) and (max-width: 1200px) {
   .preschool-tour-form {
     width: 55%;
@@ -2523,32 +2403,14 @@ form {
  *                                                     *
  *******************************************************/
 
-.contact-us-1 {
-  transform: translateY(100%);
-}
-
-.contact-us-semi-circle-1 {
-  width: 130%;
-  height: 100%;
-  border-radius: 50% 50% 0% 0%;
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow: hidden;
+.contact-us-1 .semi-circle {
   background-color: var(--color-blue);
 }
 
-.contact-us-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  /* border: 1px solid #000; */
-  z-index: 50;
-  margin-top: 2%;
-  text-align: center;
+.contact-us-1 .semi-circle .screen-title{
+  color: var(--color-blue);
 }
+
 
 /*******************************************************
  *                                                     *
@@ -2556,35 +2418,6 @@ form {
  *                                                     *
  *******************************************************/
 
-.contact-us-content button {
-  color: var(--color-blue);
-  background-color: #fff;
-  border-radius: 50px;
-  font-family: "MontserratRegular";
-  padding: 10px;
-  border: none;
-  font-size: 16px;
-  font-weight: 800;
-}
-
-.contact-us-semi-circle-1 > .contact-us-content p:nth-child(1) {
-  font-family: "MontserratRegular";
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-
-.contact-us-semi-circle-1 > .contact-us-content p:nth-child(2) {
-  font-family: "MontserratRegular";
-  font-size: 14px;
-  line-height: 25px;
-  width: 55%;
-  margin: auto;
-  margin-top: 1%;
-}
 
 /* Container styling */
 .contact-container {
@@ -2592,7 +2425,6 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  /* border: 1px solid black; */
   margin-top: 1%;
 }
 
@@ -2601,7 +2433,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem; /* Specific gap between email and mobile number */
+  gap: 5rem; 
   width: 100%;
 }
 
@@ -2611,13 +2443,14 @@ form {
   align-items: center;
   justify-content: center;
   margin-top: 1.5%;
+  gap: 10px;
 }
 
 .email-item img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
-.email-item p {
+.email-item a {
   margin-left: 0;
   font-family: "MontserratRegular";
   font-size: 12px !important;
@@ -2632,50 +2465,46 @@ form {
 }
 
 .mobile-item img {
-  width: 30px;
-  height: 30px;
+   width: 25px;
+  height: 25px;
 }
 .mobile-item p {
   margin-left: 0;
   font-family: "MontserratRegular";
-  font-size: 12px !important;
-  line-height: 18px !important;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* Address item styling with reduced spacing */
 .address-item {
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
-  /* width: 70%; */
+  gap: 10px;
   margin: auto;
   white-space: nowrap;
-  /* gap: -10.5rem !important; */
   margin-top: 1.5%;
 }
 
 .address-item img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 }
 
 .address-item p {
   margin-left: 0;
-  font-family: "MontserratRegular";
-  font-size: 12px !important;
-  line-height: 18px !important;
-  /* letter-spacing: 1px; */
+  font-size: 12px;
+  line-height: 18px;
 }
 
 /* Map item styling */
 .map-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 5.5%;
 }
 
 .map-item img {
-  width: 350px;
+  width: 500px;
   height: auto;
-  margin-right: 0;
 }

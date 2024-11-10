@@ -1,9 +1,9 @@
-.video{
-    top: 0%;
-    bottom: 20%;
+.video {
+    top: -1%;
+    /* bottom: 10%; */
     height: auto;
-    width: 242%;
-    left: -9%;
+    width: 246%;
+    left: -10%;
 }
 
 .semi-circle {
@@ -25,31 +25,54 @@
   padding: 2px;
 }
 
+/* Screen title common for all pages */
+.screen-title{
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-top: 20px;
+}
+
 .screen-title-l2 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   margin: 15px auto;
   width: 70%;
 }
 
-.screen-description{
-  font-size: 14px;
+.screen-description {
+  font-size: 12px;
   line-height: 18px;
   width: 70%;
 }
 
 .screen2 .values-container .values{
-  gap: 10px;
+  gap: 5px;
   margin-top: 15px;
   flex-wrap: wrap;
-  width: 70%;
+  justify-content: center;
+  width: 80%;
+  margin-left: -30px;
+  margin-top: -10px;
 }
 .screen2 .values-container .values .value{  
   width: 30%;
 }
 
-/* Screen 3 */
+.screen2 .values-container .values .value p{  
+  font-size: 10px;
+  text-align: center;
+}
 
+.screen2 .values-container .values .letter-circle{
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* 
+* Screen 3 
+*/
 .screen3 .screen-description{
   margin-top: 20px;
   margin-bottom: 30px;
@@ -60,10 +83,30 @@
   gap: 10px;
 }
 
+.screen6 .circles-container-infra, .circles-container {
+  gap: 5px;
+}
 .circular-item {
   width: 145px;
   height: 145px;
   margin: 0 5px;
+}
+
+.screen3 .left {
+  margin-left: -10px;
+}
+
+.screen3 .circular-item.active {
+  width: 120px;
+  height: 120px;
+  transform: scale(1.2); /* Active circle scaling */
+  opacity: 1; /* Fully visible */
+  overflow: hidden;
+}
+
+.screen3 .circular-item:not(.active) {
+  width: 15px; /* Inactive circle size */
+  height: 15px; /* Inactive circle size */
 }
 
 .screen6 .circular-item.active {
@@ -85,6 +128,9 @@
 .right {
   margin-left: 10px;
 }
+.screen6 .right {
+  margin-left: 2px;
+}
 .circular-item h3{
   margin-top: 13%;
   font-size: 8px;
@@ -96,6 +142,13 @@
   line-height: 10px;
   text-align: center;
 }
+.screen3 .circular-item h3{
+  font-size: 6px;
+}
+.screen3 .circular-item p{
+  font-size: 6px;
+}
+
 .circular-keys{
   gap: 8px;
   width: 70%;
@@ -106,6 +159,9 @@
   width: 20px;
 }
 
+/* 
+* Screen 4
+*/
 .key-facts-three {
   display: flex;
   flex-direction: column;
@@ -116,90 +172,19 @@
   display: flex;
   width: 70%;
   flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
 }
 .fact-item img{
-  width: 50px;
+  width: 40px;
 }
 .fact-text{
-  font-size: 18px;
-}
-.fact-text p{
-  text-wrap: wrap;
+  font-size: 16px;
 }
 img.circles_home {
   width: 60%;
   margin-top: 4%;
 }
-
-
-.other-logos-one {
-  grid-template-columns: repeat(2, 1fr);
-  width: 80%;
-  margin-top: 20px;
-  column-gap: 20px;
-}
-
-.other-logos-container img {
-  width: 100px;
-}
-
-  /* Specific size adjustments */
-  .other-logos-one img:nth-child(1),
-  .other-logos-one img:nth-child(3) {
-    width: 50px;
-  }
-  .other-logos-one img:nth-child(1) {
-    margin-left: 0%;
-  }
-
-  .other-logos-one img:nth-child(2) {
-    width: 100px;
-  }
-
-  .connect-us-container{
-    margin-top: 50px;
-    width: 87%;
-    
-    padding-left: none;
-  }
-
-  .connect-us-icons {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 20px;
-    gap: 10px;
-  }
-
-  .connect-us-icons > div:nth-child(1){
-    margin-left: 70px;
-  }
-
-  .connect-us-icons > div:nth-child(2){
-    margin-left: 70px;
-    width: 30%;
-  }
-
-  .connect-us-icons > div:nth-child(3){
-    margin-left: 100px;
-    width: 20%;
-  }
-
-  .connect-us-icons > div:nth-child(4){
-    margin-left: 70px;
-  }
-
-  .connect-us-icons .phonecontainer{
-    font-size: 14px;
-  }
-  .emailLink{
-    font-size: 14px;
-  }
-
-  .connect-us-container-title{
-    text-align: center;
-    margin-left: 70px;
-  }
-
 
   /* Next Button  */
 #nextButton {
@@ -263,18 +248,21 @@ img.circles_home {
 
 /* ORANGE  */
 .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0px;
-  line-height: 15px;
+  line-height: 24px;
   margin-bottom: 0px;
 }
-
+.italic{
+  font-style: italic;
+}
 .our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
-  font-size: 10px;
-  line-height: 12px;
-  width: 70%;
+  font-size: 12px;
+  line-height: 16px;
+  width: 74%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 3%;
+  text-align: center;
 }
 
 /* RED Screen  */
@@ -340,30 +328,27 @@ img.circles_home {
 
 /* PURPLE  */
 .our-story-semi-circle-4 > .our-story-content p:nth-child(1) {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   line-height: 20px;
   margin-bottom: 1px;
 }
 
 .our-story-semi-circle-4 > .our-story-content p:nth-child(2) {
-  font-size: 11px;
+  font-size: 12px;
   line-height: 20px;
   width: 60%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 .our-story-image-container {
-  position: absolute;
-  bottom: 8%;
-  left: 15%;
-  height: auto;
-  z-index: 50;
+  bottom: 1%;
+  left: -80%;
 }
 
 .semicircle-image {
-  width: 350px;
+  width: 45%;
 }
 
 /* BLUE  */
@@ -447,3 +432,318 @@ img.circles_home {
   font-size: 7px;
   line-height: 12px;
 }
+
+/* 
+* Contact us style Pages
+*/
+
+/* Page 1 */
+
+.contact-row{
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.address-item {
+  padding: 0px 10px;
+  width: 72%;
+  justify-content: center;
+  margin-top: -10px;
+}
+.address-item p{
+  font-size: 10px;
+}
+
+.map-item {
+  margin-top: 10px;
+  margin-left: 8px;
+}
+.map-item img{
+  width: 72%;
+}
+
+
+/* 
+* Page 2 (Common for all menus)
+*/
+.other-logos-one {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.other-logos-container img {
+  width: 100px;
+}
+
+  /* Specific size adjustments */
+  .other-logos-one img:nth-child(1),
+  .other-logos-one img:nth-child(3) {
+    width: 70px;
+  }
+  .other-logos-one img:nth-child(1) {
+    margin-left: 0%;
+  }
+
+  .other-logos-one img:nth-child(2),
+  .other-logos-one img:nth-child(4),
+  .other-logos-one img:nth-child(6) {
+    width: 150px;
+  }
+
+  .connect-us-container{
+    margin-top: 30px;
+  }
+
+  .connect-us-icons {
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: auto;
+    margin-left: 12%; 
+    padding: 10px 20px;
+  }
+  .connect-us-icons>div img{
+    width: 25px;
+    height: 25px;
+  }
+  .connect-us-icons>div p{
+    margin-right: 30px;
+  }
+  .connect-us-icons > div:nth-child(2){
+    width: 55%;
+  }
+  .connect-us-icons > div:nth-child(3){
+    width: 30%;
+  }
+  .connect-us-icons .phonecontainer{
+    font-size: 14px;
+  }
+  .emailLink{
+    font-size: 14px;
+  }
+
+  .connect-us-container-title{
+    text-align: center;
+  }
+
+/* 
+ *  Pre School Tour Page
+ */
+  .preschool-tour-form {
+    font-family: "MontserratRegular";
+    width: 60%;
+    margin: auto;
+    background-color: var(--color-blue);
+    margin-top: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  label {
+    font-family: "MontserratRegular";
+    font-size: 12px;
+    width: 40%;
+    margin-right: 10px;
+  }
+
+  #booking-form p {
+    font-family: "MontserratRegular";
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 95%;
+    margin: auto;
+    display: grid;
+  }
+
+  .form-field {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .form-field input {
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-family: "MontserratRegular";
+  }
+
+  .age-inputs {
+    display: flex;
+    padding-left: 12px;
+  }
+  .age-inputs input {
+    width: 42%;
+    margin-left: 5px;
+  }
+
+  .form-field button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-family: "MontserratRegular";
+    padding: 10px 25px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #submit-button {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  /* 
+  *  WHY US SCREENS
+  */
+
+  .why-us-img-container{
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+
+  .why-us-img-container div>img {
+    width: 50px;
+  }
+
+.why-us-3 .screen-title {
+  color: var(--color-purple);
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+
+.why-us-3 .screen-title-l2 {
+  font-size: 11px;
+  margin-top: 5px;
+  line-height: 15px;
+}
+
+
+.why-us-3 .screen-description {
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: -5px;
+}
+.why-us-3 .why-us-values-container {
+  width: 70%;
+  margin: auto;
+}
+
+.why-us-3 .why-us-values-container .why-us-value:first-child {
+  width: 100%;
+}
+ .why-us-3 .why-us-values-container .why-us-value {
+  width: 30%;
+  margin-bottom: 5px;
+}
+.why-us-3 .why-us-values-container .why-us-value:last-child {
+  width: 100%;
+}
+
+.why-us-3 .why-us-values-container .why-us-value .why-us-letter-circle {
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+}
+
+.why-us-3 .why-us-values-container .why-us-value p {
+  font-size: 8px;
+}
+
+.why-us-3 .why-us-last-p {
+  font-size: 10px;
+  line-height: 16px;
+  width: 73%;
+}
+  /* 
+  Screen 4
+  */
+
+  .why-us-image-container-4-1{
+    gap: 10px;
+    padding-top: 20px;
+  }
+
+  .why-us-item-4 {
+    margin-top: 0px;
+    width: 71%;
+  }
+
+.why-us-item-4 img  {
+      width: 25px;
+}
+.why-us-text-4 p:last-child {
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+  /* Screen 5 */
+.why-us-5 .screen-title {
+    margin-top: 20px;
+ }
+
+ .why-us-5 .screen-title-l2 {
+    margin-top: 5px;
+    width: 75%;
+    font-size: 12px;
+    line-height: 14px;
+ }
+
+.why-us-5 .screen-description {
+    margin-top: 10px;
+    width: 74%;
+ }
+
+ .why-us-image-container-2 {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .why-us-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .why-us-title{
+  text-align: center;
+  width: 100%;
+ }
+
+ .why-us-description{
+  margin-top: 3px;
+  font-size: 12px;
+ }
+
+ .why-us-item img {
+  width: 70px;
+
+ }
+
+
+  /* Screen 6 */
+.why-us-6 .screen-description{
+  margin-top: 70px;
+  padding: 0px 20px;
+  width: 70%;
+ }

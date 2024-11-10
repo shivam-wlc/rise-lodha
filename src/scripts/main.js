@@ -4,7 +4,7 @@ const activeIndexes = {
 	"carousel-images": 0,
 	"carousel-text": 0,
 };
-let currentIndex = 0;
+let currentIndex = 15;
 
 document.addEventListener("DOMContentLoaded", (event) => {
 	event.preventDefault();
