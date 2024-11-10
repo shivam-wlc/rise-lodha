@@ -747,3 +747,76 @@ img.circles_home {
   padding: 0px 20px;
   width: 70%;
  }
+
+ /* Programs Pages */
+ 
+ .programme-content button {
+  margin-top: 30px;
+ }
+
+ .programme-content .programme-title {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.programme-content .description-text {
+  width: 74%;
+  margin: auto;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.semi-circle .programme-content .programme-img-container {
+  flex-wrap: wrap;
+  width: 70%;
+}
+.semi-circle .programme-content .programme-img-container div {
+  width:30%;
+}
+.semi-circle .programme-content .programme-img-container div img{
+  width: 50px;
+}
+
+.programme-content .programme-title {
+  font-size: 16px;
+}
+
+.programme-content .programme-title2{
+  font-size: 14px;
+}
+
+
+/* 
+* Admissions Pages
+*/
+
+.admission-content button {
+  margin-top: 30px;
+}
+.title-level-1 {
+  font-size: 16px;
+}
+
+.admission-content p.margin-20 {
+  margin-top: 20px;
+}
+.admission-arrow-img{
+  width: 50%;
+  margin: 20px auto;
+}
+.admission-img-container {
+  grid-template-columns: repeat(2,1fr);
+ }
+
+ .admission-3 .admission-content {
+  margin-top: 50px;
+ }
+
+.admission-3 .admission-content .screen-description {
+  margin-top: 30px;
+}
+
+.small-text {
+      font-size: 12px;
+  }

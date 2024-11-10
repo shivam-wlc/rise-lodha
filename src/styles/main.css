@@ -1625,11 +1625,6 @@ img.circles_home {
   font-weight: 400;
   margin-top: 50px;
 }
-.programme-content .programme-title2 {
-  /* font-size: 18px;
-  margin-top: -10px;
-  font-weight: 500; */
-}
 
 .description-text{
   font-size: 16px;
@@ -1877,6 +1872,7 @@ img.circles_home {
 
 .admission-img-container {
   display: grid;
+  grid-template-columns: repeat(4,1fr);
   gap: 20px; 
   width: 50%;
   margin: 4% auto;
@@ -2507,4 +2503,25 @@ form {
 .map-item img {
   width: 500px;
   height: auto;
+}
+.small-text{
+  font-size: 18px;
+}
+
+.admission-content>.letter-circle{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  width: 240px;
+  border:1px solid var(--color-red);
+  border-radius: 50%;
+  padding: 20px;
+  background-color: var(--color-red);
+  box-sizing: border-box;
+  color: var(--color-white);
+  font-family: "MontserratRegular";
+  font-weight: 800;
+  line-height: 30px;
 }
