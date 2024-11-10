@@ -681,11 +681,13 @@ img.circles_home {
   .why-us-image-container-4-1{
     gap: 10px;
     padding-top: 20px;
+    width: 78%;
+    margin: auto;
   }
 
   .why-us-item-4 {
     margin-top: 0px;
-    width: 71%;
+    width: 70%;
   }
 
 .why-us-item-4 img  {
