@@ -1,10 +1,34 @@
-.book{
-    top: 100%;
+.header {
+  height: 13%;
+  padding-top: 1%;
 }
+
+.logo img {
+  width: 45%;
+}
+
+.nav-item {
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+}
+.right-section {
+  margin-top: 4%;
+}
+
+.nav-text {
+  right: 30px;
+  font-size: 14px;
+}
+
+.book {
+  top: 105%;
+}
+
 .video {
-    top: -9%;
-    left: -1%; 
-    width: 170%;
+  top: -9%;
+  left: -1%;
+  width: 170%;
 }
 
 .screen-title-l2 {
@@ -13,28 +37,29 @@
   margin-bottom: 15px;
 }
 
-.screen-description{
+.screen-description {
   font-size: 18px;
   line-height: 18px;
   width: 65%;
 }
 
-.screen2 .values-container .values{
+.screen2 .values-container .values {
   gap: 20px;
-  margin-top: 15px; 
+  margin-top: 15px;
   width: 70%;
   flex-wrap: wrap;
 }
-.screen2 .values-container .values .value{  
+.screen2 .values-container .values .value {
   width: 30%;
 }
 
-.screen-description{
+.screen-description {
   font-size: 14px;
 }
 .nav-button img {
   width: 20px;
 }
+
 img.circles_home {
   margin-top: 30px;
   width: 45%;
@@ -52,62 +77,61 @@ img.circles_home {
   width: 100px;
 }
 
-  /* Specific size adjustments */
-  .other-logos-one img:nth-child(1),
-  .other-logos-one img:nth-child(3) {
-    width: 50px;
-  }
-  .other-logos-one img:nth-child(1) {
-    margin-left: 0%;
-  }
+/* Specific size adjustments */
+.other-logos-one img:nth-child(1),
+.other-logos-one img:nth-child(3) {
+  width: 50px;
+}
+.other-logos-one img:nth-child(1) {
+  margin-left: 0%;
+}
 
-  .other-logos-one img:nth-child(2) {
-    width: 100px;
-  }
+.other-logos-one img:nth-child(2) {
+  width: 100px;
+}
 
-  .connect-us-container{
-    margin-top: 50px;
-    width: 87%;
-    padding-left: none;
-  }
+.connect-us-container {
+  margin-top: 50px;
+  width: 87%;
+  padding-left: none;
+}
 
-  .connect-us-icons {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 40px;
-    gap: 10px;
-  }
+.connect-us-icons {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 40px;
+  gap: 10px;
+}
 
-  .connect-us-icons > div:nth-child(1){
-    margin-left: 70px;
-  }
+.connect-us-icons > div:nth-child(1) {
+  margin-left: 70px;
+}
 
-  .connect-us-icons > div:nth-child(2){
-    margin-left: 70px;
-    width: 30%;
-  }
+.connect-us-icons > div:nth-child(2) {
+  margin-left: 70px;
+  width: 30%;
+}
 
-  .connect-us-icons > div:nth-child(3){
-    margin-left: 70px;
-    width: 20%;
-  }
+.connect-us-icons > div:nth-child(3) {
+  margin-left: 70px;
+  width: 20%;
+}
 
-  .connect-us-icons > div:nth-child(4){
-    margin-left: 70px;
-  }
+.connect-us-icons > div:nth-child(4) {
+  margin-left: 70px;
+}
 
-  .connect-us-icons .phonecontainer{
-    font-size: 14px;
-  }
-  .emailLink{
-    font-size: 14px;
-  }
+.connect-us-icons .phonecontainer {
+  font-size: 14px;
+}
+.emailLink {
+  font-size: 14px;
+}
 
-  .connect-us-container-title{
-    text-align: center;
-    margin-left: 70px;
-  }
-
+.connect-us-container-title {
+  text-align: center;
+  margin-left: 70px;
+}
 
 .key-facts-three {
   display: flex;
@@ -115,25 +139,221 @@ img.circles_home {
   width: 70%;
   padding-left: 30%;
 }
-.key-facts-two{
+.key-facts-two {
   display: flex;
   width: 70%;
   flex-direction: column;
   padding-left: 30%;
 }
-.fact-item img{
+.fact-item img {
   width: 50px;
 }
-.fact-text{
+.fact-text {
   font-size: 18px;
 }
 
 .age-inputs {
-    width: 100%;
-    margin: 0px;
+  width: 100%;
+  margin: 0px;
 }
 
-  .age-inputs input {
-    width: 40%;
-    margin: 0px;
-  }
+.age-inputs input {
+  width: 40%;
+  margin: 0px;
+}
+
+/* 
+  ========= Screen 2 How we do it ==========
+ */
+
+.circular-keys {
+  width: 80%;
+}
+
+.circles-container-infra,
+.circles-container {
+  width: 65%;
+}
+
+.circular-item {
+  width: 250px;
+  height: 250px;
+  margin: 20px 15px;
+}
+
+.circular-item h3 {
+  font-size: 12px;
+  width: 70%;
+  margin-top: 12%;
+  font-weight: bolder;
+  line-height: 10px;
+}
+
+.circular-item p {
+  letter-spacing: 0px;
+  line-height: 8px;
+}
+/* 
+  ========= Screen 4 Why we do it ==========
+ */
+
+img.circles_home {
+  width: 30%;
+}
+
+/* 
+  ========= Screen 5 Key Facts ==========
+ */
+
+.key-facts-three {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 70px;
+}
+
+.key-facts-two {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* 
+  ========= Screen 6 Infrastructures ==========
+ */
+
+.circular-keys-2 {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.circles-container-infra,
+.circles-container {
+  width: 65%;
+}
+
+.circular-keys-2 .circular-item {
+  width: 250px;
+  height: 250px;
+  margin: 20px 15px;
+}
+
+.circular-item h3 {
+  font-size: 12px;
+  width: 70%;
+  margin-top: 12%;
+  font-weight: bolder;
+  line-height: 10px;
+}
+
+.circular-item p {
+  letter-spacing: 0px;
+  line-height: 8px;
+}
+/* 
+  ========= Screen 7 Contact us ==========
+ */
+
+.other-logos-one img:nth-child(1) {
+  margin-left: 0;
+}
+.connect-us-container {
+  margin-top: 7%;
+}
+
+.connect-us-icons img {
+  margin: 10px;
+}
+
+.connect-us-icons a {
+  text-decoration: none;
+  color: var(--color-blue);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*******************************************************
+ *             Our story screen 4                      *
+ *******************************************************/
+.our-story-image-container {
+  bottom: -6%;
+}
+/*******************************************************
+ *            WHY US Screen 5                           *
+ *******************************************************/
+
+/*******************************************************
+ *            ADMISSIONS Screen 1                       *
+ *******************************************************/
+.admission-img-container img {
+  max-width: 50px;
+}
+
+.admission-img-container > div:first-child img {
+  max-width: 70px;
+}
+.admission-img-container > div:nth-child(2) img {
+  max-width: 50px;
+}
+.admission-img-container > div:nth-child(3) img {
+  max-width: 70px;
+}
+
+/*******************************************************
+ *            ADMISSIONS Screen 2                      *
+ *******************************************************/
+
+.admission-content > .screen-description {
+  margin-top: -10px;
+}
+.admission-arrow-img {
+  width: 200px;
+  /* border: 1px solid red; */
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+/*******************************************************
+ *            ADMISSIONS Screen 3                      *
+ *******************************************************/
+
+.admission-3 .admission-content {
+  margin-top: 1%;
+}
+/*******************************************************
+ *            ADMISSIONS Screen 4                      *
+ *******************************************************/
+.admission-4 {
+}
+
+#title-container .small-text {
+  font-size: 14px;
+  margin-top: -10px;
+}
+
+#title-container .large-text {
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.admission-content > .letter-circle {
+  margin-top: 30px;
+  height: 230px;
+  width: 230px;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+/*******************************************************
+ *          contact us screen                        *
+ *******************************************************/
+.email-item img {
+  margin: 0 10px;
+}
+.mobile-item img {
+  margin: 0 10px;
+}
+.address-item img {
+  margin: 25px 10px;
+}
