@@ -197,12 +197,31 @@ why us
   font-size: 12px;
   line-height: 1.4;
 }
+
+.why-us-5 .screen-title-l2{
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.why-us-5 .screen-description{
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.why-us-image-container-2 { 
+  width: 50%;
+}
+.why-us-item {
+  width: 70%;
+}
 /* ******************************** 
 FEE STRUCTURE
  ********************************** */
 
 #title-container .small-text {
-  margin-top: 0;
+  margin-top: 10;
+  margin-bottom: 10px;
 }
 
 #title-container .large-text {
@@ -217,6 +236,11 @@ FEE STRUCTURE
   line-height: 30px;
   font-size: 20px;
 }
+.admission-arrow-img {
+  width: 200px;
+  height: auto;
+  margin-top: 30px;
+}
 
 /* ******************************** 
 Contact us
@@ -226,4 +250,26 @@ Contact us
 }
 .contact-us-1 .semi-circle .screen-title-l2 {
   margin-top: 0%;
+}
+
+
+label {
+  font-size: 16px;
+}
+.form-field input{
+  width: 70%;
+}
+.age-inputs {
+  width: 70%;
+}
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}
+
+
+.programme-content { 
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
 }

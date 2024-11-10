@@ -22,24 +22,6 @@ img.circles_home {
   font-size: 22px;
 }
 
-/* .screen4 .screen-description {
-  font-size: 42px;
-  border: 4px solid green;
-} */
-
-/* .circles-container {
-  margin-top: -500px;
-  border: 120px solid red;
-}
-
-.screen6 .nav-button.left img {
-  width: 30px;
-}
-
-.screen6 .nav-button.right img {
-  width: 30px;
-} */
-
 /* Yellow Section  (What We do Screen)   */
 
 .screen2 .values-container {
@@ -170,8 +152,7 @@ img.circles_home {
 }
 
 #title-container .small-text {
-  font-size: 16px;
-  margin-top: -10px;
+  font-size: 22px;
 }
 
 #title-container .large-text {
@@ -179,10 +160,90 @@ img.circles_home {
   margin-top: 0px;
 }
 
-.admission-content > .letter-circle {
+form {
+  gap: 10px;
+  width: 95%;
+}
+
+label { 
+  width: 40%;
+  font-size: 18px;
+}
+.form-field input{
+  width: 60%;
+}
+
+.age-inputs {
+  width: 62%;
+}
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}
+
+.form-field button {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.admission-content button { 
+  font-size: 22px;
+  padding: 10px 30px;
+}
+.admission-content .title-level-1{
+  font-size: 20px;
+}
+.admission-content .title-level-1 {
+  line-height: 30px;
   margin-top: 30px;
-  height: 230px;
-  width: 230px;
-  font-size: 26px;
-  line-height: 36px;
+}
+
+.admission-img-container img {
+  width: 150px;
+}
+
+.admission-img-container > div:first-child img {
+  max-width: 160px;
+}
+.admission-img-container > div:nth-child(2) img {
+  max-width: 90px;
+}
+.admission-img-container > div:nth-child(3) img {
+  max-width: 130px;
+}
+.admission-img-container > div:nth-child(4) img {
+  max-width: 130px;
+}
+
+.admission-img-container > div p {
+  font-size: 20px;
+}
+
+.admission-arrow-img {
+  margin-top: 30px;
+  width: 250px;
+}
+
+.semi-circle .small-text:first-child {
+  margin-bottom: 20px;
+}
+
+.semi-circle .large-text {
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.admission-content > .letter-circle { 
+  width: 300px;
+  height: 300px;
+  font-size: 32px;
+  line-height: 45px;
+}
+.admission-content .screen-description {
+  line-height: 34px;
+}
+
+.connect-us-icons {
+  gap: 10px;
+  border: 10px solid red;
 }

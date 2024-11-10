@@ -157,7 +157,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-
 	if (typeof emailjs !== "undefined") {
 		emailjs.init("G2SDjizAB86ZjO6Tz");
 	} else {
@@ -207,7 +206,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Attach listeners to both forms
 	addFormListener("booking-form");
 	addFormListener("admission-booking-form");
-  
 
 	nextButton.addEventListener("click", () => {
 		handleTransition("next");
