@@ -1,7 +1,7 @@
 .video {
-    top: auto;
-    bottom: 20%;
-    width: 121%;
+  top: auto;
+  bottom: 20%;
+  width: 121%;
 }
 
 img.circles_home {
@@ -14,21 +14,175 @@ img.circles_home {
   width: 70%;
   gap: 10px;
 }
-.fact-item img{
+.fact-item img {
   width: 70px;
 }
 
-.fact-text{
+.fact-text {
   font-size: 22px;
 }
 
-.screen4 .screen-description{
+/* .screen4 .screen-description {
   font-size: 42px;
+  border: 4px solid green;
+} */
+
+/* .circles-container {
+  margin-top: -500px;
+  border: 120px solid red;
 }
+
 .screen6 .nav-button.left img {
-    width: 30px;
+  width: 30px;
 }
 
 .screen6 .nav-button.right img {
-    width: 30px;
+  width: 30px;
+} */
+
+/* Yellow Section  (What We do Screen)   */
+
+.screen2 .values-container {
+  margin-top: 0%;
+}
+
+.screen2 .values-container .values {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen2 .values-container .values .value {
+  margin: 0 15px;
+}
+
+.screen2 .values-container .values .value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* orange screen */
+.circular-keys {
+  margin-top: 2%;
+}
+.circular-item.active {
+  transform: scale(1); /* Active circle scaling */
+}
+
+/* red screen */
+.screen4 .screen-title-l2 {
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 0px;
+}
+.screen4 .screen-description {
+  font-size: 20px;
+  line-height: 25px;
+  width: 50%;
+}
+img.circles_home {
+  width: 14%;
+}
+
+/* purple screen  */
+.screen5 .key-facts-three {
+  margin-top: 5% !important;
+}
+
+/* whity  */
+.connect-us-icons img {
+  margin: 0 10px;
+}
+
+.connect-us-icons a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+/* why us  */
+.why-us-2 .screen-title-l2 {
+  margin-top: 0px;
+}
+.why-us-3 .screen-title {
+  text-transform: uppercase;
+}
+.why-us-4 .screen-title {
+  text-transform: uppercase;
+}
+
+/*******************************************************
+ *            PROGRAMMS SCREEN 1                    *
+ *******************************************************/
+.semi-circle .programme-content .programme-img-container div img {
+  width: 70px;
+}
+
+.programme-img-container p {
+  font-size: 14px !important;
+  margin: 10px 15px;
+}
+
+.programme-title2 {
+  margin-top: -10px;
+}
+.programme-2 .description-text {
+  width: 70%;
+  margin: auto;
+}
+.programme-3 .description-text {
+  width: 70%;
+  margin: auto;
+}
+.programme-4 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+.programme-5 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+.programme-6 .description-text {
+  width: 70%;
+  margin: auto;
+}
+/*******************************************************
+ *            ADMISSION SCREEN                     *
+ *******************************************************/
+.admission-arrow-img {
+  width: 10%;
+  margin: 0px 0;
+}
+
+/*******************************************************
+ *            ADMISSIONS Screen 4                      *
+ *******************************************************/
+.admission-1 button {
+  color: var(--color-purple);
+}
+.admission-2 button {
+  color: var(--color-blue);
+}
+.admission-4 button {
+  color: var(--color-yellow);
+}
+
+#title-container .small-text {
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+#title-container .large-text {
+  font-size: 26px;
+  margin-top: 0px;
+}
+
+.admission-content > .letter-circle {
+  margin-top: 30px;
+  height: 230px;
+  width: 230px;
+  font-size: 26px;
+  line-height: 36px;
 }
