@@ -1,8 +1,8 @@
 .video {
-    width: 110%;
-    left: 2%;
-    top: auto;
-    bottom: 14%;
+  width: 110%;
+  left: 2%;
+  top: auto;
+  bottom: 14%;
 }
 
 img.circles_home {
@@ -10,16 +10,220 @@ img.circles_home {
   margin-top: 22px;
 }
 
-
-
 .key-facts-three {
   width: 70%;
   gap: 10px;
 }
-.fact-item img{
+.fact-item img {
   width: 70px;
 }
 
-.fact-text{
+.fact-text {
   font-size: 22px;
+}
+
+.header {
+  padding-top: 1%;
+}
+
+.logo img {
+  width: 25%;
+}
+
+.nav-item {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+}
+.nav-text {
+  right: 30px;
+}
+
+/* ******************************** 
+ Home - what we do
+ ********************************** */
+
+.screen2 .content {
+  margin-top: 1.5%;
+}
+
+.screen2 .content .screen-title {
+  margin-top: 0%;
+}
+
+.screen2 .content .screen-title-l2 {
+  margin-top: 0%;
+}
+.screen2 .values-container {
+  margin-top: 0%;
+}
+/* ******************************** 
+ Home -HOW WE DO IT
+ ********************************** */
+.screen3 .content {
+  margin-top: 1.5%;
+}
+
+.screen3 .content .screen-title {
+  margin-top: 0%;
+}
+
+.screen3 .content .screen-title-l2 {
+  margin-top: 0%;
+}
+.circular-keys {
+  margin-top: 2%;
+}
+/* ******************************** 
+ Home -WHY WE DO IT
+ ********************************** */
+.screen4 .content {
+  margin-top: 1.5%;
+}
+
+.screen4 .content .screen-title {
+  margin-top: 0%;
+}
+
+.screen4 .content .screen-title-l2 {
+  margin-top: 0%;
+}
+.screen4 .circles_home {
+  width: 13%;
+}
+/* ******************************** 
+ Home - KEY FACTS
+ ********************************** */
+.screen5 .semi-circle .key-facts-three {
+  margin-top: 3.5%;
+}
+
+/* ******************************** 
+       INFRASTRUCTURE
+ ********************************** */
+
+.screen6 .circular-keys-2 .left img {
+  width: 30%;
+}
+.screen6 .circular-keys-2 .right img {
+  width: 30%;
+}
+
+/* ******************************** 
+      OUR STORY   -Purpose  
+ ********************************** */
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+  line-height: 20px;
+  width: 55%;
+}
+/* ******************************** 
+     Philosophy
+ ********************************** */
+.our-story-3 > .our-story-semi-circle-3 > .our-story-content > button {
+  margin-top: -1%;
+}
+
+.our-story-3 > .our-story-semi-circle-3 > .our-story-content p:nth-child(2) {
+  margin-top: 0.5%;
+}
+/* ******************************** 
+   MISSION
+ ********************************** */
+.our-story-semi-circle-5 > .our-story-content > button {
+  margin-top: -1%;
+}
+.our-story-semi-circle-5 > .our-story-content p:nth-child(2) {
+  margin-top: 0;
+}
+.semicircle-image {
+  position: relative;
+  left: 55%;
+  width: 18%;
+  height: auto;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -1%;
+}
+
+/* ******************************** 
+why us 
+ ********************************** */
+.why-us-2 .semi-circle .content {
+  margin-top: 0%;
+}
+.why-us-2 .semi-circle .content .screen-title-l2 {
+  margin-top: 0%;
+}
+
+.why-us-2 .semi-circle .content .screen-description {
+  margin-top: 0%;
+}
+
+.why-us-3 .semi-circle .content {
+  margin-top: 0%;
+}
+.why-us-3 .semi-circle .content .screen-title-l2 {
+  margin-top: 0%;
+}
+
+.why-us-3 .semi-circle .content .screen-description {
+  margin-top: 0%;
+}
+
+.why-us-4 .semi-circle .content {
+  margin-top: 1%;
+}
+.why-us-4 .semi-circle .content .screen-title-l2 {
+  margin-top: 0%;
+}
+
+.why-us-4 .semi-circle .content .screen-description {
+  margin-top: 0%;
+}
+
+.why-us-item-4 img {
+  width: 40px;
+  margin-bottom: 12px;
+}
+.why-us-title-4 {
+  font-size: 14px;
+}
+.why-us-text-4 p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+/* ******************************** 
+FEE STRUCTURE
+ ********************************** */
+
+#title-container .small-text {
+  margin-top: 0;
+}
+
+#title-container .large-text {
+  margin-top: 0;
+}
+
+.admission-4 .admission-content > .letter-circle {
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  font-weight: 800;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+/* ******************************** 
+Contact us
+ ********************************** */
+.contact-us-1 .semi-circle .content {
+  margin-top: 1%;
+}
+.contact-us-1 .semi-circle .screen-title-l2 {
+  margin-top: 0%;
 }
