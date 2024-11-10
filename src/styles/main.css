@@ -57,20 +57,20 @@ html {
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   font-size: 18px;
 }
 
-a.phonecontainer{
+a.phonecontainer {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   gap: 10px;
 }
-a img.phone{
-  width: 30px; 
+a img.phone {
+  width: 30px;
   height: 30px;
 }
 /* Header Style Start (Left logo, right menus, book preschool tour button) */
@@ -128,10 +128,10 @@ a img.phone{
 
 .nav-text {
   position: absolute;
-  right: 40px; 
+  right: 40px;
   white-space: nowrap;
-  opacity: 0.3; 
-  transition: opacity 0.5s ease; 
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
   color: var(--color-blue);
 }
 
@@ -154,11 +154,11 @@ a img.phone{
 }
 
 .right-section:hover .nav-text {
-  opacity: 0.3; 
+  opacity: 0.3;
 }
 
 .nav-item:hover .nav-text {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .nav-item:nth-child(1) {
@@ -179,7 +179,6 @@ a img.phone{
 
 /* Header Style Ends here (Left logo, right menus, book preschool tour button) */
 
-
 .container {
   position: relative;
   height: 100%;
@@ -199,16 +198,15 @@ a img.phone{
   color: white;
   -webkit-transition: transform 1.8s ease;
   -moz-transition: transform 1.8s ease;
-  transition: transform 1.8s ease; 
+  transition: transform 1.8s ease;
   top: 0;
   will-change: transform;
 }
 
-
 .screen1 {
-  transform: translateY(0); 
-  position: relative; 
-  overflow: hidden; 
+  transform: translateY(0);
+  position: relative;
+  overflow: hidden;
 }
 
 .semi-circle {
@@ -223,25 +221,23 @@ a img.phone{
 }
 
 .video {
-/* Positioning the video absolutely */
-  position: absolute; 
+  /* Positioning the video absolutely */
+  position: absolute;
   /* Align to top */
-  top: -32%; 
+  top: -32%;
   height: auto;
   /* Center horizontally */
-  left: 6%; 
+  left: 6%;
   width: 80%;
   /* Ensure it's behind any other content */
-  z-index: 0; 
- 
+  z-index: 0;
 }
-
 
 /* 
  * Common across all screens.
  */
 
- .content {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,7 +277,7 @@ a img.phone{
   margin-top: 20px;
 }
 
-.screen-title-l2{
+.screen-title-l2 {
   font-size: 30px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -289,20 +285,20 @@ a img.phone{
   margin-bottom: 0;
   text-transform: uppercase;
 }
-.screen-description{
+.screen-description {
   font-size: 16px;
   line-height: 25px;
   width: 55%;
   margin: auto;
   margin-top: 1%;
 }
-.link{
+.link {
   cursor: pointer;
 }
 /* 
   ========= Screen 2 What we do ==========
  */
-.screen2 .semi-circle{
+.screen2 .semi-circle {
   background-color: var(--color-yellow);
 }
 
@@ -325,7 +321,7 @@ a img.phone{
 .screen2 .values-container .values {
   display: flex;
   justify-content: center;
-   /* Adjust spacing between circles */
+  /* Adjust spacing between circles */
   gap: 20%;
 }
 
@@ -342,10 +338,7 @@ a img.phone{
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(
-    --circle-color,
-    yellow
-  ); 
+  background-color: var(--circle-color, yellow);
   /* Set circle background color */
   font-family: "MontserratBold", sans-serif;
   font-size: 25px;
@@ -353,7 +346,7 @@ a img.phone{
   border: 1px solid var(--color-white);
 }
 .screen2 .values-containe p:nth-child(1) {
-    font-size: 18px;
+  font-size: 18px;
 }
 .screen2 .values-container .values .value:nth-child(1) .letter-circle {
   background-color: var(--color-yellow);
@@ -376,10 +369,10 @@ a img.phone{
   ========= Screen 2 How we do it ==========
  */
 
- .screen3 .semi-circle{
+.screen3 .semi-circle {
   background-color: var(--color-orange);
 }
- 
+
 .circular-keys {
   display: flex;
   justify-content: center;
@@ -390,7 +383,8 @@ a img.phone{
   margin-top: 4%;
 }
 
-.circles-container-infra, .circles-container {
+.circles-container-infra,
+.circles-container {
   width: auto;
   display: flex;
   justify-content: center;
@@ -454,17 +448,17 @@ a img.phone{
   background-color: var(--color-yellow);
 }
 
-.circles-container-infra .circular-item:nth-child(4){
+.circles-container-infra .circular-item:nth-child(4) {
   background-color: var(--color-orange);
 }
-.circles-container-infra .circular-item:nth-child(6){
+.circles-container-infra .circular-item:nth-child(6) {
   background-color: var(--color-red);
 }
 
-.circles-container-infra .circular-item:nth-child(7){
+.circles-container-infra .circular-item:nth-child(7) {
   background-color: var(--color-purple);
 }
-.circles-container-infra .circular-item:nth-child(8){
+.circles-container-infra .circular-item:nth-child(8) {
   background-color: var(--color-orange);
 }
 
@@ -516,24 +510,21 @@ a img.phone{
   width: 13%;
 }
 
-
 /* 
   ========= Screen 4 How we do it ==========
  */
 
-.screen4 .semi-circle{
+.screen4 .semi-circle {
   background-color: var(--color-red);
 }
 img.circles_home {
   width: 20%;
 }
 
-
-
 /* 
   ========= Screen 5 How we do it ==========
  */
- .screen5 .semi-circle{
+.screen5 .semi-circle {
   background-color: var(--color-purple);
 }
 .key-facts-three {
@@ -551,7 +542,6 @@ img.circles_home {
   margin-top: 50px; /* Adjust spacing as needed */
   justify-content: center; /* Center the items */
 }
-
 
 .fact-item {
   display: flex;
@@ -589,22 +579,19 @@ img.circles_home {
   margin-left: 0px;
 }
 
-
-
 /* 
-  ========= Screen 6 How we do it ==========
+  ========= Screen 6 Infrastructures ==========
  */
 
- .screen6 .semi-circle{
+.screen6 .semi-circle {
   background-color: var(--color-blue);
 }
 
-
 /* 
-  ========= Screen 7 How we do it ==========
+  ========= Screen 7 Contact us ==========
  */
 
- .screen7 .semi-circle{
+.screen7 .semi-circle {
   background-color: var(--color-white);
 }
 
@@ -621,14 +608,13 @@ img.circles_home {
 }
 
 .other-logos-one {
-  /* border: 1px solid #000; */
-  width: 100%; /* Full width to allow centering */
-  max-width: 700px; /*Adjust max-width as needed*/
+  width: 100%;
+  max-width: 700px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
   row-gap: 50px;
-  justify-content: center; /* Centers the grid content */
+  justify-content: center;
   align-items: center;
 }
 
@@ -646,7 +632,7 @@ img.circles_home {
   text-align: center;
   margin-top: 3%;
   font-family: "MontserratRegular";
-  color: rgb(43, 46, 140);
+  color: var(--color-blue);
 }
 
 .connect-us-container > p {
@@ -706,7 +692,7 @@ img.circles_home {
   font-weight: 800;
 }
 
-/* * next button  */ 
+/* * next button  */
 #nextButton {
   position: fixed;
   bottom: 20px;
@@ -1108,7 +1094,6 @@ img.circles_home {
   line-height: 15px;
 }
 
-
 /*******************************************************
  *                                                     *
  *            WHY US  COMMON STYLES                   *
@@ -1165,7 +1150,6 @@ img.circles_home {
  *            WHY US Screen 1                           *
  *                                                     *
  *******************************************************/
-
 
 .why-us-1 .screen-title {
   color: var(--color-orange);
@@ -1481,17 +1465,15 @@ img.circles_home {
 }
 
 /*******************************************************
- *                                                     *
  *            WHY US Screen 5                           *
- *                                                     *
  *******************************************************/
 
- .why-us-5 .screen-title {
+.why-us-5 .screen-title {
   color: var(--color-yellow);
- }
- .why-us-5 .screen-title-l2{
+}
+.why-us-5 .screen-title-l2 {
   font-size: 12px;
- }
+}
 .why-us-5 .screen-description {
   font-size: 11px;
 }
@@ -1513,7 +1495,7 @@ img.circles_home {
 
 .why-us-item img {
   /* Set a fixed size for the images */
-  width: 100px; 
+  width: 100px;
   height: auto;
   margin-bottom: 5px;
   margin-top: -5px;
@@ -1536,22 +1518,19 @@ img.circles_home {
  *            WHY US Screen 6                          *
  *                                                     *
  *******************************************************/
- 
- .why-us-6 .screen-title{ 
+
+.why-us-6 .screen-title {
   color: var(--color-orange);
 }
-.why-us-6 .screen-description{
+.why-us-6 .screen-description {
   padding: 0px 20px;
- }
+}
 
 /*******************************************************
  *                                                     *
  *            WHY US Screen 7                           *
  *                                                     *
  *******************************************************/
-
-
-
 
 /*******************************************************
  *                                                     *
@@ -1622,7 +1601,7 @@ img.circles_home {
 .semi-circle .programme-content button {
   color: var(--color-red);
 }
-.programme-content div > img.kids-icon{
+.programme-content div > img.kids-icon {
   width: 170px;
 }
 .programme-content .programme-title {
@@ -1630,11 +1609,11 @@ img.circles_home {
   margin-top: 50px;
 }
 
-.description-text{
+.description-text {
   font-size: 16px;
   margin-top: 0px;
   line-height: 30px;
- }
+}
 
 /*******************************************************
  *                                                     *
@@ -1642,57 +1621,56 @@ img.circles_home {
  *                                                     *
  *******************************************************/
 
-.semi-circle .programme-content>div:first-child {
+.semi-circle .programme-content > div:first-child {
   font-weight: bold;
   padding-top: 50px;
 }
 
 .semi-circle .programme-content .programme-img-container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 4% auto;
-    justify-items: center;
-    align-items: start;
-    box-sizing: border-box;
- }
- .semi-circle .programme-content .programme-img-container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
- }
- .semi-circle .programme-content .programme-img-container img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 4% auto;
+  justify-items: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+.semi-circle .programme-content .programme-img-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.semi-circle .programme-content .programme-img-container img {
   width: 80px;
   height: 80px;
- }
+}
 
- .semi-circle .programme-content .programme-img-container p {
+.semi-circle .programme-content .programme-img-container p {
   font-size: 16px;
- }
+}
 
- .semi-circle .programme-content .programme-img-container div:nth-child(1) p {
-    color: var(--color-yellow);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(2) p {
-    color: var(--color-orange);
- }
+.semi-circle .programme-content .programme-img-container div:nth-child(1) p {
+  color: var(--color-yellow);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(2) p {
+  color: var(--color-orange);
+}
 .semi-circle .programme-content .programme-img-container div:nth-child(3) p {
-    color: var(--color-blue);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(4) p {
-    color: var(--color-white);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(5) p {
-    color: var(--color-yellow);
- }
+  color: var(--color-blue);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(4) p {
+  color: var(--color-white);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(5) p {
+  color: var(--color-yellow);
+}
 
 /*******************************************************
  *                                                     *
  *            PROGRAMMES Screen 1                      *
  *                                                     *
  *******************************************************/
-
 
 .programme-1 .semi-circle {
   background-color: var(--color-red);
@@ -1757,7 +1735,7 @@ img.circles_home {
 .semi-circle .programme-content button {
   color: var(--color-red);
 }
-.programme-content div > img.kids-icon{
+.programme-content div > img.kids-icon {
   width: 170px;
 }
 .programme-content .programme-title {
@@ -1765,11 +1743,11 @@ img.circles_home {
   margin-top: 50px;
 }
 
-.description-text{
+.description-text {
   font-size: 16px;
   margin-top: 0px;
   line-height: 30px;
- }
+}
 
 /*******************************************************
  *                                                     *
@@ -1777,75 +1755,71 @@ img.circles_home {
  *                                                     *
  *******************************************************/
 
-.semi-circle .programme-content>div:first-child {
+.semi-circle .programme-content > div:first-child {
   font-weight: bold;
   padding-top: 50px;
 }
 
 .semi-circle .programme-content .programme-img-container {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 4% auto;
-    justify-items: center;
-    align-items: start;
-    box-sizing: border-box;
- }
- .semi-circle .programme-content .programme-img-container > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
- }
- .semi-circle .programme-content .programme-img-container img {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: 4% auto;
+  justify-items: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+.semi-circle .programme-content .programme-img-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.semi-circle .programme-content .programme-img-container img {
   width: 80px;
   height: 80px;
- }
+}
 
- .semi-circle .programme-content .programme-img-container p {
+.semi-circle .programme-content .programme-img-container p {
   font-size: 16px;
- }
+}
 
- .semi-circle .programme-content .programme-img-container div:nth-child(1) p {
-    color: var(--color-yellow);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(2) p {
-    color: var(--color-orange);
- }
+.semi-circle .programme-content .programme-img-container div:nth-child(1) p {
+  color: var(--color-yellow);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(2) p {
+  color: var(--color-orange);
+}
 .semi-circle .programme-content .programme-img-container div:nth-child(3) p {
-    color: var(--color-blue);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(4) p {
-    color: var(--color-white);
- }
- .semi-circle .programme-content .programme-img-container div:nth-child(5) p {
-    color: var(--color-yellow);
- }
+  color: var(--color-blue);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(4) p {
+  color: var(--color-white);
+}
+.semi-circle .programme-content .programme-img-container div:nth-child(5) p {
+  color: var(--color-yellow);
+}
 
-
-
- /* 
+/* 
  * Admission
  */
-
 
 .admission-1 .semi-circle {
   background-color: var(--color-purple);
 }
-.admission-2 .semi-circle{
+.admission-2 .semi-circle {
   background-color: var(--color-blue);
 }
-.admission-3 .semi-circle{
+.admission-3 .semi-circle {
   background-color: var(--color-blue);
 }
-.admission-4 .semi-circle{
+.admission-4 .semi-circle {
   background-color: var(--color-yellow);
 }
 .admission-5 .semi-circle,
 .admission-6 .semi-circle {
   background-color: var(--color-blue);
 }
-
 
 .admission-content {
   display: flex;
@@ -1867,7 +1841,6 @@ img.circles_home {
   font-weight: 800;
 }
 
-
 /*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 1                           *
@@ -1876,8 +1849,8 @@ img.circles_home {
 
 .admission-img-container {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 20px; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   width: 50%;
   margin: 4% auto;
   justify-items: center;
@@ -1900,13 +1873,13 @@ img.circles_home {
   height: auto;
   margin-bottom: 10px;
 }
-.admission-img-container > div:first-child img{
+.admission-img-container > div:first-child img {
   max-width: 100px;
 }
-.admission-img-container > div:nth-child(2) img{
+.admission-img-container > div:nth-child(2) img {
   max-width: 65px;
 }
-.admission-img-container > div:nth-child(3) img{
+.admission-img-container > div:nth-child(3) img {
   max-width: 80px;
 }
 
@@ -1931,61 +1904,59 @@ img.circles_home {
   color: var(--color-yellow);
 }
 
-
 /*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 2                           *
  *                                                     *
  *******************************************************/
 
- .admission-semi-circle-2 .admission-content p {
+.admission-semi-circle-2 .admission-content p {
   font-family: "MontserratRegular";
- }
+}
 
- .admission-semi-circle-2 .admission-content img {
+.admission-semi-circle-2 .admission-content img {
   max-width: 200px;
   padding: 15px 0px;
- }
+}
 
-
- /*******************************************************
+/*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 3                           *
  *                                                     *
  *******************************************************/
 
- .admission-semi-circle-3 .admission-content {
+.admission-semi-circle-3 .admission-content {
   margin: auto;
- }
+}
 
-  .admission-semi-circle-3 .admission-content img {
-    max-width: 200px;
-    padding: 15px 0px;
-    margin-top: -30px;
-  }
+.admission-semi-circle-3 .admission-content img {
+  max-width: 200px;
+  padding: 15px 0px;
+  margin-top: -30px;
+}
 
-  .admission-semi-circle-3 .admission-content p {
-    font-family: "MontserratRegular";
-  }
- 
-  /*******************************************************
+.admission-semi-circle-3 .admission-content p {
+  font-family: "MontserratRegular";
+}
+
+/*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 4                          *
  *                                                     *
  *******************************************************/
 
 .admission-semi-circle-4 .admission-content p {
-    font-family: "MontserratRegular";
+  font-family: "MontserratRegular";
 }
 
-.admission-semi-circle-4 .admission-content>.letter-circle{
+.admission-semi-circle-4 .admission-content > .letter-circle {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 240px;
   width: 240px;
-  border:1px solid var(--color-red);
+  border: 1px solid var(--color-red);
   border-radius: 50%;
   padding: 20px;
   background-color: var(--color-red);
@@ -2008,33 +1979,29 @@ img.circles_home {
 }
 .admission-semi-circle-4 .small-text:last-child {
   margin-top: -20px;
-} 
+}
 
-
- /*******************************************************
+/*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 5                      *
  *                                                     *
  *******************************************************/
 
- /*******************************************************
+/*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 6                      *
  *                                                     *
  *******************************************************/
 
- .admission-semi-circle-6 .admission-content {
+.admission-semi-circle-6 .admission-content {
   position: relative;
- }
-
-
-
+}
 
 /* 
   Pre School Tour
  */
 
- .preschool-tour {
+.preschool-tour {
   transform: translateY(100%);
 }
 
@@ -2149,17 +2116,15 @@ form {
   background-color: var(--color-blue);
 }
 
-.contact-us-1 .semi-circle .screen-title{
+.contact-us-1 .semi-circle .screen-title {
   color: var(--color-blue);
 }
-
 
 /*******************************************************
  *                                                     *
  *            CONTACT US SCREEN1 STYLES                 *
  *                                                     *
  *******************************************************/
-
 
 /* Container styling */
 .contact-container {
@@ -2175,7 +2140,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem; 
+  gap: 5rem;
   width: 100%;
 }
 
@@ -2207,7 +2172,7 @@ form {
 }
 
 .mobile-item img {
-   width: 25px;
+  width: 25px;
   height: 25px;
 }
 .mobile-item p {
@@ -2250,18 +2215,18 @@ form {
   width: 500px;
   height: auto;
 }
-.small-text{
+.small-text {
   font-size: 18px;
 }
 
-.admission-content>.letter-circle{
+.admission-content > .letter-circle {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 240px;
   width: 240px;
-  border:1px solid var(--color-red);
+  border: 1px solid var(--color-red);
   border-radius: 50%;
   padding: 20px;
   background-color: var(--color-red);
