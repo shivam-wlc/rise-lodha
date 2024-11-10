@@ -177,3 +177,7 @@ img.circles_home{
   .other-logos-container .other-logos-one img {
     margin: auto;
   }
+
+  .screen7 .semi-circle {
+  background-color: var(--color-white);
+}

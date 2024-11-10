@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		screens.forEach((screen, index) => {
 			if (index < currentIndex) {
 				// Keep the current screen in place
-				// screen.style.transform = "translateY(0)";
+				screen.style.transform = "translateY(100)";
 			} else if (index === currentIndex) {
 				// Center the current screen
 				screen.style.transform = "translateY(0)";
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				lastWheelTime = now;
 
 				event.preventDefault();
-				const scrollThreshold = 5;
+				const scrollThreshold = 2;
 				// Increase threshold for Mac touchpad sensitivity
 				if (Math.abs(event.deltaY) > scrollThreshold) {
 					handleTransition(event.deltaY > 0 ? "next" : "prev");

@@ -357,3 +357,8 @@ img.circles_home {
 .address-item img {
   margin: 25px 10px;
 }
+
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}

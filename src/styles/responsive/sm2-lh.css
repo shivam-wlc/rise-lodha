@@ -905,3 +905,12 @@ img.circles_home {
   line-height: 20px;
   margin-top: -10px;
 }
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}
+
+form {
+  width: 95%;
+  gap: 5px;
+}

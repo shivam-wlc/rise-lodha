@@ -562,12 +562,6 @@ label {
   margin-bottom: 20px;
 }
 
-form {
-  width: 95%;
-  margin: auto;
-  display: grid;
-}
-
 .form-field {
   display: flex;
   justify-content: flex-start;
@@ -819,3 +813,8 @@ form {
 .small-text {
   font-size: 12px;
 }
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}
+
