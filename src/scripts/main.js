@@ -157,6 +157,58 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
+
+	if (typeof emailjs !== "undefined") {
+		emailjs.init("G2SDjizAB86ZjO6Tz");
+	} else {
+		return;
+	}
+	// Function to add submit event to forms
+	function addFormListener(formId) {
+		const bookingForm = document.getElementById(formId);
+		if (!bookingForm) return; // Skip if form does not exist
+		bookingForm.addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent default submission
+			// Get input values
+			const fromName = bookingForm["name"].value;
+			const email = bookingForm["email"].value;
+			const mobile = bookingForm["mobile"].value;
+			const childName = bookingForm["childname"].value;
+			const childAgeYear = bookingForm["childage-year"].value;
+			const childAgeMonth = bookingForm["childage-month"].value;
+			const city = bookingForm["city"].value;
+			// Create message
+			const message = `You have received a booking from ${fromName}. Details:
+                        Name: ${fromName}
+                        Email: ${email}
+                        Mobile: ${mobile}
+                        Child's Name: ${childName}
+                        Child's Age: ${childAgeYear} years ${childAgeMonth} months
+                        City: ${city}`;
+			const formData = {
+				to_name: "Recipient Name",
+				from_name: fromName,
+				message,
+			};
+
+			console.log(emailjs, formData);
+			// Send email
+			emailjs
+				.send("service_gb9bmin", "template_ktx4jsb", formData)
+				.then((response) => {
+					alert("Your booking request has been sent!");
+				})
+				.catch((error) => {
+					alert("Oops! Something went wrong. Please try again.");
+				});
+			bookingForm.reset(); // Reset form after submission
+		});
+	}
+	// Attach listeners to both forms
+	addFormListener("booking-form");
+	addFormListener("admission-booking-form");
+  
+
 	nextButton.addEventListener("click", () => {
 		handleTransition("next");
 	});

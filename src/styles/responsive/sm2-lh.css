@@ -224,6 +224,7 @@ img.circles_home {
   top: auto;
   left: -16%;
   border-radius: 50% 50% 0% 0%;
+  overflow: hidden;
 }
 
 .our-story-content button {
@@ -388,6 +389,7 @@ img.circles_home {
   margin: -10px auto;
   padding: 20px;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 350px;
   margin-bottom: 10%;
 }
