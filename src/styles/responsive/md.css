@@ -2,9 +2,9 @@
     top: 100%;
 }
 .video {
-    top: auto;
-    bottom: 19%; 
-    width: 128%;
+    top: -9%;
+    left: -1%; 
+    width: 170%;
 }
 
 .screen-title-l2 {
@@ -127,3 +127,13 @@ img.circles_home {
 .fact-text{
   font-size: 18px;
 }
+
+.age-inputs {
+    width: 100%;
+    margin: 0px;
+}
+
+  .age-inputs input {
+    width: 40%;
+    margin: 0px;
+  }

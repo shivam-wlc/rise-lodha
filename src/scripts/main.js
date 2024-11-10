@@ -4,7 +4,7 @@ const activeIndexes = {
 	"carousel-images": 0,
 	"carousel-text": 0,
 };
-let currentIndex = 38;
+let currentIndex = 7;
 
 document.addEventListener("DOMContentLoaded", (event) => {
 	event.preventDefault();
@@ -120,8 +120,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	smoothTransition("why-us-link", 14);
 	smoothTransition("programmes-link", 28);
 	smoothTransition("admission-link", 35);
-	smoothTransition("contact-us-link", 42);
-	smoothTransition("book-button", 44);
+	smoothTransition("contact-us-link", 41);
+	smoothTransition("book-button", 43);
 
 	// Initial call to set the first screen
 	updateScreens();

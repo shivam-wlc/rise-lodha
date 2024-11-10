@@ -523,7 +523,7 @@
                       src="./src/assessts/icons/location@2x.png"
                       alt="location"
                     />
-                    <p>
+                    <p class="contact-adress">
                       Plot No: 33 Opp to HDFC Bank, La Oceana Colony, <br />La
                       Citadel Colony, Dona Paula, Durgavado, Goa 403002
                     </p>
@@ -2153,31 +2153,34 @@
         </div>
         </div>
 
+            <!-- *******************************************************
+     *              BOOK A PRESCHOOL TOUR                      *
+     ******************************************************* -->
         <div class="screen preschool-tour">
           <div class="semi-circle">
             <!-- form  -->
             <div class="preschool-tour-form">
-              <form id="admission-booking-form">
+              <form id="booking-form" class="booking-form">
                 <p>Book a Preschool Tour</p>
 
                 <div class="form-field">
                   <label for="name">Name:</label>
-                  <input title="Please enter your name" type="text" name="name" required />
+                  <input type="text" title="name" name="name" required />
                 </div>
 
                 <div class="form-field">
                   <label for="email">Email:</label>
-                  <input title="enter email" type="email" name="email" required />
+                  <input title="email" type="email" name="email" required />
                 </div>
 
                 <div class="form-field">
                   <label for="mobile">Mobile:</label>
-                  <input title="enter mobile number" type="tel" name="mobile" required />
+                  <input title="mobile number" type="tel"  name="mobile" required />
                 </div>
 
                 <div class="form-field">
                   <label for="childname">Child's Name:</label>
-                  <input title="enter child name" type="text" name="childname" required />
+                  <input title="child name" type="text"  name="childname" required />
                 </div>
 
                 <div class="form-field">
@@ -2203,16 +2206,17 @@
 
                 <div class="form-field">
                   <label for="city">City:</label>
-                  <input title="city" type="text" name="city" required />
+                  <input type="text" id="city" name="city" required />
                 </div>
 
-                <div class="form-field">
+                <div class="form-field" id="submit-button">
                   <button type="submit">Book</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
         <div class="screen screen7">
             <div class="semi-circle">
               <div class="content"></div>
@@ -2416,14 +2420,14 @@
             </div>
         </div>
         
-         <!-- *******************************************************
+     <!-- *******************************************************
      *              BOOK A PRESCHOOL TOUR                      *
      ******************************************************* -->
         <div class="screen preschool-tour">
           <div class="semi-circle">
             <!-- form  -->
             <div class="preschool-tour-form">
-              <form id="booking-form">
+              <form id="booking-form" class="booking-form">
                 <p>Book a Preschool Tour</p>
 
                 <div class="form-field">

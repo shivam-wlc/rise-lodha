@@ -52,3 +52,13 @@ img.circles_home {
 .fact-text{
   font-size: 18px;
 }
+
+.age-inputs {
+    width: 100%;
+    margin: 0px;
+}
+
+  .age-inputs input {
+    width: 40%;
+    margin: 0px;
+  }

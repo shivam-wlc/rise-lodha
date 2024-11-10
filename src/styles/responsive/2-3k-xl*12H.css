@@ -55,3 +55,57 @@ img.circles_home {
   width: 12%;
   margin-top: 10px;
 }
+
+
+.connect-us-container .connect-us-container-title {
+    font-size: 32px;
+  }
+
+  .connect-us-icons>div img{
+    width: 55px;
+    height: 55px;
+  }
+  .connect-us-icons>div p{
+    margin-right: 40px;
+  }
+
+  .connect-us-icons .contact-adress{
+    font-size: 32px;
+  }
+  .connect-us-icons > div:nth-child(2){
+    width: 55%;
+  }
+  .connect-us-icons > div:nth-child(3){
+    width: 30%;
+  }
+  .connect-us-icons .phonecontainer{
+    font-size: 32px;
+  }
+  .emailLink{
+    font-size: 32px;
+  }
+
+  .other-logos-container .other-logos-one img {
+    margin: auto;
+  }
+
+  .our-story-1 .img-container>div img{
+        width: 350px;
+  } 
+
+
+  .our-story-4 .our-story-semi-circle-4 > .our-story-content button {
+    font-size: 34px;
+    padding: 0xp 20px;
+  }
+  .our-story-4 .our-story-semi-circle-4 > .our-story-content p:nth-child(1) {
+    font-size: 32px;
+  }
+  .our-story-4 .our-story-semi-circle-4 > .our-story-content p:nth-child(2) {
+    font-size: 28px;
+    width: 60%;
+    line-height: 60px;
+  }
+  .our-story-image-container {
+    left: -24%;
+  }

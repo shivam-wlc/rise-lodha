@@ -21,3 +21,22 @@ img.circles_home {
 .fact-text{
   font-size: 22px;
 }
+
+.screen4 .screen-description{
+  font-size: 42px;
+  border: 4px solid green;
+}
+
+ .circles-container {
+  margin-top: -500px;
+  border: 120px solid red;
+}
+
+
+.screen6 .nav-button.left img {
+    width: 30px;
+}
+
+.screen6 .nav-button.right img {
+    width: 30px;
+}

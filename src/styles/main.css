@@ -277,6 +277,10 @@ a img.phone{
   color: var(--color-blue);
 }
 
+.screen5 .content .key-facts-three {
+  margin-top: 20px;
+}
+
 .screen-title-l2{
   font-size: 30px;
   letter-spacing: 2px;
@@ -619,7 +623,7 @@ img.circles_home {
 .other-logos-one {
   /* border: 1px solid #000; */
   width: 100%; /* Full width to allow centering */
-  max-width: 700px; /* Adjust max-width as needed */
+  max-width: 700px; /*Adjust max-width as needed*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 40px;
@@ -2013,67 +2017,6 @@ img.circles_home {
  *                                                     *
  *******************************************************/
 
- .admission-semi-circle-5 .admission-content {
-  position: relative;
- }
-
- .admission-semi-circle-5 .registration-form-title-circle{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 190px;
-    width: 190px;
-    border:1px solid var(--color-red);
-    border-radius: 50%;
-    padding: 20px;
-    background-color: var(--color-red);
-    box-sizing: border-box;
-    color: var(--color-white);
-    font-family: "MontserratRegular";
-    font-weight: 800;
-    line-height: 30px;
-    position: absolute;
-    z-index: 51;
-    top: -10px;
- }
-
- .admission-semi-circle-5 .registration-form-title-circle p{
-  font-size: 18px;
- }
-
-.admission-semi-circle-5 .registration-form-container-1 {
-    /* position: absolute; */
-    background-color: var(--color-white);
-    border-radius: 50% 50% 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    box-sizing: border-box;
- }
-
- .admission-semi-circle-5 .input-container {
-    display: flex;
-    justify-content: flex-start;
-
- }
- .admission-semi-circle-5 .input-container label {
-    width: 35%;
-    text-align: left;
-    font-size: 16px;
-    color: var(--color-blue);
-    font-family: "MontserratRegular";
- }
-  .admission-semi-circle-5 .input-container input {
-    width: 50%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 10px 10px;
-    font-family: "MontserratRegular";
- }
-
  /*******************************************************
  *                                                     *
  *            ADMISSIONS Screen 6                      *
@@ -2084,71 +2027,7 @@ img.circles_home {
   position: relative;
  }
 
- .admission-semi-circle-6 .registration-form-container-2 {
-    padding-left: 30px;
-    background-color: var(--color-white);
-    border-radius: 0 0 50% 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-    box-sizing: border-box;
 
- }
-
- .admission-semi-circle-6 .input-container {
-    display: flex;
-    justify-content: flex-start;
- }
- .admission-semi-circle-6 .input-container label {
-    width: 35%;
-    text-align: left;
-    font-size: 16px;
-    color: var(--color-blue);
-    font-family: "MontserratRegular";
- }
-  .admission-semi-circle-6 .input-container>input {
-    width: 50%;
-    outline: none;
-    border: none;
-    border-radius: 15px;
-    font-size: 18px;
-    padding: 10px 10px;
-    font-family: "MontserratRegular";
- }
-
-.admission-semi-circle-6 .input-container .radio-options-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.admission-semi-circle-6 .input-container .radio-options-container .radio-option {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: none;
-}
-.admission-semi-circle-6 .input-container .radio-options-container .radio-option>input{
-  height: 20px;
-}
-.admission-semi-circle-6 .input-container .radio-options-container .radio-option label{
-  font-size: 10px;
-  width: 150px;
-}
-
-.admission-semi-circle-6 .button-container{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 40px;
-  margin-top: 20px;
-}
-
-.admission-semi-circle-6 .button-container button{
-  padding: 10px 20px;
-  cursor: pointer;
-}
 
 
 /* 
@@ -2229,15 +2108,15 @@ form {
 
 .age-inputs {
   display: flex;
-  /* width: 50%;
-  margin: auto; */
-  /* border: 1px solid black; */
-  justify-content: flex-start;
+  width: 51%;
+  justify-content: space-between;
+  gap: 5px;
+  padding: none;
 }
 .age-inputs input {
-  width: 40%;
-  margin: auto;
-
+  width: 45%;
+  margin: 0px;
+  border-radius: 10px;
 }
 
 .form-field button {
@@ -2330,7 +2209,7 @@ form {
     margin-right: 10px;
   }
 
-  #booking-form p {
+  #admission-booking-form p, #booking-form p {
     font-family: "MontserratRegular";
     font-size: 36px;
     letter-spacing: 2px;
@@ -2342,6 +2221,20 @@ form {
     margin-top: 50px;
     margin-bottom: 100px;
   }
+
+  #admission-booking-form p {
+    font-family: "MontserratRegular";
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
 
   form {
     width: 80%;

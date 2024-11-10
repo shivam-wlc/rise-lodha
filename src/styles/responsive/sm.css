@@ -44,6 +44,9 @@
   line-height: 18px;
   width: 70%;
 }
+.screen2 .screen-title-l2{
+  margin: 0px auto;
+}
 
 .screen2 .values-container .values{
   gap: 5px;
@@ -580,8 +583,7 @@ img.circles_home {
   }
 
   .age-inputs {
-    display: flex;
-    padding-left: 12px;
+    width: 90%;
   }
   .age-inputs input {
     width: 42%;
