@@ -369,7 +369,6 @@ a img.phone {
   ========= Screen 2 How we do it ==========
  */
 
-
 .screen3 .semi-circle {
   background-color: var(--color-orange);
 }
@@ -589,6 +588,9 @@ img.circles_home {
   background-color: var(--color-blue);
 }
 
+.screen6 .circular-keys-2 .circles-container-infra img {
+  margin: -10px;
+}
 /* 
   ========= Screen 7 How we do it ==========
  */
@@ -1176,7 +1178,6 @@ img.circles_home {
   margin-top: 50px;
 }
 
-
 .why-us-img-container > div {
   display: flex;
   flex-direction: column;
@@ -1262,25 +1263,6 @@ img.circles_home {
   text-transform: uppercase;
 }
 
-/* .why-us-3 .content p:nth-child(1) {
-  font-family: "MontserratRegular";
-  font-size: 22px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  line-height: 30px;
-  margin-bottom: 0;
-  text-transform: uppercase;
-} */
-
-/* .why-us-3 .content p:nth-child(2) {
-  font-family: "MontserratRegular";
-  font-size: 14px;
-  line-height: 20px;
-  width: 55%;
-  margin: auto;
-  margin-top: 1%;
-} */
-
 .why-us-values-container {
   display: flex;
   flex-wrap: wrap;
@@ -1291,7 +1273,6 @@ img.circles_home {
   margin-top: 2%;
   /* padding: 10px; */
 }
-
 
 .why-us-value {
   display: flex;
@@ -1305,10 +1286,10 @@ img.circles_home {
   /* border: 1px solid black; */
 }
 
-.why-us-value:first-child{
+.why-us-value:first-child {
   line-height: 150px;
 }
-.why-us-value:last-child{
+.why-us-value:last-child {
   line-height: 150px;
 }
 
@@ -1886,6 +1867,8 @@ img.circles_home {
 .admission-arrow-img {
   width: 100px;
   height: auto;
+  /* border: 1px solid red; */
+  margin-top: -10px !important;
 }
 /*******************************************************
  *                                                     *
@@ -1952,8 +1935,8 @@ img.circles_home {
   Pre School Tour
  */
 
- .preschool-tour .semi-circle {
-    background-color: #a9a9cc;
+.preschool-tour .semi-circle {
+  background-color: #a9a9cc;
 }
 
 .preschool-tour-form {
@@ -1974,7 +1957,8 @@ label {
   margin-right: 10px;
 }
 
-#admission-booking-form p, #booking-form p {
+#admission-booking-form p,
+#booking-form p {
   font-family: "MontserratRegular";
   font-size: 22px;
   letter-spacing: 2px;
@@ -2043,7 +2027,6 @@ form {
   text-align: center;
   margin-left: 40%;
 }
-
 
 /*******************************************************
  *                                                     *
@@ -2178,4 +2161,147 @@ form {
 
 .preschool-tour .resemi-circle {
   background-color: var(--color-white);
+}
+
+/* carousal  */
+.why-us-carousal {
+  width: 35%;
+  margin: auto;
+  margin-top: 2%;
+  position: relative;
+}
+
+.why-us-carousal-left,
+.why-us-carousal-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+}
+
+.why-us-carousal-left {
+  left: 0px;
+}
+
+.why-us-carousal-right {
+  right: 0px;
+}
+
+.why-us-carousal-left img,
+.why-us-carousal-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.why-us-carousal-outer-container {
+  overflow: hidden;
+  width: 75%;
+  margin: auto;
+}
+
+.why-us-carousal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+  gap: 10px;
+  width: calc(100% * 5);
+  transition: transform 1.5s ease;
+}
+
+.why-us-carousal-item {
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.why-us-carousal-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.why-us-carousal-item p {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.why-us-carousal-container div:nth-child(1) {
+  background-color: var(--color-yellow);
+}
+.why-us-carousal-container div:nth-child(2) {
+  background-color: var(--color-orange);
+}
+
+.why-us-carousal-container div:nth-child(3) {
+  background-color: var(--color-red);
+}
+.why-us-carousal-container div:nth-child(4) {
+  background-color: var(--color-purple);
+}
+.why-us-carousal-container div:nth-child(5) {
+  background-color: var(--color-yellow);
+}
+.why-us-carousal-container div:nth-child(6) {
+  background-color: var(--color-orange);
+}
+
+.why-us-carousal-container div:nth-child(7) {
+  background-color: var(--color-red);
+}
+.why-us-carousal-container div:nth-child(8) {
+  background-color: var(--color-purple);
+}
+.why-us-carousal-container div:nth-child(9) {
+  background-color: var(--color-yellow);
+}
+.why-us-carousal-container div:nth-child(10) {
+  background-color: var(--color-orange);
+}
+
+.why-us-carousal-container div:nth-child(11) {
+  background-color: var(--color-red);
+}
+.why-us-carousal-container div:nth-child(12) {
+  background-color: var(--color-purple);
+}
+.why-us-carousal-container div:nth-child(13) {
+  background-color: var(--color-yellow);
+}
+.why-us-carousal-container div:nth-child(14) {
+  background-color: var(--color-orange);
+}
+
+.why-us-carousal-container div:nth-child(15) {
+  background-color: var(--color-red);
+}
+.why-us-carousal-container div:nth-child(16) {
+  background-color: var(--color-purple);
+}
+
+.why-us-carousal-container div:nth-child(17) {
+  background-color: var(--color-yellow);
+}
+.why-us-carousal-container div:nth-child(18) {
+  background-color: var(--color-orange);
+}
+
+.why-us-carousal-container div:nth-child(19) {
+  background-color: var(--color-red);
+}
+.why-us-carousal-container div:nth-child(20) {
+  background-color: var(--color-purple);
 }
