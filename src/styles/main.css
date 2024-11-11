@@ -2305,3 +2305,26 @@ form {
 .why-us-carousal-container div:nth-child(20) {
   background-color: var(--color-purple);
 }
+
+#our-story-purpose,
+#our-story-mission,
+#our-story-philosophy,
+#our-story-team,
+#why-us-mind-model,
+#why-us-curriculum,
+#why-us-infrastructure,
+#why-us-enrichment,
+#why-us-growth-mindset,
+#why-us-partnerships,
+#programme-toddler,
+#programme-playgroup,
+#programme-nursery,
+#programme-jrkg,
+#programme-srkg,
+#admission-process,
+#eligibility-criterion,
+#fee-structure,
+#apply-for-admission,
+#letter-circle {
+  cursor: pointer;
+}

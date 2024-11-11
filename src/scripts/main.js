@@ -146,6 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
   smoothTransition("eligibility-criterion", 30);
   smoothTransition("fee-structure", 31);
   smoothTransition("apply-for-admission", 32);
+  //RED CIRCLE
+  smoothTransition("letter-circle", 36);
 
   // Initial call to set the first screen
   updateScreens();
