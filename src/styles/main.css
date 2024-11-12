@@ -2328,3 +2328,65 @@ form {
 #letter-circle {
   cursor: pointer;
 }
+
+/* Modal css  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,   0, 0, 0.5);
+  align-items: center;
+  padding-top: 40px;
+}
+
+.modal-image-box {
+  position: relative;
+  border: 5px solid white;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 80vw;
+  border-radius: 10px;
+}
+.modal-image-item {
+  cursor: pointer;
+}
+
+/* Loader Css  */
+/* Add this to your CSS file */
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 9999; /* Ensure it is above other elements */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-content {
+  display: none; /* Hide the main content initially */
+}
