@@ -1,59 +1,59 @@
 .video {
-    width: 110%;
-    left: 2%;
-    top: auto;
-    bottom: 14%;
+  width: 110%;
+  left: 2%;
+  top: auto;
+  bottom: 14%;
 }
 
-.book{
-    font-size: 22px;
-    width: auto;
-    height: auto;
-    padding: 20px 25px;
+.book {
+  font-size: 22px;
+  width: auto;
+  height: auto;
+  padding: 20px 25px;
 }
-.header{
-    width: 100vw;
-    justify-content: space-between;
+.header {
+  width: 100vw;
+  justify-content: space-between;
 }
 
 #home-link img {
-    width: 600px;
+  width: 600px;
 }
 
 .right-section {
-    justify-content: space-between;
-    height: 320px;
+  justify-content: space-between;
+  height: 320px;
 }
 
 .nav-text {
-    font-size: 42px;
+  font-size: 42px;
 }
 
-.screen-title { 
-    font-size: 32px;
+.screen-title {
+  font-size: 32px;
 }
-.screen-title-l2{
-    font-size: 42px;
-    line-height: 60px;
+.screen-title-l2 {
+  font-size: 42px;
+  line-height: 60px;
 }
 
-.screen-description{
+.screen-description {
   font-size: 28px;
   line-height: 45px;
 }
 
-.screen2 .values-container .values .letter-circle{
+.screen2 .values-container .values .letter-circle {
   font-size: 52px;
   width: 220px;
   height: 220px;
 }
 
-.screen2 .values-container .values .value p{
-    font-size: 32px;
+.screen2 .values-container .values .value p {
+  font-size: 32px;
 }
 
 .screen2 .values-container p:first-child {
-    font-size: 42px;
+  font-size: 42px;
 }
 
 img.circles_home {
@@ -61,9 +61,9 @@ img.circles_home {
   margin-top: 10px;
 }
 
-
 /* Carouser navigation */
-.circles-container-infra, .circles-container {
+.circles-container-infra,
+.circles-container {
   gap: 50px;
   width: 70%;
 }
@@ -79,16 +79,16 @@ img.circles_home {
 }
 
 .nav-button.left {
-    width: 10%;
+  width: 10%;
 }
 
 .nav-button.right {
-    width: 10%;
+  width: 10%;
 }
 
-img.circles_home{
-    width: 20%;
-    margin-top: 40px;
+img.circles_home {
+  width: 20%;
+  margin-top: 40px;
 }
 
 .screen5 .semi-circle .screen-title,
@@ -111,73 +111,73 @@ img.circles_home{
 }
 
 .screen5 .semi-circle .key-facts-three {
-    margin-top: 100px;
-    margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .fact-item img {
-    width: 150px;
+  width: 150px;
 }
 
-.fact-text p{
-    font-size: 42px;
+.fact-text p {
+  font-size: 42px;
 }
 
-#nextButton { 
-    right: 150px;
-    bottom: 150px;
+#nextButton {
+  right: 150px;
+  bottom: 150px;
 }
 
 .other-logos-container img {
   width: 200px;
 }
 
-  /* Specific size adjustments */
-  .other-logos-one img:nth-child(1),
-  .other-logos-one img:nth-child(3) {
-    width: 200px;
-  }
-  .other-logos-one img:nth-child(1) {
-    margin-left: 0%;
-  }
+/* Specific size adjustments */
+.other-logos-one img:nth-child(1),
+.other-logos-one img:nth-child(3) {
+  width: 200px;
+}
+.other-logos-one img:nth-child(1) {
+  margin-left: 0%;
+}
 
-  .other-logos-one img:nth-child(2),
-  .other-logos-one img:nth-child(4),
-  .other-logos-one img:nth-child(6) {
-    width: 350px;
-  }
-  
-  .connect-us-container .connect-us-container-title {
-    font-size: 32px;
-  }
+.other-logos-one img:nth-child(2),
+.other-logos-one img:nth-child(4),
+.other-logos-one img:nth-child(6) {
+  width: 350px;
+}
 
-  .connect-us-icons>div img{
-    width: 55px;
-    height: 55px;
-  }
-  .connect-us-icons>div p{
-    margin-right: 40px;
-  }
+.connect-us-container .connect-us-container-title {
+  font-size: 32px;
+}
 
-  .connect-us-icons .contact-adress{
-    font-size: 32px;
-  }
-  .connect-us-icons > div:nth-child(2){
-    width: 55%;
-  }
-  .connect-us-icons > div:nth-child(3){
-    width: 30%;
-  }
-  .connect-us-icons .phonecontainer{
-    font-size: 32px;
-  }
-  .emailLink{
-    font-size: 32px;
-  }
+.connect-us-icons > div img {
+  width: 55px;
+  height: 55px;
+}
+.connect-us-icons > div p {
+  margin-right: 40px;
+}
 
-  .other-logos-container .other-logos-one img {
-    margin: auto;
-  }
+.connect-us-icons .contact-adress {
+  font-size: 32px;
+}
+.connect-us-icons > div:nth-child(2) {
+  width: 55%;
+}
+.connect-us-icons > div:nth-child(3) {
+  width: 30%;
+}
+.connect-us-icons .phonecontainer {
+  font-size: 32px;
+}
+.emailLink {
+  font-size: 32px;
+}
 
-  .screen7 .semi-circle {
+.other-logos-container .other-logos-one img {
+  margin: auto;
+}
+
+.screen7 .semi-circle {
   background-color: var(--color-white);
 }

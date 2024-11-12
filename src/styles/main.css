@@ -298,6 +298,7 @@ a img.phone {
 /* 
   ========= Screen 2 What we do ==========
  */
+
 .screen2 .semi-circle {
   background-color: var(--color-yellow);
 }
@@ -503,7 +504,7 @@ a img.phone {
   width: 80%;
   line-height: 12px;
   margin-top: -2px;
-  text-align: justify;
+  text-align: center;
   max-height: 100px;
 }
 
@@ -1259,8 +1260,12 @@ img.circles_home {
 
 .why-us-3 .screen-title {
   color: var(--color-purple);
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+.why-us-3 .screen-title-l2 {
+  line-height: 35px;
+  font-size: 25px;
 }
 
 .why-us-values-container {
@@ -1350,7 +1355,7 @@ img.circles_home {
   /* line-height: 20px; */
   width: 55%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 0%;
 }
 .why-us-last-p {
   font-family: "MontserratRegular";
@@ -1362,9 +1367,7 @@ img.circles_home {
 }
 
 /*******************************************************
- *                                                     *
  *            WHY US Screen 4                           *
- *                                                     *
  *******************************************************/
 .why-us-4 .screen-title {
   color: var(--color-blue);
@@ -2071,7 +2074,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
   gap: 10px;
 }
 
@@ -2164,6 +2167,7 @@ form {
 }
 
 /* carousal  */
+
 .why-us-carousal {
   width: 35%;
   margin: auto;
