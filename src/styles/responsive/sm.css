@@ -890,8 +890,8 @@ label {
   margin-top: 20px;
 }
 .admission-arrow-img {
-  width: 20%;
-  margin: 0px auto;
+  width: 24%;
+  /* margin: 0px auto; */
 }
 .admission-img-container {
   grid-template-columns: repeat(2, 1fr);
@@ -902,7 +902,10 @@ label {
 }
 
 .admission-3 .admission-content .screen-description {
-  margin-top: 30px;
+  margin-top: 10px;
+  font-size: 10px;
+
+  line-height: 20px;
 }
 
 .small-text {
@@ -940,4 +943,13 @@ label {
 .why-us-carousal-item img {
   width: 30px;
   height: 30px;
+}
+
+/* loaders  */
+.loader {
+  left: 40%;
+  top: 40%;
+  width: 80px;
+  height: 80px;
+  border-width: 12px;
 }

@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Our Story
   smoothTransition("our-story-purpose", 8);
-  smoothTransition("our-story-mission", 9);
-  smoothTransition("our-story-philosophy", 10);
+  smoothTransition("our-story-mission", 10);
+  smoothTransition("our-story-philosophy", 9);
   smoothTransition("our-story-team", 11);
   // Why us
   smoothTransition("why-us-mind-model", 15);
@@ -281,6 +281,68 @@ function openModal(imageSrc) {
   modalImg.src = imageSrc;
 }
 
+// CAROUSAL FUNCTIONALITY
+
+// let currentCarouselIndex = 0;
+// let itemsPerPage = 4; // Default value for larger screens
+// const leftButton = document.getElementById("left-button");
+// const rightButton = document.getElementById("right-button");
+
+// // Function to update itemsPerPage based on screen size
+// function updateItemsPerPage() {
+//   if (window.innerWidth <= 768) {
+//     // Small screen (mobile/tablet)
+//     itemsPerPage = 2;
+//   } else {
+//     // Large screen (desktop)
+//     itemsPerPage = 4;
+//   }
+//   // Reset the carousel index when changing the screen size
+//   currentCarouselIndex = 0;
+//   moveCarousel(0); // Move the carousel to the correct position
+// }
+
+// leftButton.addEventListener("click", () => moveCarousel(-1));
+// rightButton.addEventListener("click", () => moveCarousel(1));
+
+// // Function to move the carousel based on direction
+// function moveCarousel(direction) {
+//   const container = document.querySelector(".why-us-carousal-container");
+//   const totalItems = document.querySelectorAll(".why-us-carousal-item").length;
+//   console.log("currentCarouselIndex", currentCarouselIndex);
+
+//   // Calculate the new index after moving left or right
+//   currentCarouselIndex += direction;
+
+//   // Prevent going past the start or end of the carousel
+//   if (currentCarouselIndex < 0) {
+//     currentCarouselIndex = 0;
+//   } else if (currentCarouselIndex > 4) {
+//     currentCarouselIndex = 4;
+//   }
+//   if (currentCarouselIndex > totalItems - itemsPerPage) {
+//     currentCarouselIndex = totalItems - itemsPerPage;
+//   }
+
+//   // Disable the right button if the last index is reached
+//   if (currentCarouselIndex == totalItems - itemsPerPage) {
+//     rightButton.disabled = true;
+//   } else {
+//     rightButton.disabled = false;
+//   }
+
+//   // Calculate how far to translate the carousel
+//   const translateValue =
+//     ((currentCarouselIndex * 100) / totalItems) * itemsPerPage;
+
+//   // Update the transform property to slide the carousel
+//   container.style.transform = `translateX(-${translateValue}%)`;
+// }
+
+// // Adjust the itemsPerPage on page load and window resize
+// window.addEventListener("resize", updateItemsPerPage);
+// updateItemsPerPage(); // Initialize on page load
+
 let currentCarouselIndex = 0;
 let itemsPerPage = 4; // Default value for larger screens
 const leftButton = document.getElementById("left-button");
@@ -316,6 +378,20 @@ function moveCarousel(direction) {
   if (currentCarouselIndex < 0) {
     currentCarouselIndex = 0;
   }
+
+  // Hardcoded max index for mobile devices (8) and desktop devices (4)
+  if (window.innerWidth <= 768) {
+    // For mobile (max index 8)
+    if (currentCarouselIndex > 9) {
+      currentCarouselIndex = 9;
+    }
+  } else {
+    // For desktop (max index 4)
+    if (currentCarouselIndex > 4) {
+      currentCarouselIndex = 4;
+    }
+  }
+
   if (currentCarouselIndex > totalItems - itemsPerPage) {
     currentCarouselIndex = totalItems - itemsPerPage;
   }

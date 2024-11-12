@@ -1,8 +1,8 @@
 .video {
-    width: 110%;
-    left: 2%;
-    top: auto;
-    bottom: 14%;
+  width: 110%;
+  left: 2%;
+  top: auto;
+  bottom: 14%;
 }
 
 img.circles_home {
@@ -18,7 +18,7 @@ img.circles_home {
 /* 
 Our Story 2
 */
-.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1){
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
   font-size: 32px;
   line-height: 60px;
   margin-top: 50px;
@@ -48,11 +48,11 @@ Our Story 3
   margin-bottom: 10px;
 }
 
-.our-story-3 .our-story-semi-circle-3 > .our-story-content div p:nth-child(3){
+.our-story-3 .our-story-semi-circle-3 > .our-story-content div p:nth-child(3) {
   font-size: 20px;
   margin-bottom: 10px;
 }
-.our-story-3 .our-story-semi-circle-3 > .our-story-content div p:nth-child(5){
+.our-story-3 .our-story-semi-circle-3 > .our-story-content div p:nth-child(5) {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -63,30 +63,28 @@ Our Story 4
 */
 
 .our-story-4 .our-story-semi-circle-4 > .our-story-content p:nth-child(1) {
-font-size: 28px;
+  font-size: 28px;
 }
 .our-story-4 .our-story-semi-circle-4 > .our-story-content p:nth-child(2) {
-font-size: 24px;
-width: 60%;
-line-height: 40px;
+  font-size: 24px;
+  width: 60%;
+  line-height: 40px;
 }
 .our-story-image-container {
-left: -24%;
+  left: -24%;
 }
-
-
 
 .our-story-semi-circle-5 > .our-story-content p:nth-child(1) {
   font-size: 18px;
   line-height: 32px;
 }
 
-.our-story-semi-circle-5 > .our-story-content p:nth-child(2) { 
+.our-story-semi-circle-5 > .our-story-content p:nth-child(2) {
   font-size: 18px;
   line-height: 28px;
 }
 
-.team-member img { 
+.team-member img {
   width: 200px;
 }
 
@@ -107,19 +105,19 @@ left: -24%;
   line-height: 20px;
 }
 
-
 img.circles_home {
   width: 20%;
   margin-top: 10px;
 }
 
 .why-us-4 .screen-title {
-    font-size: 20px;
-    margin-top: 0px;
+  font-size: 20px;
+  margin-top: 0px;
 }
-.why-us-3 .screen-title-l2, .why-us-4 .screen-title-l2 {
-    font-size: 16px;
-    margin-top: 0px;
+.why-us-3 .screen-title-l2,
+.why-us-4 .screen-title-l2 {
+  font-size: 16px;
+  margin-top: 0px;
 }
 .why-us-4 .screen-description {
   font-size: 18px;
@@ -135,15 +133,14 @@ img.circles_home {
   max-width: 100%;
 }
 .why-us-text-4 {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .why-us-text-4 p {
   width: 70%;
   font-size: 18px;
   line-height: 30px;
 }
-
 
 .why-us-5 .semi-circle .screen-description {
   font-size: 20px;
@@ -153,11 +150,10 @@ img.circles_home {
   line-height: 35px;
 }
 
-
 .why-us-item img {
   width: 200px;
 }
-.why-us-item .why-us-title { 
+.why-us-item .why-us-title {
   font-size: 22px;
   margin-top: 20px;
 }
@@ -174,38 +170,38 @@ img.circles_home {
   line-height: 40px;
 }
 
-.programme-content{
+.programme-content {
   width: 90%;
   margin: auto;
   padding-top: 50px;
 }
 .programme-content button {
   font-size: 32px !important;
- }
- .programme-content .programme-title {
+}
+.programme-content .programme-title {
   line-height: 50px;
- }
- .programme-content .description-text {
+}
+.programme-content .description-text {
   font-size: 24px;
- }
+}
 
- .programme-img-container {
-    gap: 20px;
- }
- .programme-img-container div {
+.programme-img-container {
+  gap: 20px;
+}
+.programme-img-container div {
   width: 15%;
- }
- .programme-img-container div img {
+}
+.programme-img-container div img {
   width: 250px;
- }
- .programme-content .programme-title {
+}
+.programme-content .programme-title {
   font-size: 24px;
- }
- .programme-content .programme-title2 {
+}
+.programme-content .programme-title2 {
   font-size: 22px;
- }
+}
 
- .programme-content div > img.kids-icon {
+.programme-content div > img.kids-icon {
   width: 250px;
   margin-top: 20px;
 }
@@ -217,9 +213,7 @@ img.circles_home {
   width: 50%;
 }
 
-
-
-.admission-content button { 
+.admission-content button {
   font-size: 28px;
   padding: 10px 30px;
 }
@@ -268,7 +262,7 @@ img.circles_home {
   line-height: 60px;
 }
 
-.admission-content > .letter-circle { 
+.admission-content > .letter-circle {
   width: 350px;
   height: 350px;
   line-height: 50px;
@@ -304,4 +298,28 @@ img.circles_home {
 }
 .connect-us-icons p {
   font-size: 18px;
+}
+
+/* Carousal  */
+
+.why-us-carousal {
+  width: 21%;
+
+}
+
+.why-us-carousal-left,
+.why-us-carousal-right {
+  width: 40px;
+  height: 40px;
+}
+
+.why-us-carousal-outer-container {
+  width: 90%;
+}
+.why-us-carousal-left {
+  left: -50px;
+}
+
+.why-us-carousal-right {
+  right: -50px;
 }

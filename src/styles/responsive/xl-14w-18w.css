@@ -165,7 +165,7 @@ why us
 }
 
 .why-us-3 .semi-circle .content {
-  margin-top: 0%;
+  margin-top: 1%;
 }
 .why-us-3 .semi-circle .content .screen-title-l2 {
   margin-top: 0%;
@@ -198,18 +198,18 @@ why us
   line-height: 1.4;
 }
 
-.why-us-5 .screen-title-l2{
+.why-us-5 .screen-title-l2 {
   font-size: 24px;
   line-height: 40px;
 }
 
-.why-us-5 .screen-description{
+.why-us-5 .screen-description {
   font-size: 16px;
   line-height: 25px;
   margin-bottom: 20px;
 }
 
-.why-us-image-container-2 { 
+.why-us-image-container-2 {
   width: 50%;
 }
 .why-us-item {
@@ -252,11 +252,10 @@ Contact us
   margin-top: 0%;
 }
 
-
 label {
   font-size: 16px;
 }
-.form-field input{
+.form-field input {
   width: 70%;
 }
 .age-inputs {
@@ -267,9 +266,31 @@ label {
   background-color: var(--color-white);
 }
 
-
-.programme-content { 
+.programme-content {
   width: 70%;
   margin: auto;
   padding-top: 50px;
+}
+
+/* Carousal  */
+
+.why-us-carousal {
+  width: 30%;
+}
+
+.why-us-carousal-left,
+.why-us-carousal-right {
+  width: 40px;
+  height: 40px;
+}
+
+.why-us-carousal-outer-container {
+  width: 85%;
+}
+.why-us-carousal-left {
+  left: -20px;
+}
+
+.why-us-carousal-right {
+  right: 0px;
 }

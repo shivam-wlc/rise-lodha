@@ -165,11 +165,11 @@ form {
   width: 95%;
 }
 
-label { 
+label {
   width: 40%;
   font-size: 18px;
 }
-.form-field input{
+.form-field input {
   width: 60%;
 }
 
@@ -186,11 +186,11 @@ label {
   color: var(--color-white);
 }
 
-.admission-content button { 
+.admission-content button {
   font-size: 22px;
   padding: 10px 30px;
 }
-.admission-content .title-level-1{
+.admission-content .title-level-1 {
   font-size: 20px;
 }
 .admission-content .title-level-1 {
@@ -233,7 +233,7 @@ label {
   line-height: 50px;
 }
 
-.admission-content > .letter-circle { 
+.admission-content > .letter-circle {
   width: 300px;
   height: 300px;
   font-size: 32px;

@@ -298,6 +298,7 @@ a img.phone {
 /* 
   ========= Screen 2 What we do ==========
  */
+
 .screen2 .semi-circle {
   background-color: var(--color-yellow);
 }
@@ -503,7 +504,7 @@ a img.phone {
   width: 80%;
   line-height: 12px;
   margin-top: -2px;
-  text-align: justify;
+  text-align: center;
   max-height: 100px;
 }
 
@@ -1259,8 +1260,12 @@ img.circles_home {
 
 .why-us-3 .screen-title {
   color: var(--color-purple);
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+.why-us-3 .screen-title-l2 {
+  line-height: 35px;
+  font-size: 25px;
 }
 
 .why-us-values-container {
@@ -1350,7 +1355,7 @@ img.circles_home {
   /* line-height: 20px; */
   width: 55%;
   margin: auto;
-  margin-top: 1%;
+  margin-top: 0%;
 }
 .why-us-last-p {
   font-family: "MontserratRegular";
@@ -1362,9 +1367,7 @@ img.circles_home {
 }
 
 /*******************************************************
- *                                                     *
  *            WHY US Screen 4                           *
- *                                                     *
  *******************************************************/
 .why-us-4 .screen-title {
   color: var(--color-blue);
@@ -2071,7 +2074,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1.5%;
+  /* margin-top: 1.5%; */
   gap: 10px;
 }
 
@@ -2164,6 +2167,7 @@ form {
 }
 
 /* carousal  */
+
 .why-us-carousal {
   width: 35%;
   margin: auto;
@@ -2327,4 +2331,66 @@ form {
 #apply-for-admission,
 #letter-circle {
   cursor: pointer;
+}
+
+/* Modal css  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,   0, 0, 0.5);
+  align-items: center;
+  padding-top: 40px;
+}
+
+.modal-image-box {
+  position: relative;
+  border: 5px solid white;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 80vw;
+  border-radius: 10px;
+}
+.modal-image-item {
+  cursor: pointer;
+}
+
+/* Loader Css  */
+/* Add this to your CSS file */
+.loader {
+  position: fixed;
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 9999; /* Ensure it is above other elements */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main-content {
+  display: none; /* Hide the main content initially */
 }
