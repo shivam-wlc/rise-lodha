@@ -2366,8 +2366,8 @@ form {
 /* Add this to your CSS file */
 .loader {
   position: fixed;
-  left: 50%;
-  top: 50%;
+  left: 45%;
+  top: 40%;
   transform: translate(-50%, -50%);
   border: 16px solid #f3f3f3;
   border-radius: 50%;
