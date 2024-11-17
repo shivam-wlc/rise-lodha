@@ -1,0 +1,300 @@
+.video {
+  width: 130%;
+  left: 2%;
+}
+
+.nav-item {
+  height: 20px;
+  width: 20px;
+  margin: 4px;
+}
+.nav-text {
+  right: 30px;
+  font-size: 14px;
+}
+
+.screen-title-l2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.screen-description {
+  font-size: 16px;
+  line-height: 18px;
+  width: 65%;
+  text-align: center;
+}
+
+.screen2 .values-container .values {
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.nav-button img {
+  width: 20px;
+}
+
+img.circles_home {
+  margin-top: 30px;
+  width: 25%;
+  margin-top: 22px;
+}
+
+.key-facts-three {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-left: 30%;
+}
+
+.key-facts-two {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  padding-left: 30%;
+}
+.fact-item img {
+  width: 50px;
+}
+.fact-text {
+  font-size: 18px;
+}
+
+.age-inputs {
+  width: 100%;
+  margin: 0px;
+}
+
+.age-inputs input {
+  width: 40%;
+  margin: 0px;
+}
+
+/*******************************************************
+ *             Our story screen 2                      *
+ *******************************************************/
+.our-story .screen-title {
+  font-size: 24px;
+  padding: 10px 30px;
+}
+.img-container img {
+  max-width: 100px;
+  border: 1px solid red;
+}
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+  font-family: "MontserratRegular";
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+  font-family: "MontserratRegular";
+  font-size: 14px;
+  line-height: 22px;
+  width: 60%;
+  margin: auto;
+  margin-top: 1%;
+}
+
+/*******************************************************
+ *            WHY US SCREEN 2                     *
+ *******************************************************/
+
+.why-us-value {
+  width: 80px;
+}
+
+.why-us-5 .semi-circle .screen-title-l2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.why-us-5 .semi-circle .screen-description {
+  font-size: 16px;
+  margin-bottom: 25px;
+  width: 40%;
+  margin-top: 10px;
+  line-height: 35px;
+}
+
+.why-us-item img {
+  width: 80px;
+}
+.why-us-item .why-us-title {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.why-us-item .why-us-description {
+  font-size: 14px;
+}
+/*******************************************************
+ *            PROGRAMMS SCREEN 1                    *
+ *******************************************************/
+.semi-circle .programme-content .programme-img-container {
+  flex-wrap: wrap;
+  width: 70%;
+}
+.semi-circle .programme-content .programme-img-container div {
+  width: 25%;
+}
+.semi-circle .programme-content .programme-img-container div img {
+  width: 50px;
+}
+.programme-content .programme-title {
+  font-size: 20px;
+}
+
+.programme-img-container p {
+  font-size: 14px !important;
+  margin: 0px 15px;
+}
+
+/*******************************************************
+ *            PROGRAMMS SCREEN 2                    *
+ *******************************************************/
+
+.programme-title2 {
+  margin-top: 5px;
+}
+
+.programme-2 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+.programme-3 .description-text {
+  width: 70%;
+  margin: auto;
+}
+.programme-4 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+.programme-5 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+.programme-6 .description-text {
+  width: 70%;
+  margin: auto;
+}
+
+/*******************************************************
+ *            ADMISSION SCREEN                     *
+ *******************************************************/
+
+.admission-content button {
+  font-size: 20px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+.admission-content .title-level-1 {
+  font-size: 18px;
+}
+.admission-content .title-level-1 {
+  line-height: 30px;
+  margin-top: 30px;
+}
+
+.admission-img-container img {
+  width: 100px;
+}
+
+.admission-img-container > div:first-child img {
+  max-width: 100px;
+}
+.admission-img-container > div:nth-child(2) img {
+  max-width: 70px;
+}
+.admission-img-container > div:nth-child(3) img {
+  max-width: 100px;
+}
+.admission-img-container > div:nth-child(4) img {
+  max-width: 90px;
+}
+
+.admission-img-container > div p {
+  font-size: 18px;
+}
+
+.admission-arrow-img {
+  margin-top: 20px;
+  width: 230px;
+}
+.semi-circle .small-text:first-child {
+  margin-bottom: 10px;
+}
+
+.semi-circle .large-text {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.admission-content > .letter-circle {
+  width: 230px;
+  height: 230px;
+  font-size: 24px;
+  line-height: 40px;
+}
+.admission-content .screen-description {
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.connect-us-icons {
+  width: 75%;
+}
+
+.preschool-tour-form {
+  width: 40%;
+}
+label {
+  font-size: 18px;
+}
+.age-inputs {
+  width: 52%;
+}
+
+#submit-button {
+  margin-left: 32%;
+}
+
+.screen7 .semi-circle {
+  background-color: var(--color-white);
+}
+
+.why-us-letter-circle {
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.why-us-letter-circle {
+  width: 50px;
+  height: 50px;
+}
+
+.why-us-value:first-child {
+  line-height: 150px;
+}
+.why-us-value:last-child {
+  line-height: 150px;
+}
+
+.our-story-values-list div {
+  width: 80px;
+  height: 80px;
+  font-size: 10px;
+}

@@ -1,212 +1,416 @@
-const screens = document.querySelectorAll(".screen");
-const nextButton = document.getElementById("nextButton");
-let currentIndex = 0;
-let isTransitioning = false;
-let lastTouchTime = 0;
+import { updateVideoSource } from "./responsiveVideo.js";
 
-// Function to show the current screen
-function updateScreens() {
-  screens.forEach((screen, index) => {
-    if (index < currentIndex) {
-      screen.style.transform = "translateY(0)"; // Keep previous screens fixed in place
-    } else if (index === currentIndex) {
-      screen.style.transform = "translateY(0)"; // Show current screen
-    } else {
-      screen.style.transform = "translateY(100%)"; // Slide next screens from below
+const activeIndexes = {
+  "carousel-images": 0,
+  "carousel-text": 0,
+};
+let currentIndex = 0;
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  event.preventDefault();
+  updateVideoSource();
+  window.addEventListener("resize", updateVideoSource);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const screens = document.querySelectorAll(".screen");
+  const nextButton = document.getElementById("nextButton");
+  let isTransitioning = false;
+  let lastTouchTime = 0;
+
+  // Function to update visible screens
+  function updateScreens() {
+    screens.forEach((screen, index) => {
+      if (index < currentIndex) {
+        // Keep the current screen in place
+        screen.style.transform = "translateY(100)";
+      } else if (index === currentIndex) {
+        // Center the current screen
+        screen.style.transform = "translateY(0)";
+      } else {
+        // Move below the current screen
+        screen.style.transform = `translateY(${100 * (index - currentIndex)}%)`;
+      }
+    });
+  }
+
+  // Unified transition handler
+  function handleTransition(direction) {
+    if (!isTransitioning) {
+      isTransitioning = true;
+
+      if (direction === "next" && currentIndex < screens.length - 1) {
+        currentIndex++;
+      } else if (direction === "prev" && currentIndex > 0) {
+        currentIndex--;
+      }
+
+      updateScreens();
+
+      setTimeout(() => {
+        isTransitioning = false;
+      }, 800); // Adjust duration if necessary
+    }
+  }
+
+  // Wheel event for scrolling (desktop)
+  if (!/Mobi|Android/i.test(navigator.userAgent)) {
+    let lastWheelTime = 0;
+    window.addEventListener(
+      "wheel",
+      (event) => {
+        const now = Date.now();
+        if (now - lastWheelTime < 500) return;
+        lastWheelTime = now;
+
+        event.preventDefault();
+        const scrollThreshold = 2;
+        // Increase threshold for Mac touchpad sensitivity
+        if (Math.abs(event.deltaY) > scrollThreshold) {
+          handleTransition(event.deltaY > 0 ? "next" : "prev");
+        }
+      },
+      { passive: false }
+    );
+  }
+
+  // Touch event for scrolling (mobile)
+  let touchStartY = 0;
+  window.addEventListener(
+    "touchstart",
+    (event) => {
+      touchStartY = event.touches[0].clientY;
+    },
+    { passive: true }
+  );
+
+  window.addEventListener(
+    "touchend",
+    (event) => {
+      const touchEndY = event.changedTouches[0].clientY;
+      const currentTime = Date.now();
+
+      if (currentTime - lastTouchTime > 300) {
+        if (touchStartY > touchEndY + 50) {
+          handleTransition("next");
+        } else if (touchStartY < touchEndY - 50) {
+          handleTransition("prev");
+        }
+        lastTouchTime = currentTime;
+      }
+    },
+    { passive: true }
+  );
+
+  // Smooth transitions for menu links
+  function smoothTransition(linkId, targetIndex) {
+    const link = document.getElementById(linkId);
+    if (link) {
+      link.addEventListener("click", (event) => {
+        event.preventDefault();
+        currentIndex = targetIndex;
+        updateScreens();
+      });
+    }
+  }
+
+  // Assign menu link transitions (adjust target indexes as needed)
+  smoothTransition("home-link", 0);
+  smoothTransition("our-story-link", 7);
+  smoothTransition("why-us-link", 14);
+  smoothTransition("programmes-link", 21);
+  smoothTransition("admission-link", 28);
+  smoothTransition("contact-us-link", 34);
+  smoothTransition("book-button", 36);
+
+  // Our Story
+  smoothTransition("our-story-purpose", 8);
+  smoothTransition("our-story-mission", 10);
+  smoothTransition("our-story-philosophy", 9);
+  smoothTransition("our-story-team", 11);
+  // Why us
+  smoothTransition("why-us-mind-model", 15);
+  smoothTransition("why-us-curriculum", 16);
+  smoothTransition("why-us-infrastructure", 17);
+  smoothTransition("why-us-enrichment", 18);
+  smoothTransition("why-us-growth-mindset", 19);
+  smoothTransition("why-us-partnerships", 20);
+  //PROGRAMMS
+  smoothTransition("programme-toddler", 22);
+  smoothTransition("programme-playgroup", 23);
+  smoothTransition("programme-nursery", 24);
+  smoothTransition("programme-jrkg", 25);
+  smoothTransition("programme-srkg", 26);
+  //Admission
+  smoothTransition("admission-process", 29);
+  smoothTransition("eligibility-criterion", 30);
+  smoothTransition("fee-structure", 31);
+  smoothTransition("apply-for-admission", 32);
+  //RED CIRCLE
+  smoothTransition("letter-circle", 36);
+
+  // Initial call to set the first screen
+  updateScreens();
+
+  document
+    .getElementById("carousel1-right-icon")
+    .addEventListener("click", () => {
+      moveRight("carousel-images");
+    });
+  document
+    .getElementById("carousel1-left-icon")
+    .addEventListener("click", () => {
+      moveLeft("carousel-images");
+    });
+
+  document
+    .getElementById("carousel2-right-icon")
+    .addEventListener("click", () => {
+      moveRight("carousel-text");
+    });
+  document
+    .getElementById("carousel2-left-icon")
+    .addEventListener("click", () => {
+      moveLeft("carousel-text");
+    });
+
+  // Add event listeners to the images
+  document.querySelectorAll(".circular-item a").forEach((item) => {
+    item.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default link behavior
+      const imageSrc = this.href; // Get the image source
+      openModal(imageSrc); // Open the modal with the clicked image
+    });
+  });
+
+  if (typeof emailjs !== "undefined") {
+    emailjs.init("G2SDjizAB86ZjO6Tz");
+  } else {
+    return;
+  }
+  // Function to add submit event to forms
+  function addFormListener(formId) {
+    const bookingForm = document.getElementById(formId);
+    if (!bookingForm) return; // Skip if form does not exist
+    bookingForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent default submission
+      // Get input values
+      const fromName = bookingForm["name"].value;
+      const email = bookingForm["email"].value;
+      const mobile = bookingForm["mobile"].value;
+      const childName = bookingForm["childname"].value;
+      const childAgeYear = bookingForm["childage-year"].value;
+      const childAgeMonth = bookingForm["childage-month"].value;
+      const city = bookingForm["city"].value;
+      // Create message
+      const message = `You have received a booking from ${fromName}. Details:
+                          Name: ${fromName}
+                          Email: ${email}
+                          Mobile: ${mobile}
+                          Child's Name: ${childName}
+                          Child's Age: ${childAgeYear} years ${childAgeMonth} months
+                          City: ${city}`;
+      const formData = {
+        to_name: "Recipient Name",
+        from_name: fromName,
+        message,
+      };
+
+      console.log(emailjs, formData);
+      // Send email
+      emailjs
+        .send("service_gb9bmin", "template_ktx4jsb", formData)
+        .then((response) => {
+          alert("Your booking request has been sent!");
+        })
+        .catch((error) => {
+          alert("Oops! Something went wrong. Please try again.");
+        });
+      bookingForm.reset(); // Reset form after submission
+    });
+  }
+  // Attach listeners to both forms
+  addFormListener("booking-form");
+  addFormListener("admission-booking-form");
+
+  nextButton.addEventListener("click", () => {
+    handleTransition("next");
+  });
+});
+
+function moveLeft(carouselClass) {
+  const circularItems = document.querySelectorAll(
+    `.${carouselClass} .circular-item`
+  );
+  if (activeIndexes[carouselClass] > 0) {
+    activeIndexes[carouselClass]--;
+  } else {
+    // Wrap around to the end
+    activeIndexes[carouselClass] = circularItems.length - 1;
+  }
+  updateCircularItems(circularItems, activeIndexes[carouselClass]);
+}
+
+function moveRight(carouselClass) {
+  const circularItems = document.querySelectorAll(
+    `.${carouselClass} .circular-item`
+  );
+  if (activeIndexes[carouselClass] < circularItems.length - 1) {
+    activeIndexes[carouselClass]++;
+  } else {
+    // Wrap around to the start
+    activeIndexes[carouselClass] = 0;
+  }
+  updateCircularItems(circularItems, activeIndexes[carouselClass]);
+}
+
+function updateCircularItems(circularItems, activeIndex) {
+  circularItems.forEach((item, index) => {
+    item.classList.remove("active");
+    if (index === activeIndex) {
+      item.classList.add("active");
     }
   });
 }
 
-// Unified function to handle transitions
-function handleTransition(direction) {
-  if (!isTransitioning) {
-    isTransitioning = true;
-
-    if (direction === "next" && currentIndex < screens.length - 1) {
-      currentIndex++;
-    } else if (direction === "prev" && currentIndex > 0) {
-      currentIndex--;
-    }
-
-    updateScreens();
-
-    setTimeout(() => {
-      isTransitioning = false;
-    }, 800); // Adjust duration as needed
-  }
+// Open the modal and display the clicked image
+function openModal(imageSrc) {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-image");
+  modal.style.display = "block";
+  modalImg.src = imageSrc;
 }
 
-// window.addEventListener(
-//   "wheel",
-//   (event) => {
-//     event.preventDefault();
-//     if (Math.abs(event.deltaY) > 30) {
-//       handleTransition(event.deltaY > 0 ? "next" : "prev");
-//     }
-//   },
-//   { passive: false }
-// );
-if (!/Mobi|Android/i.test(navigator.userAgent)) {
-  window.addEventListener(
-    "wheel",
-    (event) => {
-      event.preventDefault();
-      if (Math.abs(event.deltaY) > 30) {
-        handleTransition(event.deltaY > 0 ? "next" : "prev");
-      }
-    },
-    { passive: false }
-  );
-}
+// CAROUSAL FUNCTIONALITY
 
-// Handle touch events (mobile)
-let touchStartY = 0;
+// let currentCarouselIndex = 0;
+// let itemsPerPage = 4; // Default value for larger screens
+// const leftButton = document.getElementById("left-button");
+// const rightButton = document.getElementById("right-button");
 
-window.addEventListener("touchstart", (event) => {
-  touchStartY = event.touches[0].clientY;
-});
-
-// window.addEventListener("touchend", (event) => {
-//   const touchEndY = event.changedTouches[0].clientY;
-//   if (touchStartY > touchEndY + 50) {
-//     handleTransition("next"); // Swiping up
-//   } else if (touchStartY < touchEndY - 50) {
-//     handleTransition("prev"); // Swiping down
+// // Function to update itemsPerPage based on screen size
+// function updateItemsPerPage() {
+//   if (window.innerWidth <= 768) {
+//     // Small screen (mobile/tablet)
+//     itemsPerPage = 2;
+//   } else {
+//     // Large screen (desktop)
+//     itemsPerPage = 4;
 //   }
-// });
-window.addEventListener("touchend", (event) => {
-  const touchEndY = event.changedTouches[0].clientY;
-  const currentTime = Date.now();
+//   // Reset the carousel index when changing the screen size
+//   currentCarouselIndex = 0;
+//   moveCarousel(0); // Move the carousel to the correct position
+// }
 
-  // Throttle the touch events to prevent rapid firing
-  if (currentTime - lastTouchTime > 300) {
-    if (touchStartY > touchEndY + 50) {
-      handleTransition("next");
-    } else if (touchStartY < touchEndY - 50) {
-      handleTransition("prev");
+// leftButton.addEventListener("click", () => moveCarousel(-1));
+// rightButton.addEventListener("click", () => moveCarousel(1));
+
+// // Function to move the carousel based on direction
+// function moveCarousel(direction) {
+//   const container = document.querySelector(".why-us-carousal-container");
+//   const totalItems = document.querySelectorAll(".why-us-carousal-item").length;
+//   console.log("currentCarouselIndex", currentCarouselIndex);
+
+//   // Calculate the new index after moving left or right
+//   currentCarouselIndex += direction;
+
+//   // Prevent going past the start or end of the carousel
+//   if (currentCarouselIndex < 0) {
+//     currentCarouselIndex = 0;
+//   } else if (currentCarouselIndex > 4) {
+//     currentCarouselIndex = 4;
+//   }
+//   if (currentCarouselIndex > totalItems - itemsPerPage) {
+//     currentCarouselIndex = totalItems - itemsPerPage;
+//   }
+
+//   // Disable the right button if the last index is reached
+//   if (currentCarouselIndex == totalItems - itemsPerPage) {
+//     rightButton.disabled = true;
+//   } else {
+//     rightButton.disabled = false;
+//   }
+
+//   // Calculate how far to translate the carousel
+//   const translateValue =
+//     ((currentCarouselIndex * 100) / totalItems) * itemsPerPage;
+
+//   // Update the transform property to slide the carousel
+//   container.style.transform = `translateX(-${translateValue}%)`;
+// }
+
+// // Adjust the itemsPerPage on page load and window resize
+// window.addEventListener("resize", updateItemsPerPage);
+// updateItemsPerPage(); // Initialize on page load
+
+let currentCarouselIndex = 0;
+let itemsPerPage = 4; // Default value for larger screens
+const leftButton = document.getElementById("left-button");
+const rightButton = document.getElementById("right-button");
+
+// Function to update itemsPerPage based on screen size
+function updateItemsPerPage() {
+  if (window.innerWidth <= 768) {
+    // Small screen (mobile/tablet)
+    itemsPerPage = 2;
+  } else {
+    // Large screen (desktop)
+    itemsPerPage = 4;
+  }
+  // Reset the carousel index when changing the screen size
+  currentCarouselIndex = 0;
+  moveCarousel(0); // Move the carousel to the correct position
+}
+
+leftButton.addEventListener("click", () => moveCarousel(-1));
+rightButton.addEventListener("click", () => moveCarousel(1));
+
+// Function to move the carousel based on direction
+function moveCarousel(direction) {
+  const container = document.querySelector(".why-us-carousal-container");
+  const totalItems = document.querySelectorAll(".why-us-carousal-item").length;
+  console.log("currentCarouselIndex", currentCarouselIndex);
+
+  // Calculate the new index after moving left or right
+  currentCarouselIndex += direction;
+
+  // Prevent going past the start or end of the carousel
+  if (currentCarouselIndex < 0) {
+    currentCarouselIndex = 0;
+  }
+
+  // Hardcoded max index for mobile devices (8) and desktop devices (4)
+  if (window.innerWidth <= 768) {
+    // For mobile (max index 8)
+    if (currentCarouselIndex > 9) {
+      currentCarouselIndex = 9;
     }
-    lastTouchTime = currentTime;
+  } else {
+    // For desktop (max index 4)
+    if (currentCarouselIndex > 4) {
+      currentCarouselIndex = 4;
+    }
   }
-});
 
-// Handle button click
-nextButton.addEventListener("click", () => {
-  handleTransition("next");
-});
-
-// Initial call to set the first screen
-updateScreens();
-
-// Smooth transition to the 7th screen on "Our Story" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("our-story-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 7;
-      updateScreens();
-    });
+  if (currentCarouselIndex > totalItems - itemsPerPage) {
+    currentCarouselIndex = totalItems - itemsPerPage;
   }
-});
 
-// Smooth transition to the )th screen on "Home" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("home");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 0;
-      updateScreens();
-    });
+  // Disable the right button if the last index is reached
+  if (currentCarouselIndex == totalItems - itemsPerPage) {
+    rightButton.disabled = true;
+  } else {
+    rightButton.disabled = false;
   }
-});
 
-// Smooth transition to the 7th screen on "Why Us" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("why-us-link");
+  // Calculate how far to translate the carousel
+  const translateValue =
+    ((currentCarouselIndex * 100) / totalItems) * itemsPerPage;
 
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
+  // Update the transform property to slide the carousel
+  container.style.transform = `translateX(-${translateValue}%)`;
+}
 
-      // Directly set the currentIndex to 6 (7th screen)
-      currentIndex = 14;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "programmes" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("programmes-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 27 (28th screen)
-      currentIndex = 28;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "admission" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("admission-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault(); // Prevent default anchor behavior
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 34 (34th screen)
-      currentIndex = 35;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "Our Story" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("contact-us-link");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 41 (42th screen)
-      currentIndex = 42;
-      updateScreens();
-    });
-  }
-});
-
-// Smooth transition to the 7th screen on "Our Story" link click
-document.addEventListener("DOMContentLoaded", () => {
-  const ourStoryLink = document.getElementById("book-button");
-
-  if (ourStoryLink) {
-    ourStoryLink.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopImmediatePropagation();
-
-      // Directly set the currentIndex to 41 (42th screen)
-      currentIndex = 44;
-      updateScreens();
-    });
-  }
-});
+// Adjust the itemsPerPage on page load and window resize
+window.addEventListener("resize", updateItemsPerPage);
+updateItemsPerPage(); // Initialize on page load

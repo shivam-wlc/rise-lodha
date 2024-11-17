@@ -1,0 +1,107 @@
+.right-section {
+  /* border: 1px solid black; */
+}
+
+/* contact  */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-row {
+  gap: 10rem;
+  width: 100%;
+}
+
+/* Make the email and mobile items more centered */
+.email-item,
+.mobile-item {
+  justify-content: center;
+}
+
+.email-item img,
+.mobile-item img {
+  width: 30px;
+  height: 30px; /* Increase icon size for larger screens */
+}
+
+.email-item a,
+.mobile-item p {
+  font-size: 16px; /* Increase text size for readability */
+  line-height: 22px;
+}
+
+/* Address item adjustments */
+.address-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.address-item img {
+  width: 30px;
+  height: 30px;
+}
+.map-item {
+  margin-top: 4%;
+}
+
+.map-item iframe {
+  width: 800px;
+  height: 400px;
+}
+
+.screen2 .values-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-top: 3%; */
+  gap: 1%; /* Increase gap between elements for more space */
+  /* border: 1px solid black; */
+}
+
+.screen2 .values-container p {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 22px; /* Increased font size for readability on large screens */
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 20px; /* Adding margin for better spacing */
+  /* border: 1px solid black; */
+}
+
+.screen2 .values-container .values {
+  display: flex;
+  justify-content: space-evenly; /* Spread out the values more evenly */
+  gap: 20px; /* Increase gap between circles for large screens */
+  width: 50%; /* Make sure the values container spans the full width */
+  margin-top: 0%; /* Adjust the margin for better spacing */
+  /* border: 1px solid black; */
+}
+
+.screen2 .values-container .values .value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%; /* Reduce the width for better spacing */
+}
+
+.screen2 .values-container .values .letter-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; /* Increased size of the letter circle for large screens */
+  height: 120px; /* Increased height */
+  border-radius: 50%;
+  background-color: var(--circle-color, yellow);
+  font-family: "MontserratBold", sans-serif;
+  font-size: 40px; /* Increase font size for letters inside circles */
+  color: white;
+  border: 2px solid var(--color-white);
+}
