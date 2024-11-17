@@ -961,6 +961,7 @@ img.circles_home {
 #founder-text p:nth-child(1) {
   font-size: 14px !important;
   text-transform: none;
+  letter-spacing: normal;
 }
 #founder-text p:nth-child(2) {
   font-size: 14px;
@@ -1222,6 +1223,9 @@ img.circles_home {
 .why-us-img-container > div:nth-child(6) p {
   color: var(--color-red);
 }
+.why-us-img-container > div:nth-child(6) img {
+  max-width: 110px;
+}
 
 /*******************************************************
  *                                                     *
@@ -1375,7 +1379,7 @@ img.circles_home {
 
 .why-us-4 .screen-description {
   margin-top: -12px;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .why-us-semi-circle-4 .why-us-content p:nth-child(1) {
@@ -1678,11 +1682,12 @@ img.circles_home {
 
 .programme-2 .programme-title {
   margin-top: 4%;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 .programme-2 .programme-title2 {
-  margin-top: -0.5%;
-  font-size: 22px;
+  margin-top: -0.7%;
+  font-size: 16px;
 }
 .programme-2 .description-text {
   width: 70%;
@@ -1690,11 +1695,12 @@ img.circles_home {
 }
 .programme-3 .programme-title {
   margin-top: 4%;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 .programme-3 .programme-title2 {
-  margin-top: -0.5%;
-  font-size: 22px;
+  margin-top: -0.7%;
+  font-size: 16px;
 }
 .programme-3 .description-text {
   width: 70%;
@@ -1702,11 +1708,12 @@ img.circles_home {
 }
 .programme-4 .programme-title {
   margin-top: 4%;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 .programme-4 .programme-title2 {
-  margin-top: -0.5%;
-  font-size: 22px;
+  margin-top: -0.7%;
+  font-size: 16px;
 }
 .programme-4 .description-text {
   width: 70%;
@@ -1714,11 +1721,12 @@ img.circles_home {
 }
 .programme-5 .programme-title {
   margin-top: 4%;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 .programme-5 .programme-title2 {
-  margin-top: -0.5%;
-  font-size: 22px;
+  margin-top: -0.7%;
+  font-size: 16px;
 }
 .programme-5 .description-text {
   width: 70%;
@@ -1726,11 +1734,12 @@ img.circles_home {
 }
 .programme-6 .programme-title {
   margin-top: 4%;
-  font-size: 22px;
+  font-size: 26px;
+  font-weight: bold;
 }
 .programme-6 .programme-title2 {
-  margin-top: -0.5%;
-  font-size: 22px;
+  margin-top: -0.7%;
+  font-size: 16px;
 }
 .programme-6 .description-text {
   width: 70%;
@@ -2393,4 +2402,13 @@ form {
 
 .main-content {
   display: none; /* Hide the main content initially */
+}
+
+/* color change to white in big red circle  */
+.admission-4 .semi-circle .admission-content .letter-circle {
+  color: white;
+}
+/* color change to white in button in tour form   */
+#submit-button button {
+  color: white;
 }
