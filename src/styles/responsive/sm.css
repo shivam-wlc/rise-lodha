@@ -10,12 +10,11 @@
 }
 
 .book {
-  top: 80%;
   font-size: 10px;
   padding: 2px;
   margin-top: 10px;
-  width: 200px;
-  height: 40px;
+  width: 180px;
+  height: 30px;
 }
 
 /* Video  */
@@ -211,6 +210,10 @@ img.circles_home {
 /* infrastructure  */
 .circular-keys-2 {
   margin-top: 100px;
+}
+.screen6 .circular-keys-2 .circles-container-infra img {
+  margin: -10px;
+  width: 200px;
 }
 
 /* Next Button  */
@@ -635,6 +638,9 @@ label {
 #submit-button {
   text-align: center;
   justify-content: center;
+  /* border: 1px solid black; */
+  /* width: 100%; */
+  margin: auto;
 }
 
 /* 
@@ -657,7 +663,7 @@ label {
 }
 
 .why-us-img-container img {
-  max-width: 60px; /* Adjust image size */
+  max-width: 50px; /* Adjust image size */
   height: auto;
 }
 
@@ -793,10 +799,41 @@ label {
 }
 
 /* Screen 6 */
+
 .why-us-6 .screen-description {
-  margin-top: 70px;
+  /* margin-top: 70px; */
   padding: 0px 20px;
   width: 60%;
+  font-size: 12px;
+  line-height: 16px;
+}
+.why-us-6 .semi-circle .content .screen-title-l2 {
+  margin-top: -0.2%;
+  font-size: 14px;
+  line-height: 20px;
+}
+.why-us-6 .semi-circle .content {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.why-us-6 .screen-description {
+  padding: 0px 20px;
+  width: 60%;
+}
+.why-us-6 .growth-mindset-image-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  flex-direction: row;
+  max-width: 200px;
+  margin: auto;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+.why-us-6 .growth-mindset-image-container img {
+  width: 100%;
+  margin: auto;
 }
 
 /* Programs Pages */

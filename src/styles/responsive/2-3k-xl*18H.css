@@ -2,6 +2,12 @@
   /* border: 1px solid black; */
 }
 
+.nav-item {
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+}
+
 /* contact  */
 .contact-container {
   display: flex;

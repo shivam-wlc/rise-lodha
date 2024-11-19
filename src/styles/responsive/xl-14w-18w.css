@@ -295,3 +295,9 @@ label {
 .why-us-carousal-right {
   right: 0px;
 }
+
+.team-member.right {
+  justify-content: flex-end;
+  /* border: 1px solid black; */
+  margin-top: -35px;
+}
