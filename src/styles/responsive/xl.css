@@ -4,6 +4,10 @@
   width: 121%;
 }
 
+.nav-item {
+  margin: 2px;
+}
+
 img.circles_home {
   margin-top: 30px;
   width: 25%;

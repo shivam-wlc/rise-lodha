@@ -19,8 +19,51 @@ document.addEventListener("DOMContentLoaded", () => {
   let lastTouchTime = 0;
 
   // Function to update visible screens
+
+  let isAllowedPage = {
+    Home: { 0: true, 1: true, 2: true, 3: true, 4: true, 5: true, 6: true },
+    OurStory: {
+      7: true,
+      8: true,
+      9: true,
+      10: true,
+      11: true,
+      12: true,
+      13: true,
+    },
+    WhyUs: {
+      14: true,
+      15: true,
+      16: true,
+      17: true,
+      18: true,
+      19: true,
+      20: true,
+    },
+    Programmes: {
+      21: true,
+      22: true,
+      23: true,
+      24: true,
+      25: true,
+      26: true,
+      27: true,
+    },
+    Admission: { 28: true, 29: true, 30: true, 31: true, 32: true },
+    ContactUs: { 34: true, 35: true },
+    bookNow: { 36: true },
+    letterCircle: { 32: true },
+  };
+
+  let changeMenu = isAllowedPage.Home;
   function updateScreens() {
+    if (!changeMenu[currentIndex]) {
+      return;
+    }
+
     screens.forEach((screen, index) => {
+      //
+
       if (index < currentIndex) {
         // Keep the current screen in place
         screen.style.transform = "translateY(100)";
@@ -36,6 +79,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Unified transition handler
   function handleTransition(direction) {
+    const shouldAllowNext = changeMenu[currentIndex + 1];
+    const shouldAllowPrev = changeMenu[currentIndex - 1];
+
+    if (direction === "next" && !shouldAllowNext) {
+      console.log("shouldAllowNext", shouldAllowNext);
+      console.log("shouldAllowPrev", shouldAllowPrev);
+      return;
+    }
+
+    if (direction === "prev" && !shouldAllowPrev) {
+      console.log("shouldAllowNext", shouldAllowNext);
+      console.log("shouldAllowPrev", shouldAllowPrev);
+      return;
+    }
+
     if (!isTransitioning) {
       isTransitioning = true;
 
@@ -103,11 +161,19 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   // Smooth transitions for menu links
-  function smoothTransition(linkId, targetIndex) {
+  function smoothTransition(linkId, targetIndex, menu) {
     const link = document.getElementById(linkId);
+
     if (link) {
       link.addEventListener("click", (event) => {
         event.preventDefault();
+        if (menu) {
+          changeMenu = menu;
+          document.querySelectorAll(".navlink-active").forEach((item) => {
+            item.classList.remove("navlink-active");
+          });
+          event.target.classList.add("navlink-active");
+        }
         currentIndex = targetIndex;
         updateScreens();
       });
@@ -115,13 +181,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Assign menu link transitions (adjust target indexes as needed)
-  smoothTransition("home-link", 0);
-  smoothTransition("our-story-link", 7);
-  smoothTransition("why-us-link", 14);
-  smoothTransition("programmes-link", 21);
-  smoothTransition("admission-link", 28);
-  smoothTransition("contact-us-link", 34);
-  smoothTransition("book-button", 36);
+  smoothTransition("home-link", 0, isAllowedPage.Home);
+  smoothTransition("our-story-link", 7, isAllowedPage.OurStory);
+  smoothTransition("why-us-link", 14, isAllowedPage.WhyUs);
+  smoothTransition("programmes-link", 21, isAllowedPage.Programmes);
+  smoothTransition("admission-link", 28, isAllowedPage.Admission);
+  smoothTransition("contact-us-link", 34, isAllowedPage.ContactUs);
+  smoothTransition("book-button", 36, isAllowedPage.bookNow);
+  smoothTransition("letter-circle", 32, isAllowedPage.Admission);
 
   // Our Story
   smoothTransition("our-story-purpose", 8);
@@ -147,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
   smoothTransition("fee-structure", 31);
   smoothTransition("apply-for-admission", 32);
   //RED CIRCLE
-  smoothTransition("letter-circle", 36);
+  // smoothTransition("letter-circle", 32);
 
   // Initial call to set the first screen
   updateScreens();
@@ -280,68 +347,6 @@ function openModal(imageSrc) {
   modal.style.display = "block";
   modalImg.src = imageSrc;
 }
-
-// CAROUSAL FUNCTIONALITY
-
-// let currentCarouselIndex = 0;
-// let itemsPerPage = 4; // Default value for larger screens
-// const leftButton = document.getElementById("left-button");
-// const rightButton = document.getElementById("right-button");
-
-// // Function to update itemsPerPage based on screen size
-// function updateItemsPerPage() {
-//   if (window.innerWidth <= 768) {
-//     // Small screen (mobile/tablet)
-//     itemsPerPage = 2;
-//   } else {
-//     // Large screen (desktop)
-//     itemsPerPage = 4;
-//   }
-//   // Reset the carousel index when changing the screen size
-//   currentCarouselIndex = 0;
-//   moveCarousel(0); // Move the carousel to the correct position
-// }
-
-// leftButton.addEventListener("click", () => moveCarousel(-1));
-// rightButton.addEventListener("click", () => moveCarousel(1));
-
-// // Function to move the carousel based on direction
-// function moveCarousel(direction) {
-//   const container = document.querySelector(".why-us-carousal-container");
-//   const totalItems = document.querySelectorAll(".why-us-carousal-item").length;
-//   console.log("currentCarouselIndex", currentCarouselIndex);
-
-//   // Calculate the new index after moving left or right
-//   currentCarouselIndex += direction;
-
-//   // Prevent going past the start or end of the carousel
-//   if (currentCarouselIndex < 0) {
-//     currentCarouselIndex = 0;
-//   } else if (currentCarouselIndex > 4) {
-//     currentCarouselIndex = 4;
-//   }
-//   if (currentCarouselIndex > totalItems - itemsPerPage) {
-//     currentCarouselIndex = totalItems - itemsPerPage;
-//   }
-
-//   // Disable the right button if the last index is reached
-//   if (currentCarouselIndex == totalItems - itemsPerPage) {
-//     rightButton.disabled = true;
-//   } else {
-//     rightButton.disabled = false;
-//   }
-
-//   // Calculate how far to translate the carousel
-//   const translateValue =
-//     ((currentCarouselIndex * 100) / totalItems) * itemsPerPage;
-
-//   // Update the transform property to slide the carousel
-//   container.style.transform = `translateX(-${translateValue}%)`;
-// }
-
-// // Adjust the itemsPerPage on page load and window resize
-// window.addEventListener("resize", updateItemsPerPage);
-// updateItemsPerPage(); // Initialize on page load
 
 let currentCarouselIndex = 0;
 let itemsPerPage = 4; // Default value for larger screens
