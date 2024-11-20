@@ -5,7 +5,42 @@ const activeIndexes = {
   "carousel-text": 0,
 };
 let currentIndex = 0;
+let isAllowedPage = {
+  Home: { 0: true, 1: true, 2: true, 3: true, 4: true, 5: true, 6: true },
+  OurStory: {
+    7: true,
+    8: true,
+    9: true,
+    10: true,
+    11: true,
+    12: true,
+    13: true,
+  },
+  WhyUs: {
+    14: true,
+    15: true,
+    16: true,
+    17: true,
+    18: true,
+    19: true,
+    20: true,
+  },
+  Programmes: {
+    21: true,
+    22: true,
+    23: true,
+    24: true,
+    25: true,
+    26: true,
+    27: true,
+  },
+  Admission: { 28: true, 29: true, 30: true, 31: true, 32: true },
+  ContactUs: { 34: true, 35: true },
+  bookNow: { 36: true },
+  letterCircle: { 32: true },
+};
 
+let changeMenu = isAllowedPage.Home;
 document.addEventListener("DOMContentLoaded", (event) => {
   event.preventDefault();
   updateVideoSource();
@@ -20,42 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to update visible screens
 
-  let isAllowedPage = {
-    Home: { 0: true, 1: true, 2: true, 3: true, 4: true, 5: true, 6: true },
-    OurStory: {
-      7: true,
-      8: true,
-      9: true,
-      10: true,
-      11: true,
-      12: true,
-      13: true,
-    },
-    WhyUs: {
-      14: true,
-      15: true,
-      16: true,
-      17: true,
-      18: true,
-      19: true,
-      20: true,
-    },
-    Programmes: {
-      21: true,
-      22: true,
-      23: true,
-      24: true,
-      25: true,
-      26: true,
-      27: true,
-    },
-    Admission: { 28: true, 29: true, 30: true, 31: true, 32: true },
-    ContactUs: { 34: true, 35: true },
-    bookNow: { 36: true },
-    letterCircle: { 32: true },
-  };
-
-  let changeMenu = isAllowedPage.Home;
   function updateScreens() {
     if (!changeMenu[currentIndex]) {
       return;
@@ -297,8 +296,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   // Attach listeners to both forms
-  addFormListener("booking-form");
-  addFormListener("admission-booking-form");
+  // addFormListener("booking-form");
+  // addFormListener("admission-booking-form");
 
   nextButton.addEventListener("click", () => {
     handleTransition("next");
@@ -419,3 +418,49 @@ function moveCarousel(direction) {
 // Adjust the itemsPerPage on page load and window resize
 window.addEventListener("resize", updateItemsPerPage);
 updateItemsPerPage(); // Initialize on page load
+
+// popup
+// Select elements
+// Select elements
+const popup = document.getElementById("popup");
+const popupImage = document.getElementById("popup-image");
+const closePopup = document.getElementById("close-popup");
+const popupContainer = document.querySelector(".popup"); // Select the outer popup container
+
+// Show popup on page load
+window.addEventListener("load", () => {
+  popup.classList.add("active"); // Add 'active' class to show popup
+});
+
+popupImage.addEventListener("click", () => {
+  const screens = document.querySelectorAll(".screen");
+  function updateScreens() {
+    if (!changeMenu[currentIndex]) {
+      return;
+    }
+
+    screens.forEach((screen, index) => {
+      if (index < currentIndex) {
+        screen.style.transform = "translateY(100%)";
+      } else if (index === currentIndex) {
+        screen.style.transform = "translateY(0)";
+      } else {
+        screen.style.transform = `translateY(${100 * (index - currentIndex)}%)`;
+      }
+    });
+  }
+
+  changeMenu = isAllowedPage.bookNow;
+  currentIndex = 36;
+
+  popup.classList.remove("active");
+  popupContainer.style.display = "none";
+
+  updateScreens();
+});
+
+// Close popup when clicking the close button
+closePopup.addEventListener("click", () => {
+  popup.classList.remove("active");
+  popupContainer.style.display = "none";
+});

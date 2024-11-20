@@ -990,3 +990,22 @@ label {
   height: 80px;
   border-width: 12px;
 }
+
+/* Common  */
+.popup-semi-circle {
+  width: 150%;
+  height: 80%;
+  bottom: 0px;
+  top: auto;
+  left: -25%;
+  border-radius: 50% 50% 0% 0%;
+}
+
+#popup {
+  top: 90px;
+}
+
+#close-popup {
+  top: 0px;
+  right: 130px;
+}

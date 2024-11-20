@@ -2460,3 +2460,80 @@ form {
 #submit-button button {
   color: white;
 }
+
+/* POPUP  */
+/* Popup container within the semi-circle */
+
+.popup {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: transform 1.8s ease;
+  -moz-transition: transform 1.8s ease;
+  transition: transform 1.8s ease;
+  top: 0;
+  will-change: transform;
+}
+
+.popup-semi-circle {
+  width: 130%;
+  height: 100%;
+  border-radius: 50% 50% 0% 0%;
+  position: absolute;
+  top: 20%;
+  left: -15%;
+  background-color: var(--color-blue);
+}
+
+#popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  margin: auto;
+  visibility: hidden;
+}
+
+/* Popup content centered in the semi-circle */
+#popup-content {
+  position: relative;
+}
+
+/* Popup image styling */
+#popup-image {
+  max-width: 60%;
+  cursor: pointer;
+  margin: -10px auto;
+  display: block;
+}
+
+/* Close button styling */
+#close-popup {
+  position: absolute;
+  top: 0px;
+  right: 190px;
+  color: gray;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+}
+
+/* Show popup */
+#popup.active {
+  visibility: visible;
+  opacity: 1;
+}
