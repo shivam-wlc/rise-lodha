@@ -26,6 +26,10 @@ img.circles_home {
   font-size: 22px;
 }
 
+.right-section {
+  /* width: 50%; */
+  /* border: 1px solid black; */
+}
 /* Yellow Section  (What We do Screen)   */
 
 .screen2 .values-container {
@@ -249,7 +253,7 @@ label {
 
 .connect-us-icons {
   gap: 10px;
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
 
 /* POPUP  */

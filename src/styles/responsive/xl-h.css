@@ -1,0 +1,598 @@
+.right-section {
+  margin-top: 2%;
+}
+
+.nav-item {
+  height: 20px;
+  width: 20px;
+}
+
+.nav-text {
+  right: 35px;
+  font-size: 12px;
+}
+/* common  */
+.screen-title-l2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 0px;
+}
+
+.screen-description {
+  font-size: 14px;
+  line-height: 20px;
+  width: 60%;
+}
+
+/* Yellow Section  (What We do Screen)   */
+.screen2 .values-container .values {
+  gap: 0%;
+}
+
+.screen2 .values-container .values .letter-circle {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.screen2 .values-container p {
+  font-size: 12px;
+}
+
+.our-story-image-container {
+  left: -15%;
+  height: auto;
+  z-index: 50;
+}
+
+.semicircle-image {
+  position: relative;
+  width: 15%;
+}
+
+/* why we do it  */
+
+.screen4 .semi-circle .content .screen-title-l2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 0px;
+}
+.screen4 .semi-circle .content .screen-description {
+  font-size: 14px;
+  line-height: 20px;
+  width: 50%;
+}
+
+/* key facts  */
+
+.key-facts-three {
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.key-facts-two {
+  gap: 20px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.fact-item img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+/* infrasturcture  */
+
+.circular-keys-2 .nav-button img {
+  width: 20px;
+}
+.fact-text {
+  font-size: 16px;
+}
+
+.circular-item.active {
+  transform: scale(1);
+  opacity: 1;
+  overflow: hidden;
+}
+
+/* 
+  ========= Screen 7 How we do it ==========
+ */
+
+.other-logos-container {
+  margin-top: 1%;
+}
+.other-logos-container img {
+  width: 100px;
+  height: auto;
+}
+
+.other-logos-one {
+  width: 70%;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 20px;
+  margin: auto;
+}
+
+.other-logos-one img:nth-child(1),
+.other-logos-one img:nth-child(3) {
+  width: 50px;
+}
+.other-logos-one img:nth-child(1) {
+  margin-left: 0%;
+}
+.other-logos-one img:nth-child(2) {
+  width: 200px;
+}
+
+.other-logos-one img:nth-child(6) {
+  width: 130px;
+}
+.connect-us-container {
+  width: 70%;
+}
+
+.connect-us-icons {
+  gap: 20px;
+  margin-top: 1%;
+}
+
+.connect-us-container {
+  margin-top: 1%;
+}
+
+.connect-us-container > p {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+#nextButton {
+  width: 60px;
+}
+
+/* ur story home page  */
+
+.img-container {
+  width: 60%;
+  margin: 0% auto;
+}
+
+.img-container > div:nth-child(4) img {
+  max-width: 130px;
+}
+
+/* our purpose  */
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(1) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.our-story-2 > .our-story-semi-circle-2 > .our-story-content p:nth-child(2) {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin-top: 1%;
+}
+
+/* Our Philosophy  */
+
+.our-story-3 > .our-story-semi-circle-3 > .our-story-content p:nth-child(1) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.our-story-3 > .our-story-semi-circle-3 > .our-story-content p:nth-child(2) {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin-top: 0.5%;
+}
+
+.our-story-3 > .our-story-semi-circle-3 > .our-story-content p:nth-child(3) {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+}
+
+.our-story-after-values {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+}
+
+.our-story-values-list div {
+  width: 50px;
+  height: 50px;
+  font-size: 8px;
+  border: 1px solid #fff;
+  margin: 10px 0;
+}
+
+.founder-image {
+  width: 100px;
+}
+
+#founder-text p:nth-child(1) {
+  font-size: 12px !important;
+}
+
+#founder-text p:nth-child(2) {
+  font-size: 12px;
+}
+
+/* Our mission  */
+.our-story-semi-circle-4 > .our-story-content p:nth-child(1) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.our-story-semi-circle-4 > .our-story-content p:nth-child(2) {
+  font-size: 12px;
+  line-height: 18px;
+  width: 50%;
+}
+
+/* our team  */
+
+.our-story-semi-circle-5 > .our-story-content p:nth-child(1) {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.our-story-semi-circle-5 > .our-story-content p:nth-child(2) {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+}
+
+.team-container {
+  max-width: 900px;
+  padding: 10px;
+  height: 20px;
+  margin-bottom: 10%;
+}
+
+.team-container-2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 2%;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.team-member img {
+  width: 100px;
+}
+
+.team-text-container {
+  max-width: 700px;
+}
+
+.team-text-container p:nth-child(3) {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+/* not  */
+
+/* why us home screeen  */
+
+.why-us-img-container {
+  width: 40%;
+  margin: 1% auto;
+}
+
+.why-us-img-container img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.why-us-img-container > div {
+  padding: 20px;
+  height: 120px;
+  /* border: 1px solid black; */
+}
+
+.why-us-img-container > div:nth-child(6) img {
+  max-width: 70px;
+}
+
+.why-us-2 .semi-circle .content .screen-title {
+  margin-top: 1%;
+}
+
+.why-us-2 .semi-circle .content .screen-title-l2 {
+  margin-top: 0%;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.why-us-2 .semi-circle .content .screen-description {
+  line-height: 20px;
+}
+
+img.circles_home {
+  width: 10%;
+}
+
+/* International discovery curriculum  */
+
+.why-us-3 .screen-title-l2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.why-us-3 .screen-description {
+  font-size: 14px;
+  line-height: 20px;
+  width: 75%;
+}
+
+.why-us-values-container {
+  gap: 1px;
+  margin-top: 1%;
+}
+
+.why-us-value {
+  width: 100px;
+  height: 80px;
+}
+
+.why-us-letter-circle {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+/* Style for "THE" and "WAY" */
+.why-us-text {
+  font-family: "MontserratBold", sans-serif;
+  font-size: 10px !important;
+  margin-bottom: -10px;
+  text-align: center;
+}
+
+.why-us-value:first-child {
+  line-height: 80px;
+}
+.why-us-value:last-child {
+  line-height: 80px;
+}
+
+.why-us-last-p {
+  width: 75%;
+}
+
+/* World class infrastructure   */
+
+.why-us-4 .semi-circle .content .screen-title-l2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.why-us-4 .semi-circle .content .screen-description {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin-top: 1%;
+}
+
+.why-us-carousal-outer-container {
+  width: 85%;
+}
+
+/* enrichment program  */
+
+.why-us-5 .semi-circle .content .screen-title-l2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.why-us-5 .semi-circle .content .screen-description {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* Growth mindset  */
+
+.why-us-6 .semi-circle .content .screen-title-l2 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.why-us-6 .semi-circle .content .screen-description {
+  font-size: 12px;
+  line-height: 18px;
+  width: 65%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+/* programnms home screen */
+
+.programme-1 .semi-circle .programme-title {
+  /* width: 70px; */
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-1 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 75%;
+}
+
+/* toddler  */
+
+.programme-2 .semi-circle .programme-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-2 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 70%;
+}
+
+/* play group  */
+
+.programme-3 .semi-circle .programme-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-3 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 70%;
+}
+
+/* Nursery  */
+
+.programme-4 .semi-circle .programme-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-4 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 70%;
+}
+/* Jr KG  */
+
+.programme-5 .semi-circle .programme-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-5 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 70%;
+}
+
+/* Sr KG  */
+
+.programme-6 .semi-circle .programme-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.programme-6 .semi-circle .programme-content .description-text {
+  font-size: 12px;
+  line-height: 18px;
+  width: 70%;
+}
+
+/* Admission  */
+.admission-1 .semi-circle .admission-content .title-level-1 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.admission-img-container img {
+  max-width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.admission-img-container > div:first-child img {
+  max-width: 100px;
+}
+.admission-img-container > div:nth-child(2) img {
+  max-width: 65px;
+}
+.admission-img-container > div:nth-child(3) img {
+  max-width: 80px;
+}
+
+.admission-img-container > div:nth-child(4) img {
+  max-width: 70px;
+}
+
+/* Admissssion process  */
+.admission-3 .semi-circle .admission-content .screen-description {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+/* fee structure  */
+
+.admission-4 .semi-circle .admission-content .small-text {
+  font-size: 12px !important;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-top: -10px;
+}
+
+.admission-4 .semi-circle .admission-content .large-text {
+  font-size: 16px !important;
+  line-height: 25px;
+  margin-top: 0px;
+}
+
+.admission-content > .letter-circle {
+  margin-top: 10px;
+  height: 160px;
+  width: 160px;
+  padding: 30px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 25px;
+}
+
+/* contact us  */
+
+.contact-us-1 .semi-circle .content .screen-title {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 0px;
+}
+
+.contact-us-1 .semi-circle .content .screen-description {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 0px;
+  width: 75%;
+}
+
+.contact-container {
+  gap: 0rem;
+  margin-top: 0%;
+}
+
+.contact-us-1 .semi-circle .content .address-item {
+  margin-top: 0%;
+}
+
+.contact-us-1 .semi-circle .content .map-item iframe {
+  width: 500px;
+  height: 120px;
+}
