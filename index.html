@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="icon" type="image/svg+xml" href="/rise.svg" />
     <title>RISE - Rising India School of Excellence</title>
     <!-- Consolidated styles into a single request if possible -->
@@ -14,15 +15,16 @@
     />
     <!-- CSS for screens smaller than 576px (like phones) -->
     <link
-      rel="stylesheet"
-      href="./src/styles/responsive/sm2-lh.css"
-      media="screen and (max-width: 576px)"
-    />
+    rel="stylesheet"
+    href="./src/styles/responsive/sm2-lh.css"
+    media="screen and (max-width: 576px)"
+  />
     <link
       rel="stylesheet"
       href="./src/styles/responsive/sm.css"
       media="screen and (max-width: 576px) and (min-height: 701px)"
     />
+  
 
     <!-- CSS for screens between 576px and 768px (like phones) -->
     <link
@@ -42,6 +44,20 @@
       href="./src/styles/responsive/xl.css"
       media="screen and (min-width: 1200px) and (max-width: 1400px)"
     />
+<!-- CSS for ThinkPad 14-inch screen (1920x1080 resolution) -->
+    <link
+  rel="stylesheet"
+  href="./src/styles/responsive/14-inch-scaled.css"
+  media="screen and (min-width: 1200px) and (max-width: 1920px) and (min-height: 700px) and (max-height: 1080px)"
+/>
+
+     <!-- CSS for screens between 1200px and 1400px (like laptops, desktops) to 500 to 600 height px -->
+      <link 
+      rel="stylesheet" 
+      href="./src/styles/responsive/xl-h.css" 
+      media="screen and (min-width: 1200px) and (max-width: 1400px) and (min-height: 500px) and (max-height: 600px)"
+      />
+
     <!-- CSS for screens between 1400px and 1800px (like laptops, desktops) -->
     <link
       rel="stylesheet"
@@ -86,7 +102,7 @@
     />
 
     <!-- Defer JavaScript to reduce blocking -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function () {
         emailjs.init("G2SDjizAB86ZjO6Tz");
@@ -103,6 +119,7 @@
         <img
           src="./src/assessts/logo/rise-lodha-logo.png"
           alt="Rise Lodha Logo"
+     
       /></a>
     </div>
     <!-- ************** BOOK BUTTON ************** -->
@@ -129,7 +146,7 @@
   <!-- ************** MAIN CONTENT ************** -->
   <div class="container">
     <!-- ************** VIDEO SECTION ************** -->
-    <div class="screen screen1">
+    <!-- <div class="screen screen1">
       <div class="semi-circle">
         <video
           id="responsive-video"
@@ -148,7 +165,30 @@
           Your browser does not support the video tag.
         </video>
       </div>
+    </div> -->
+
+    <div class="screen screen1">
+      <div class="semi-circle">
+        <video
+          id="responsive-video"
+          class="video"
+          preload="metadata"
+          autoplay
+          loop
+          playshine
+          muted
+          poster="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biblecenterchurch.com%2Fvideo-placeholder%2F&psig=AOvVaw1pffOTrKJyoXhLUNQE5wjK&ust=1732693226322000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDQ3bS_-YkDFQAAAAAdAAAAABAE"
+        >
+          <source
+            id="video-source"
+            src=""
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
+    
     <!-- ************** HOME PAGE ************** -->
     <div class="screen screen2">
       <div class="semi-circle">
@@ -226,6 +266,7 @@
             <img
               src="./src/assessts/icons/leftIcon@5x.png"
               alt="Left Icon"
+           
             />
           </div>
           <div class="circles-container carousel-images">
@@ -276,6 +317,7 @@
             <img
               src="./src/assessts/icons/rightIcon@5x.png"
               alt="Right Icon"
+           
             />
           </div>
         </div>
@@ -322,6 +364,7 @@
               <img
                 src="./src/assessts/icons/adultChildRatio@5x.png"
                 alt="adultChildRatio"
+             
               />
               <div class="fact-text">
                 <p>1:8</p>
@@ -333,6 +376,7 @@
               <img
                 src="./src/assessts/icons/squarefit@5x.png"
                 alt="squarefit"
+             
               />
               <div class="fact-text">
                 <p>100 sq. ft.</p>
@@ -344,6 +388,7 @@
               <img
                 src="./src/assessts/icons/learningZone@5x.png"
                 alt="learningZone"
+             
               />
               <div class="fact-text">
                 <p>20</p>
@@ -358,6 +403,7 @@
               <img
                 src="./src/assessts/icons/education@5x.png"
                 alt="education"
+             
               />
               <div class="fact-text">
                 <p>80%</p>
@@ -369,6 +415,7 @@
               <img
                 src="./src/assessts/icons/femaleStaff@5x.png"
                 alt="femaleStaff"
+             
               />
               <div class="fact-text">
                 <p>100%</p>
@@ -401,6 +448,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/1.jpg"
+           
             /></a>
           </div>
           <div class="circular-item">
@@ -412,6 +460,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/2.jpg"
+      
               />
             </a>
           </div>
@@ -423,6 +472,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/3.jpg"
+  
             /></a>
           </div>
           <div class="circular-item">
@@ -433,6 +483,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/4.jpg"
+         
             /></a>
           </div>
           <div class="circular-item">
@@ -443,6 +494,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/5.jpg"
+            
             /></a>
           </div>
           <div
@@ -456,6 +508,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/6.jpg"
+             
             /></a>
           </div>
           <div class="circular-item">
@@ -466,6 +519,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/7.jpg"
+      
             /></a>
           </div>
           <div class="circular-item">
@@ -477,6 +531,7 @@
                 class="modal-image-item"
                 alt="infra image"
                 src="./src/assessts/images/infra/8.jpg"
+       
             /></a>
           </div>
         </div>
@@ -484,6 +539,7 @@
           <img
             src="./src/assessts/icons/rightIcon@5x.png"
             alt="Right Icon"
+     
           />
         </div>
       </div>
@@ -498,12 +554,12 @@
         </p>
         <div class="other-logos-container">
           <div class="other-logos-one">
-            <img src="./src/assessts/images/lg1@5x.png" alt="" />
-            <img src="./src/assessts/images/lg2@5x.png" alt="" />
-            <img src="./src/assessts/images/lg3@5x.png" alt="" />
-            <img src="./src/assessts/images/lg4@5x.png" alt="" />
-            <img src="./src/assessts/images/lg5@5x.png" alt="" />
-            <img src="./src/assessts/images/lg6@5x.png" alt="" />
+            <img src="./src/assessts/images/lg1@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg2@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg3@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg4@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg5@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg6@5x.png" alt="" loading="lazy"/>
           </div>
         </div>
         <div class="connect-us-container">
@@ -513,6 +569,7 @@
               <img
                 src="./src/assessts/icons/location@2x.png"
                 alt="location"
+             
               />
               <p class="contact-adress">
                 Plot No: 33 Opp to HDFC Bank, La Oceana Colony, <br />La
@@ -520,7 +577,7 @@
               </p>
             </div>
             <div>
-              <img src="./src/assessts/icons/mail@2x.png" alt="mail" />
+              <img src="./src/assessts/icons/mail@2x.png" alt="mail" loading="lazy"/>
               <a href="mailto:admissions@riseschool.in" class="emailLink"
                 >admissions@riseschool.in</a
               >
@@ -536,6 +593,7 @@
                   src="./src/assessts/icons/mobile@2x.png"
                   alt="phone"
                   class="phone"
+               
                 />
                 9920038796
               </a>
@@ -549,6 +607,7 @@
                 <img
                   src="./src/assessts/icons/facebook@2x.png"
                   alt="facebook"
+               
                 />
               </a>
               <a
@@ -559,6 +618,7 @@
                 <img
                   src="./src/assessts/icons/instagram@2x.png"
                   alt="instagram"
+               
                 />
               </a>
             </div>
@@ -577,6 +637,7 @@
             <img
               src="./src/assessts/icons/our-story/purpose@5x.png"
               alt="purpose"
+           
             />
             <p>Our Purpose</p>
           </div>
@@ -584,6 +645,7 @@
             <img
               src="./src/assessts/icons/our-story/mission@5x.png"
               alt="mission"
+           
             />
             <p>Our Mission</p>
           </div>
@@ -591,6 +653,7 @@
             <img
               src="./src/assessts/icons/our-story/philosophy@5x.png"
               alt="philosophy"
+           
             />
             <p>Our Philosophy</p>
           </div>
@@ -598,6 +661,7 @@
             <img
               src="./src/assessts/icons/our-story/team@5x.png"
               alt="team"
+           
             />
             <p>Our Team</p>
           </div>
@@ -690,6 +754,7 @@
               src="./src/assessts/images/team/payalGaba.png"
               alt="Payal Gaba"
               class="founder-image"
+           
             />
             <div id="founder-text">
               <p>Warm regards,</p>
@@ -726,6 +791,7 @@
           src="./src/assessts/images/childrensImage.png"
           alt="imag"
           class="semicircle-image"
+       
         />
       </div>
     </div>
@@ -753,6 +819,7 @@
           <img
             src="./src/assessts/images/team/payalGaba.png"
             alt="Payal Gaba"
+         
           />
           <div class="team-text-container">
             <p>Payal Gaba</p>
@@ -786,6 +853,7 @@
           <img
             src="./src/assessts/images/team/pritamBisht.png"
             alt="John Doe"
+         
           />
         </div>
       </div>
@@ -798,6 +866,7 @@
           <img
             src="./src/assessts/images/team/Zeenat.png"
             alt="Member Name"
+         
           />
           <div class="team-text-container">
             <p>Zeenat Bandukwala</p>
@@ -833,6 +902,7 @@
           <img
             src="./src/assessts/images/team/leena.png"
             alt="Mike Johnson"
+         
           />
         </div>
 
@@ -840,6 +910,7 @@
           <img
             src="./src/assessts/images/team/Shilpa.png"
             alt="Member Name"
+         
           />
           <div class="team-text-container">
             <p>Dr. Shilpa Agrawal</p>
@@ -868,12 +939,12 @@
         </p>
         <div class="other-logos-container">
           <div class="other-logos-one">
-            <img src="./src/assessts/images/lg1@5x.png" alt="" />
-            <img src="./src/assessts/images/lg2@5x.png" alt="" />
-            <img src="./src/assessts/images/lg3@5x.png" alt="" />
-            <img src="./src/assessts/images/lg4@5x.png" alt="" />
-            <img src="./src/assessts/images/lg5@5x.png" alt="" />
-            <img src="./src/assessts/images/lg6@5x.png" alt="" />
+            <img src="./src/assessts/images/lg1@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg2@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg3@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg4@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg5@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg6@5x.png" alt="" loading="lazy"/>
           </div>
         </div>
         <div class="connect-us-container">
@@ -883,6 +954,7 @@
               <img
                 src="./src/assessts/icons/location@2x.png"
                 alt="location"
+             
               />
               <p class="contact-adress">
                 Plot No: 33 Opp to HDFC Bank, La Oceana Colony, <br />La
@@ -890,7 +962,7 @@
               </p>
             </div>
             <div>
-              <img src="./src/assessts/icons/mail@2x.png" alt="mail" />
+              <img src="./src/assessts/icons/mail@2x.png" alt="mail" loading="lazy"/>
               <a href="mailto:admissions@riseschool.in" class="emailLink"
                 >admissions@riseschool.in</a
               >
@@ -906,6 +978,7 @@
                   src="./src/assessts/icons/mobile@2x.png"
                   alt="phone"
                   class="phone"
+               
                 />
                 9920038796
               </a>
@@ -919,6 +992,7 @@
                 <img
                   src="./src/assessts/icons/facebook@2x.png"
                   alt="facebook"
+               
                 />
               </a>
               <a
@@ -929,6 +1003,7 @@
                 <img
                   src="./src/assessts/icons/instagram@2x.png"
                   alt="instagram"
+               
                 />
               </a>
             </div>
@@ -947,6 +1022,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 3.png"
               alt="D.I.S.C.O.V.E.R.Y. MIND MODEL © Pedagogy"
+           
             />
             <p>D.I.S.C.O.V.E.R.Y. MIND MODEL<sup>&copy;</sup> Pedagogy</p>
           </div>
@@ -954,6 +1030,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 6.png"
               alt="International DI.S.C.O.V.E.R.Y. Curriculum"
+           
             />
             <p>International DI.S.C.O.V.E.R.Y. Curriculum</p>
           </div>
@@ -961,6 +1038,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 5.png"
               alt="World-class Infrastructure"
+           
             />
             <p>World-class Infrastructure</p>
           </div>
@@ -968,6 +1046,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 4.png"
               alt="Enrichment Programmes"
+           
             />
             <p>Enrichment Programmes</p>
           </div>
@@ -975,6 +1054,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 2.png"
               alt="Growth Mindset"
+           
             />
             <p>Growth Mindset</p>
           </div>
@@ -982,6 +1062,7 @@
             <img
               src="./src/assessts/whyUs/blueIcon/Asset 1.png"
               alt="Our Partnerships"
+           
             />
             <p>Our Partnerships</p>
           </div>
@@ -1129,14 +1210,6 @@
             discovery. Here, education flows with curiosity, allowing kids
             to learn wherever their imagination takes them.
           </p>
-          <!-- <p class="screen-title-l2">
-            Learning comes alive at RISE Preschool
-          </p>
-          <p class="screen-description">
-            Play meets education at our experiential zones. Here, hands-on
-            activities encourage exploration, learning and creativity
-            through experience. Let the adventure begin!
-          </p> -->
         </div>
       </div>
 
@@ -2008,12 +2081,12 @@
         </p>
         <div class="other-logos-container">
           <div class="other-logos-one">
-            <img src="./src/assessts/images/lg1@5x.png" alt="" />
-            <img src="./src/assessts/images/lg2@5x.png" alt="" />
-            <img src="./src/assessts/images/lg3@5x.png" alt="" />
-            <img src="./src/assessts/images/lg4@5x.png" alt="" />
-            <img src="./src/assessts/images/lg5@5x.png" alt="" />
-            <img src="./src/assessts/images/lg6@5x.png" alt="" />
+            <img src="./src/assessts/images/lg1@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg2@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg3@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg4@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg5@5x.png" alt="" loading="lazy"/>
+            <img src="./src/assessts/images/lg6@5x.png" alt="" loading="lazy"/>
           </div>
         </div>
         <div class="connect-us-container">
@@ -2320,7 +2393,7 @@
     <div class="modal-img-caption"></div>
   </div>
   
-    <div class="popup">
+    <!-- <div class="popup">
       <div class="popup-semi-circle">
         <div class="content">
           <div id="popup">
@@ -2335,11 +2408,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
 
-<script type="module" src="./src/scripts/main.js"></script>
+<script type="module" src="./src/scripts/main.js" defer></script>
 
 <script>
   // Get the modal
@@ -2366,6 +2439,20 @@
     setTimeout(function () {
       document.getElementById("loader").style.display = "none";
       document.getElementById("main-content").style.display = "block";
-    }, 3000); // 3000 milliseconds = 3 seconds
+    }, 0); // 3000 milliseconds = 3 seconds
   });
+
+
+
+
+
+
+  // reset viewport 
+  function resetViewport() {
+  document.body.style.zoom = 1; 
+}
+
+window.addEventListener('resize', resetViewport);
+window.addEventListener('orientationchange', resetViewport);
+
 </script>

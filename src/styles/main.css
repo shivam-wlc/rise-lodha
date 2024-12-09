@@ -55,6 +55,7 @@ html {
   overflow: hidden;
   height: 100vh;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 a {
@@ -868,6 +869,7 @@ img.circles_home {
 .our-story-3 > .our-story-semi-circle-3 > .our-story-content > button {
   color: var(--color-red);
 }
+
 .our-story-3 > .our-story-semi-circle-3 > .our-story-content p:nth-child(1) {
   font-family: "MontserratRegular";
   font-size: 22px;
@@ -1379,6 +1381,7 @@ img.circles_home {
   margin: auto;
   margin-top: 0%;
 }
+
 .why-us-last-p {
   font-family: "MontserratRegular";
   font-size: 14px;
@@ -1418,6 +1421,7 @@ img.circles_home {
   margin: auto;
   margin-top: 1%;
 }
+
 .why-us-semi-circle-4 .why-us-content p:nth-child(3) {
   font-family: "MontserratRegular";
   font-size: 22px;
@@ -2473,11 +2477,11 @@ form {
   align-items: center;
   font-size: 2rem;
   color: white;
-  -webkit-transition: transform 1.8s ease;
-  -moz-transition: transform 1.8s ease;
-  transition: transform 1.8s ease;
+  /* -webkit-transition: transform 1.8s ease; */
+  /* -moz-transition: transform 1.8s ease; */
+  /* transition: transform 1.8s ease; */
   top: 0;
-  will-change: transform;
+  /* will-change: transform; */
 }
 
 .popup-semi-circle {
@@ -2499,7 +2503,7 @@ form {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  /* transition: opacity 0.3s ease, visibility 0.3s ease; */
   margin: auto;
   visibility: hidden;
 }
